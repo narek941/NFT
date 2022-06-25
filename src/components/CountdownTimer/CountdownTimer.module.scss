@@ -1,0 +1,108 @@
+@use '../../styles/index.scss' as *;
+
+.expired-notice {
+  color: var(--countdown-expired-notice-colorText);
+}
+
+.header {
+  margin-bottom: 18px;
+}
+.show-counter {
+  display: grid;
+  grid-template-columns: var(--countdown-grid-template-columns);
+  width: 100%;
+  gap: 11px;
+  justify-content: center;
+  @include respond-to('medium') {
+    grid-template-columns: var(--countdown-grid-template-columns-Large);
+  }
+}
+.countdown {
+  &-link {
+    text-decoration: none;
+    color: var(--countdown-link-colorText);
+  }
+
+  &-danger {
+    color: var(--countdown-danger-colorText);
+  }
+
+  &-name {
+    margin: var(--countdown-name-Margin);
+    font-weight: var(--countdown-name-FontWeight);
+    font-size: var(--countdown-name-FontSize);
+    line-height: var(--countdown-name-LineHeight);
+
+    text-align: center;
+    letter-spacing: var(--countdown-name-LetterSpace);
+  }
+}
+.countdown {
+  &-item {
+    position: relative;
+
+    &:not(:first-child) {
+      &:before {
+        position: absolute;
+        left: -10px;
+        top: 0;
+        content: var(--countdown-separator);
+        // width: var(--countdown-separator-Width);
+        // height: var(--countdown-separator-Height);
+
+        font-weight: var(--countdown-separator-FontWeight);
+        font-size: var(--countdown-separator-FontSize);
+        line-height: var(--countdown-separator-Height);
+
+        @include respond-to('large') {
+          font-size: var(--countdown-separator-FontSize-large);
+          top: 11px;
+        }
+      }
+    }
+  }
+
+  &-day {
+    width: 100%;
+  }
+
+  &-value {
+    position: relative;
+    padding: var(--countdown-value-Padding);
+    font-weight: var(--countdown-value-FontWeight);
+    font-size: var(--countdown-value-FontSize);
+    line-height: var(--countdown-value-LineHeight);
+
+    background: var(--countdown-value-bg);
+    backdrop-filter: var(--countdown-value-filter);
+    border-radius: var(--countdown-value-borderRadius);
+
+    @include respond-to('small') {
+      font-size: var(--countdown-value-FontSize-medium);
+      line-height: var(--countdown-value-LineHeight-medium);
+    }
+    @include respond-to('large') {
+      font-size: var(--countdown-value-FontSize-large);
+      line-height: var(--countdown-value-LineHeight-large);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      border: var(--countdown-value-border-width) solid transparent;
+      border-image: var(--countdown-value-border-image);
+      border-radius: var(--countdown-value-borderRadius-bottom);
+    }
+    &:after {
+      content: '';
+      height: 50%;
+      position: absolute;
+      z-index: -1;
+      inset: auto 0 0 0;
+
+      background: var(--countdown-value-bg-bottom);
+    }
+  }
+}

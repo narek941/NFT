@@ -1,0 +1,17 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  margin: 0 auto;
+  border: var(--accordion-Border);
+  border-radius: 8px;
+
+  & > :first-child {
+    & > :first-child {
+      border-top: none !important;
+      border-bottom: none;
+    }
+  }
+}
+.height-large {
+  max-height: var(--accordion-height-large);
+}

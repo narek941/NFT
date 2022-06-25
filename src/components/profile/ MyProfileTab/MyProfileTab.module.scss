@@ -1,0 +1,23 @@
+@use '@styles/index.scss' as *;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  @include respond-to('medium') {
+    padding-bottom: var(--myProfile-section-PaddingBottom);
+  }
+
+  & > .section:nth-child(odd) {
+    background: var(--myProfile-section-Bg-odd);
+  }
+  & > .section:nth-child(even) {
+    background: var(--myProfile-section-Bg-even);
+  }
+  .card {
+    width: 220px;
+    @include respond-to('small') {
+      width: 277px;
+    }
+  }
+}

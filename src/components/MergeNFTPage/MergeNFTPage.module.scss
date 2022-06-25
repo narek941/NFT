@@ -1,0 +1,53 @@
+@use '@styles/index.scss' as *;
+
+.section {
+  position: relative;
+  z-index: 3;
+  background: var(--MergeNFTs-section-Bg);
+}
+.container {
+  padding-top: 40px;
+
+  @include respond-to('medium') {
+    padding-top: 60px;
+  }
+}
+.header {
+  margin-bottom: 15px;
+}
+.description {
+  max-width: 585px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.card {
+  width: 277px;
+}
+.pagination {
+  margin: 50px auto 60px;
+}
+.card {
+  width: 277px;
+}
+.pagination {
+  margin: 50px auto 60px;
+}
+
+.tabContent {
+  width: 100%;
+  overflow: hidden;
+  padding: 18px 0;
+  margin-top: -18px;
+  position: relative;
+  z-index: 3;
+}
+
+@keyframes animationSlideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,49 @@
+@use '../../styles/index.scss' as *;
+
+.outer-wrapper {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+  margin: 28px 0 12px;
+}
+
+.slide-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.border-block {
+  flex-basis: 120px;
+  flex-shrink: 1;
+}
+
+.inner-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  &-sliding {
+    transition: left 2s ease-in-out;
+  }
+  & > div {
+    margin: 0 17px;
+  }
+}
+.arrow {
+  width: var(--carousel-arrow-Width);
+  height: var(--carousel-arrow-Height);
+  @include respond-to('medium') {
+    width: var(--carousel-arrow-Width-Large);
+    height: var(--carousel-arrow-Height-Large);
+  }
+  color: var(--carousel-arrow-ColorText);
+  border: var(--carousel-arrowWrapper-Border);
+}

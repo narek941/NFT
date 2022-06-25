@@ -1,0 +1,49 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+
+  transform: translateX(-50%);
+
+  @include respond-to('medium') {
+    &.isBg {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: auto 100%;
+        background-color: var(--jungle-Bg-Color);
+        background-image: var(--jungle-Bg);
+      }
+    }
+    &.signInBg {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: auto 100%;
+        background-color: var(--jungle-Bg-Color);
+        background-image: var(--jungle-signup-Bg);
+      }
+    }
+  }
+}

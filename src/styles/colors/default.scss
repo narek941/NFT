@@ -1,0 +1,1402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family-base: 'Poppins', sans-serif;
+
+  --primary: #0f43f9;
+  --primaryDark: #182f43;
+  --body-Bg: #ffffff;
+  --colorText-base: #182f43;
+  --container-width: 1240px;
+
+  --display1-font-size: 38px;
+  --display1-line-height: 52px;
+  --display2-font-size: 28px;
+  --display2-line-height: 44px;
+  --display3-font-size: 22px;
+  --display3-line-height: 35px;
+  --display4-font-size: 16px;
+  --display4-line-height: 26px;
+  --display5-font-size: 16px;
+  --display5-line-height: 26px;
+  --display6-font-size: 14px;
+  --display6-line-height: 21px;
+
+  --heading-font-weight: 600;
+
+  --header-bg-color: #ffffff;
+  --header-border-color: #ebf2f8;
+  --header-Padding: 16.5px 20px;
+
+  --header-Height: 60px;
+  --header-Height-Large: 80px;
+
+  --headerScroll-bg: #ffffff;
+  --headerScroll-BorderColor: #ebf2f8;
+  --headerScroll-Padding: 16.5px 20px;
+  --headerScroll-Height: 60px;
+  --headerScroll-Height-Large: 80px;
+
+  --section-bgColor: #f3faff;
+  --border-bgColor: #c1d6e9;
+
+  --hero-container-PaddingTop: 61px;
+  --hero-container-PaddingBottom: 53px;
+  --hero-gridGap: 30px;
+  --hero-gridGap-large: 30px;
+  --hero-gridTemplate-rows-large: 1fr;
+  --hero-gridTemplate-columns-large: minmax(400px, 585px) minmax(320px, 535px);
+
+  // --hero-headerBlock-Height: auto;
+  // --hero-headerBlock-Height-Large: auto;
+  --hero-headerBlock-HeaderImage: transparent;
+
+  --hero-headerBlock-Padding: 0;
+  --hero-headerBlock-Margin: 0 auto 0;
+  --hero-headerBlock-Margin-large: 22px auto 0;
+  --hero-headerBlock-ColorText: #032447;
+  --hero-headerBlock-Width: 585px;
+
+  --hero-header-Margin: 0;
+  --hero-header-FontSize: 80px;
+  --hero-header-FontSize-large: 120px;
+  --hero-header-FontWeight: 900;
+  --hero-header-LineHeight: 1;
+  --hero-header-LetterSpacing: 0.02em;
+
+  --hero-headerSmall-FontSize: 42px;
+  --hero-headerSmall-FontSize-large: 72px;
+  --hero-headerSmall-FontWeight: 900;
+  --hero-headerSmall-LineHeight: 1.05;
+  --hero-headerSmall-LetterSpacing: 0.03em;
+
+  --hero-decor-Width: 40px;
+  --hero-decor-Width-large: 62px;
+  --hero-decor-Height: 4px;
+  --hero-decor-Height-large: 6px;
+  --hero-decor-Bg: #182f43;
+
+  --hero-imageBox-Height-large: 462px;
+  --hero-imageBox-Width-large: 585px;
+  --hero-imageBox-ColorText: #fff;
+  --hero-imageBox-Bg: #0f43f9;
+  --hero-imageBox-BorderRadius: 8px;
+  --hero-imageBox-icon-Bg: #fff;
+
+  --hero-imageBox-Marge: 0;
+  --hero-imageBox-Marge-Large: 0;
+  --hero-imageBox-image-Marge: 0;
+  --homePage-desc-width: 788px;
+  --homePage-desc-width-Large: 788px;
+
+  --homePage-desc-FontSize: 18px;
+  --homePage-desc-LineHeight: 30px;
+  --homePage-desc-FontWeight: 300;
+
+  --homePage-header-Color: inherit;
+  --homePage-header-FontSize: 38px;
+  --homePage-header-LineHeight: 52px;
+  --homePage-header-Margin: 0 0 20px;
+  --homePage-header-Height: auto;
+
+  --HomePage-about-us-PaddingTop: 80px;
+  --HomePage-about-us-PaddingBottom: 70px;
+
+  --HomePage-news-PaddingTop: 60px;
+  --HomePage-news-PaddingBottom: 73px;
+  --HomePage-news-desc-Width: 585px;
+  --HomePage-news-desc-Width-Large: 585px;
+
+  --homePage-news-desc-FontSize: 16px;
+  --homePage-news-desc-LineHeight: 26px;
+  --homePage-news-desc-FontWeight: 300;
+  --homePage-news-desc-MarginBottom: 43px;
+
+  --HomePage-packs-Width: 1240px;
+  --HomePage-packs-PaddingTop-Large: 95px;
+  --HomePage-packs-PaddingBottom-Large: 97px;
+
+  --HomePage-packsSubscribe-Margin-Large: 48px 33px 0;
+
+  --myNfts-height: auto;
+  --packs-small-height: auto;
+  --packs-height: auto;
+
+  --packs-small-header-Margin: 0 0 16px;
+
+  --myNfts-Bg-Image: none;
+  --packs-small-Bg-Image: none;
+  --packs-Bg-Image: none;
+
+  --countdown-link-colorText: #032447;
+  --countdown-danger-colorText: #eb5746;
+  --countdown-expired-notice-colorText: #eb5746;
+  --countdown-grid-template-columns: repeat(4, minmax(50px, 64px));
+  --countdown-grid-template-columns-Large: repeat(4, minmax(50px, 100px));
+
+  --countdown-name-FontSize: 14px;
+  --countdown-name-FontWeight: 300;
+  --countdown-name-LineHeight: 21px;
+  --countdown-name-Margin: 2px 0 0 0;
+  --countdown-name-LetterSpace: 0.005em;
+
+  --countdown-separator-Height: 44px;
+  --countdown-separator: ':';
+  --countdown-separator-Width: 30px;
+  --countdown-separator-FontSize: 36px;
+  --countdown-separator-FontSize-large: 36px;
+  --countdown-separator-FontWeight: 700;
+
+  --countdown-value-FontSize: 28px;
+  --countdown-value-FontSize-medium: 38px;
+  --countdown-value-FontSize-large: 54px;
+  --countdown-value-LineHeight: 1;
+  --countdown-value-LineHeight-medium: 1;
+  --countdown-value-LineHeight-large: 1;
+  --countdown-value-FontWeight: 600;
+  --countdown-value-Padding: 6px;
+
+  --countdown-value-bg: transparent;
+  --countdown-value-bg-bottom: transparent;
+  --countdown-value-borderRadius: 0;
+  --countdown-value-filter: none;
+
+  --countdown-value-border-image: transparent;
+  --countdown-value-border-width: 0;
+  --countdown-value-borderRadius-bottom: 0;
+
+  --countdown-link-Bg: #ffffff;
+  --countdown-link-Padding: 32px 20px 20px 20px;
+  --countdown-link-Height: 206px;
+  --countdown-link-Border: 2px solid #bfd3e4;
+  --countdown-link-BorderRadius: 8px;
+
+  --dropDownList-Bg: #fcfcfc;
+  --dropDownList-BoxShadow: 0 5px 30px rgba(24, 47, 67, 0.2);
+  --dropDownList-filter: none;
+  --dropDownList-BorderColor: #ebf2f8;
+  --dropDownList-item-Padding: 5px 10px 5px 14px;
+
+  --dropDownList-icon-Fill: #446384;
+  --dropDown-icon-arrow-Fill: #0f43f9;
+  --dropDown-icon-arrow-Width: 10px;
+  --dropDown-icon-arrow-Height: 6px;
+  --dropDownList-scrollbar-track-Bg: #ebf2f8;
+  --dropDownList-scrollbar-thumb-Bg: #0f43f9;
+  --dropDown-selectedOption-ColorText: #032447;
+  --dropDown-isSubmenu-BorderColor: #ebf2f8;
+  --dropDown-isSubmenu-icon-Fill: #0f43f9;
+
+  --dropDownHeader-Bg: transparent;
+  --dropDownHeader-Border: 1px solid #bfd3e4;
+  --dropDownHeader-BorderRadius: 6px;
+  --dropDownHeader-Padding: 8px 9px 8px 14px;
+  --dropDownHeader-Padding-Large: 8px 9px 8px 14px;
+  --dropDownHeader-FontSize: 12px;
+  --dropDownHeader-FontSize-Large: 12px;
+  --dropDownHeader-LineHeight: 18px;
+  --dropDownHeader-FontWeight: 600;
+
+  --dropDownHeader-currency-Bg: transparent;
+  --dropDownHeader-currency-FonSize: 12px;
+  --dropDownHeader-currency-icon-arrow-Width: 10px;
+
+  --dropDown-item-ColorText: #032447;
+  --dropDown-item-Bg: #ebf2f8;
+  --dropDown-item-FontSize: 12px;
+  --dropDown-item-LineHeight: 18px;
+  --dropDown-item-FontWeight: 400;
+
+  --sortBy-dropDown-Width: auto;
+  --sortBy-dropDown-Width-Large: 175px;
+  --sortBy-title-FontSize: 12px;
+  --sortBy-title-LineHeight: 18px;
+  --sortBy-title-FontWeight: 400;
+
+  --buySearchBlock-FontSize: 12px;
+  --buySearchBlock-LineHeight: 18px;
+  --buySearchBlock-FontWeight: 400;
+  --buySearchBlock-Margin: 0;
+  --buySearchBlock-Padding: 20px 0 20px;
+  --buySearchBlock-BorderBottom-Color: transparent;
+  --buySearchBlock-BorderTop-Color: transparent;
+  --buySearchBlock-count-Padding: 0;
+  --buySearchBlock-template-columns: 256px 1fr auto;
+  --buySearchBlock-template-columns-Large: 256px minmax(auto, 477px) auto;
+
+  --profileSearchBlock-Padding: 40px 0;
+
+  --card-footer-ColorText: #446384;
+  --card-Bg: #ffffff;
+  --card-Bg-Hover: #f3faff;
+  --card-title-BoxShadow: none;
+  --card-title-filter: none;
+  --card-title-ColorText: #060d13;
+  --card-availableBlock-ColorText: #446384;
+  --card-price-ColorText: #060d13;
+  --card-buy-value-ColorText: #0f43f9;
+  --card-line-BorderTop: 1px solid #bfd3e4;
+  --card-Border: 2px solid #bfd3e4;
+  --card-BorderRadius: 8px;
+  --card-coast-ColorText: #446384;
+  --card-coast-FontWeight: 600;
+  --card-media-Bg: #bfd3e4;
+  --card-media-BorderColor: #bfd3e4;
+  --card-media-secondary-Bg: #84aed3;
+  --card-rankInfo-ColorText: #446384;
+
+  --packCard-Bg: #f3faff;
+  --packCard-hover-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --packCard-filter: none;
+  --packCard-hover-filter: none;
+  --packCard-Border: 2px solid #bfd3e4;
+  --packCard-description-BorderTop: 2px solid #bfd3e4;
+  --packCard-link-ColorText: #0f43f9;
+  --packCard-before-Z-Index: 1;
+
+  --button-pack-Padding: 2px 16px;
+  --button-pack-TextTransform: uppercase;
+  --button-pack-Width: 150px;
+
+  --button-pack-FontSize: 12px;
+  --button-pack-FontWeight: 600;
+
+  --card-subscribe-Width: 330px;
+  --card-subscribe-Padding-Large: 28px 20px 57px;
+  --card-subscribe-ColorText: #060d13;
+  --card-subscribe-Bg: #ffffff;
+  --card-subscribe-Border: 1px solid #bfd3e4;
+
+  --card-subscribe-price-ColorText: #032447;
+  --card-subscribe-price-Margin: 31px 0 0;
+
+  --card-subscribe-media-Height: 120px;
+  --card-subscribe-media-Width: 120px;
+
+  --card-subscribe-price-FontSize: 28px;
+  --card-subscribe-price-FontWeight: 300;
+  --card-subscribe-price-LineHeight: 42px;
+
+  --card-subscribe-body-FontSize: 14px;
+  --card-subscribe-body-FontWeight: 300;
+  --card-subscribe-body-LineHeight: 21px;
+  --card-subscribe-body-LetterSpace: 0.005em;
+  --card-subscribe-body-Padding: 0 20px;
+  --card-subscribe-body-Margin: 13px 0 0;
+
+  --card-subscribe-order-Media: auto;
+  --card-subscribe-order-Header: auto;
+  --card-subscribe-order-Price: auto;
+  --card-subscribe-order-Button: auto;
+  --card-subscribe-order-Body: auto;
+
+  --card-subscribe-media-Margin: 0;
+  --card-subscribe-header-Margin: 20px 0 15px 0;
+  --card-subscribe-header-ColorText: #0f4ae3;
+  --card-subscribe-header-FontSize: 18px;
+  --card-subscribe-header-FontWeight: 700;
+  --card-subscribe-header-LineHeight: 27px;
+  --card-subscribe-header-LetterSpacing: 0.03em;
+
+  --card-subscribe-button-Width: 250px;
+  --card-subscribe-button-Padding: 10px;
+  --card-subscribe-placeholder-BgColor: #0f4ae3;
+  --card-subscribe-placeholder-small-BgColor: #ffffff;
+
+  --card-withDraw-BgColor: #f3faff;
+  --card-withDraw-badge-BgColor: #dfdfff;
+  --card-withDraw-badge-ColorText: #446384;
+  --card-withDraw-available-BgColor: #446384;
+  --card-withDraw-buy-ColorText: #0f43f9;
+
+  --card-merge-active-Bg: transparent;
+  --card-merge-Border-Width: 2px;
+  --card-merge-active-BorderColor: #0f43f9;
+
+  --card-merge-media-Bg: #84aed3;
+  --card-merge-media-active-Bg: #84aed3;
+
+  --card-merge-media-BorderColor: transparent;
+  --card-merge-media-active-BorderColor: #e5e5e5;
+
+  --mergeTab-Bg: #ffffff;
+  --mergeTab-BorderColor: #ffffff;
+  --mergeTab-BoxShadow: 0 0 20px rgba(24, 47, 67, 0.2);
+  --mergeTab-triangle-before-Bg: #ffffff;
+  --mergeTab-triangle-after-Bg: #ffffff;
+  --mergeTab-box-Bg: #f3faff;
+  --mergeTab-box-BorderColor: #f3faff;
+  --mergeTab-box-BoxShadow: none;
+  --mergeTab-box-filter: none;
+
+  --button-link-signUp-Width: 100px;
+  --button-Width: 190px;
+  --button-BorderRadius: 8px;
+  --button-FontFamily: 'Poppins', sans-serif;
+  --button-FontWeight: 400;
+  --button-Bg-Position: 0 0;
+  --button-Bg-Image: none;
+  --button-BorderColor: transparent;
+  --button-BoxShadow: none;
+  --button-BoxShadow-Hover: none;
+  --button-Filter: none;
+
+  --button-blueFilled-BgColor: #0f43f9;
+  --button-blueFilled-BgColor-Hover: #3f69fa;
+  --button-blueFilled-BorderWidth: 1px;
+  --button-blueFilled-BorderColor: #0f43f9;
+  --button-blueFilled-ColorText: #ffffff;
+  --button-blueFilled-ColorText-Hover: #ffffff;
+
+  --button-blueOutlined-BgColor: #ffffff;
+  --button-blueOutlined-BgColor-Hover: #0f43f9;
+  --button-blueOutlined-ColorText: #0f43f9;
+  --button-blueOutlined-ColorText-Hover: #ffffff;
+  --button-blueOutlined-BorderWidth: 1px;
+  --button-blueOutlined-BorderColor: #0f43f9;
+  --button-blueOutlined-BorderColor-Hover: #0f43f9;
+
+  --button-whiteOutlined-BgColor: #ffffff;
+  --button-whiteOutlined-BgColor-Hover: #0f43f9;
+  --button-whiteOutlined-ColorText: #0f43f9;
+  --button-whiteOutlined-ColorText-Hover: #ffffff;
+  --button-whiteOutlined-BorderColor: #ffffff;
+  --button-whiteOutlined-BorderColor-Hover: #0f43f9;
+
+  --button-login-primary-Bg: #0f43f9;
+  --button-login-primary-ColorText: #ffffff;
+  --button-login-primary-BorderColor: #0f43f9;
+  --button-login-primary-FontWeight: 300;
+
+  --button-login-secondary-Bg: #ffffff;
+  --button-login-secondary-ColorText: #0f43f9;
+  --button-login-secondary-BorderColor: #0f43f9;
+  --button-login-FontWeight: 300;
+  --button-login-inner-Bg: #0f43f9;
+
+  --button-small-Padding: 8px 16px;
+  --button-small-Padding-Large: 8px 16px;
+  --button-small-FontSize: 14px;
+  --button-small-FontSize-Large: 14px;
+  --button-small-LineHeight: 21px;
+
+  --button-medium-Padding: 8px 10px;
+  --button-medium-Padding-Large: 9px 10px;
+  --button-medium-FontSize: 16px;
+  --button-medium-FontSize-Large: 16px;
+  --button-medium-LineHeight: 26px;
+
+  --button-large-Padding: 11px 26px;
+  --button-large-Padding-Large: 11px 26px;
+  --button-large-FontSize: 16px;
+  --button-large-FontSize-Large: 18px;
+  --button-large-LineHeight: 30px;
+
+  --button-back-Padding: 14px 16px;
+  --button-back-FontSize: 16px;
+  --button-back-LineHeight: 24px;
+  --button-back-FontWeight: 400;
+  --button-back-ColorText: #0f43f9;
+  --button-back-ColorText-Hover: #0f43f9;
+  --button-back-Bg: transparent;
+  --button-back-Bg-Hover: transparent;
+  --button-back-BorderColor: #0f43f9;
+  --button-back-icon-Fill: #0f43f9;
+
+  --button-buyPack-Padding: 11px 16px;
+  --button-buyPack-Bg-Image: none;
+
+  --button-connect-Bg-Image: none;
+  --button-connect-BgColor: #ffffff;
+  --button-connect-BgColor-Hover: #0f43f9;
+  --button-connect-ColorText: #0f43f9;
+  --button-connect-ColorText-Hover: #ffffff;
+  --button-connect-BorderColor: #bfd3e4;
+  --button-connect-BorderColor-Hover: #0f43f9;
+  --button-connect-Width: 300px;
+  --button-connect-icon-Width: 50px;
+  --button-connect-icon-Height: 50px;
+
+  --button-seeAll-BgImage: none;
+  --button-seeAll-FontSize: 16px;
+  --button-seeAll-FontSize-Large: 16px;
+  --button-seeAll-LineHeight: 24px;
+  --button-seeAll-LineHeight-Large: 24px;
+  --button-seeAll-FontWeight: 400;
+  --button-seeAll-BoxShadow: none;
+  --button-seeAll-Width: 176px;
+  --button-seeAll-Padding: 10px;
+  --button-seeAll-Margin: 30px 0 0;
+  --button-seeAll-Margin-Large: 40px 0 0;
+
+  --button-withdraw-Padding: 8px 16px 7px;
+  --button-withdraw-FontSize: 14px;
+  --button-withdraw-LineHeight: 21px;
+
+  --button-redeemInfo-actions-Width: 120px;
+
+  --tipsText-ColorText: #84aed3;
+  --tipsText-FontSize: 12px;
+  --tipsText-LineHeight: 18px;
+  --tipsText-FontWeight: 400;
+
+  --tipsText-link-ColorText: #0f43f9;
+
+  --avatar-Border: 2px solid #bfd3e4;
+  --avatar-Border-Primary: 2px solid #0f43f9;
+  --avatar-Bg-Primary: #0f43f9;
+  --avatar-icon-Fill: #0f43f9;
+  --avatar-icon-edit-BorderColor: #ffffff;
+  --avatar-icon-edit-BgColor: #bfd3e4;
+
+  --jungleHeader-leaves-left: none;
+  --jungleHeader-leaves-right: none;
+  --jungleHeader-leaves-center: none;
+
+  --jungleFooter: none;
+  --jungleFooter-Large: none;
+
+  --jungleContent-signin-left: none;
+  --jungleContent-signin-right: none;
+
+  --jungleContent-signup-left: none;
+  --jungleContent-signup-right: none;
+
+  --jungleContent-left-top: none;
+  --jungleContent-left-middle: none;
+  --jungleContent-left-bottom: none;
+
+  --jungleContent-right-top: none;
+  --jungleContent-right-bottom: none;
+
+  --jungle-Bg: none;
+  --jungle-Bg-Color: none;
+  --jungle-Bg-Color: transparent;
+
+  --color-header: #ffffff;
+
+  --padding-header: 16.5px 20px;
+
+  --header-colorText: #032447;
+  --header-colorText-hover: #0f4ae3;
+  --header-colorText-active: #0f4ae3;
+  --header-container-Height: 60px;
+  --header-container-Height-Large: 80px;
+  --header-navLink-FontSize: 18px;
+  --header-navLink-FontWeight: 600;
+  --header-navLink-LineHeight: 26px;
+  --header-navLink-Padding: 10px 0;
+  --header-navLink-Padding-Large: 0 20px;
+
+  --header-navUl-Margin-Large: 0 -20px;
+
+  --header-container-justify-content: space-between;
+  --header-container-justify-content-Large: flex-end;
+
+  --header-login-ColorText: #032447;
+
+  --header-navigation-Bg: #ffffff;
+  --header-navigation-Padding: 20px 0;
+  --header-navigation-Padding-Large: 0 40px 0 0;
+  --header-navigation-BoxShadow: 0 2px 12px 0px rgba(30, 32, 30, 0.36);
+  --header-navigation-BoxShadow-Large: none;
+  --header-navigation-overlay: rgba(0, 0, 0, 0.4);
+
+  --navbar-toggler-BorderColor: #ebf2f8;
+  --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+  --navbar-close-icon-Fill: #032447;
+
+  --pageHeading-ColorText: #032447;
+  --pageHeading-FontSize: 28px;
+  --pageHeading-FontSize-Large: 38px;
+  --pageHeading-LineHeight: 52px;
+  --pageHeading-userSettings-Margin: 0 0 10px;
+
+  --myProfile-section-Bg-odd: #ffffff;
+  --myProfile-section-Bg-even: #f3faff;
+  --myProfile-empty-ColorText: #0c1524;
+  --myProfile-empty-Border: 1px solid #bfd3e4;
+  --myProfile-section-PaddingBottom: 0;
+
+  --myProfile-BgImage-1-Height: 0;
+  --myProfile-BgImage-2-Height: 0;
+  --myProfile-BgImage-3-Height: 0;
+  --myProfile-BgImage-4-Height: 0;
+
+  --myProfile-container-Top: 56px;
+  --myProfile-container-Bottom: 37px;
+
+  --modal-Bg-Color: #ffffff;
+  --modal-Bg: none;
+  --modal-top-left-Bg: none;
+  --modal-top-right-Bg: none;
+  --jungleModal-bottom-left: none;
+  --modal-BorderRadius: 8px;
+  --modal-boxShadow: 0 0 20px rgba(24, 47, 67, 0.2);
+  --modal-Border: 1px solid transparent;
+  --modal-close-top: 0;
+  --modal-close-right: 0;
+  --modal-icon-close-Fill: #bfd3e4;
+  --modal-icon-close-Fill-Hover: #0f43f9;
+
+  --modal-Padding: 45px 0 0;
+  --modalWrapper-Bg: #ffffff;
+  --modalWrapper-Width: 585px;
+  --modal-title-ColorText: #060d13;
+  --modal-text-ColorText: #032447;
+  --modal-text-FontSize: 22px;
+  --modal-text-FontWeight: 600;
+  --modal-text-LineHeight: 35px;
+  --modal-details-Margin: 0;
+  --detail-info-block-Margin: 0 0 0 30px;
+
+  --details-Padding: 0 40px 40px;
+  --details-Padding-Large: 0 40px 40px;
+
+  --details-owen-FontSize: 12px;
+  --details-owen-FontWeight: 400;
+  --details-owen-LineHeight: 14px;
+  --details-owen-name-FontWeight: 700;
+  --details-owen-collection-LetterSpace: normal;
+
+  --details-price-FontSize: 22px;
+  --details-price-FontWeight: 600;
+  --details-btn-buy: 170px;
+
+  --modal-label-text-ColorText: #446384;
+  --modal-label-text-secondary-ColorText: #446384;
+  --modal-icon-placeholder-Bg: #f3faff;
+  --modal-icon-placeholder-Border: 1px solid #f3faff;
+  --modal-icon-placeholder-icon-Fill: #3f69fa;
+  --modal-link-ColorText: #0f4ae3;
+  --modal-line-BorderColor: #ebf2f8;
+  --modal-PackPaymentSuccess-BgImage: url('/assets/img/bg_success.webp');
+
+  --modal-highLight-title-ColorText: #3f69fa;
+  --modal-highLight-title-TextTransform: normal;
+
+  --modal-heading-FontSize: 28px;
+  --modal-heading-FontSize-Large: 28px;
+  --modal-heading-FontWeight: 600;
+  --modal-heading-LineHeight: 44px;
+  --modal-heading-LineHeight-Large: 44px;
+
+  --modal-subTitle-FontSize: 16px;
+  --modal-subTitle-FontSize-Large: 20px;
+  --modal-subTitle-LineHeight: 24px;
+  --modal-subTitle-LineHeight-Large: 23px;
+  --modal-subTitle-FontWeight: 400;
+  --modal-subTitle-bold: 600;
+
+  --modal-content-Width: 380px;
+
+  --MergeNFTs-section-Bg: #f3faff;
+
+  --footer-signIn-display: block;
+  --footer-border-color: #ebf2f8;
+  --footer-Padding: 40px 0;
+  --footer-Padding-small: 70px 0 0;
+  --footer-Padding-large: 70px 0;
+  --footer-direction: row;
+  --footer-gap: 20px;
+  --footer-ColorText: #032447;
+  --footer-small-Image: none;
+
+  --footer-terms-links-ColorText: #032447;
+  --footer-terms-separator-BgColor: #ebf2f8;
+  --footer-terms-separator-Height: 14px;
+  --footer-terms-FontSize: 14px;
+  --footer-terms-LineHeight: 21px;
+  --footer-terms-align-self: flex-end;
+
+  --poweredBy-logo-ColorText: #3f69fa;
+  --poweredBy-logo-signIn-ColorText: #3f69fa;
+  --poweredBy-logo-FontWeight: 700;
+  --poweredBy-display: none;
+  --copyright-Margin: 5px 0 0;
+
+  --order-footer-contentLeft: auto;
+  --order-footer-contentCenter: auto;
+  --order-footer-contentRight: auto;
+
+  --align-footer-contentLeft: start;
+  --align-footer-contentLeft-Large: start;
+  --align-footer-contentCenter: center;
+  --align-footer-contentRight: center;
+
+  --social-icon-BgColor: #0f43f9;
+  --social-icon-BgColor-Hover: #3f69fa;
+
+  --searchInput-Bg: var(--body-Bg);
+  --searchInput-input-Bg: #ffffff;
+  --searchInput-input-Border: 1px solid #c1d6e9;
+  --searchInput-input-BorderRadius: 6px;
+  --searchInput-input-ouLine-Color: #0f43f9;
+  --searchInput-input-FontSize: 12px;
+  --searchInput-input-LineHeight: 18px;
+  --searchInput-input-FontWeight: 400;
+  --searchInput-input-ColorText: #182f43;
+  --searchInput-input-Placeholder-ColorText: #c0c9d1;
+  --searchInput-input-Padding: 11.5px 16px 11.5px 36px;
+  --searchInput-input-Height: 36px;
+  --searchInput-input-Height-Large: 36px;
+  --searchInput-search-Width: 482px;
+  --searchInput-search-icon-Left: 2px;
+  --searchInput-search-icon-toggle-Left: 2px;
+  --searchInput-search-icon-Height: 16px;
+  --searchInput-search-icon-Width: 16px;
+  --searchInput-search-icon-Fill: #c0c9d1;
+  --searchInput-input-cancel-button-bg: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+
+  --buttonGroup-BorderColor: #bfd3e4;
+  --buttonGroup-active-Bg: #bfd3e4;
+  --buttonGroup-svg-Color: #dadada;
+  --buttonGroup-svg-active-Color: #446384;
+
+  --forgotPassLink-ColorText: #0f43f9;
+  --forgotPassLink-FontSize: 12px;
+  --forgotPassLink-FontWeight: 400;
+  --forgotPassLink-LineHeight: 18px;
+  --forgotPassLink-ColorText-Hover: #3f69fa;
+
+  --input-Bg: #fff;
+  --input-Padding: 10px 16px;
+  --input-Padding-Large: 10px 16px;
+  --input-wrapper-Margin: 20.5px 0 0;
+  --input-label-text-Padding: 0;
+  --input-ColorText: #060d13;
+  --input-Border: 2px solid #c1d6e9;
+  --input-BorderRadius: 6px;
+  --input-BorderRadius-Large: 6px;
+  --input-Placeholder-ColorText: #c0c9d1;
+  --input-AutoFill-ColorText: #060d13;
+  --input-AutoFill-BgColor: #fff;
+  --input-Outline-ColorText: #c1d6e9;
+
+  --input-FontSize: 14px;
+  --input-LineHeight: 21px;
+  --input-FontWeight: 400;
+
+  --input-Height: 48px;
+  --input-Height-large: 48px;
+  --input-height-Small: 36px;
+  --input-Height-Medium: 48px;
+  --input-icon-Height: 16px;
+  --input-icon-Width: 16px;
+  --input-icon-right-Medium: 16px;
+  --input-icon-right-Large: 16px;
+  --input-icon-valid-Fill: #80de65;
+  --input-icon-error-Fill: #fd7465;
+
+  --input-price-Bg: #ffffff;
+  --input-price-Border: 2px solid #c1d6e9;
+  --input-price-BorderRadius: 6px;
+  --input-price-Placeholder-ColorText: #c0c9d1;
+
+  --menubar-Padding: 0;
+  --menubar-Width: 240px;
+  --menubar-Bg: #ffffff;
+  --menubar-Bg-Large: #ffffff;
+  --menubar-Border: 1px solid transparent;
+  --menubar-BoxShadow: none;
+  --menubar-Filter: none;
+  --menubar-BorderRadius: 0;
+  --menubar-icon-filter-Fill: #84aed3;
+  --menubar-icon-filter-Position-Collapsed: 0 0 auto auto;
+  --menubar-icon-filter-Position: 0 0 auto auto;
+  --menubar-Margin-Large: 0 65px 0 -60px;
+  --menubar-Margin: 0 38px 0 0;
+  --menubar-header-FontSize: 20px;
+  --menubar-header-FontWeight: 600;
+  --menubar-header-LineHeight: 26px;
+
+  --filterBlock-header-Padding: 0 20px;
+  --filterBlock-header-Padding-Large: 0 0 23px;
+  --filterBlock-header-Padding-Show: 0 0 23px;
+  --filterBlock-header-BorderTop: 1px solid #ebf2f8;
+  --filterBlock-Padding-Left: 20px;
+  --filterBlock-Padding-Left-Large: 0;
+  --filterBlock-Padding-Right: 20px;
+  --filterBlock-Padding-Right-Large: 0;
+
+  --filterBlock-subHeading-FontSize: 14px;
+  --filterBlock-subHeading-FontWeight: 700;
+  --filterBlock-subHeading-LineHeight: 16px;
+  --filterBlock-subHeading-BorderTop: 1px solid #ebf2f8;
+
+  --filterBlock-form-Padding-Left: 20px;
+  --filterBlock-form-Padding-Left-Large: 0;
+  --filterBlock-form-Padding-Right: 20px;
+  --filterBlock-form-Padding-Right-Large: 0;
+
+  --filterBlock-header-AlignItems: start;
+
+  --utitlityFilter-label-FontSize: 12px;
+  --utitlityFilter-label-FontWeight: 600;
+  --utitlityFilter-label-lineHeight: 18px;
+  --utitlityFilter-label-ColorText: #446384;
+  --utitlityFilter-reedeem-ColorText: #446384;
+  --utitlityFilter-square-Border: 2px solid #0f43f9;
+  --utitlityFilter-square-BorderColor: #0f43f9;
+  --utitlityFilter-square-checked-BorderColor: #0f43f9;
+  --utitlityFilter-square-check-Bg: #0f43f9;
+  --utitlityFilter-square-check-checked-Bg: #0f43f9;
+  --utitlityFilter-square-check-Width: 3px;
+  --utitlityFilter-square-check-height: 14px;
+  --utitlityFilter-square-checked-show: none;
+
+  --filter-trait-label-ColorText: #446384;
+  --filter-trait-value-ColorText: #c0c9d1;
+  --filter-counter-ColorText: #c0c9d1;
+  --see-more-ColorText: #0f43f9;
+
+  --checkbox-Bg: #ffffff;
+  --checkbox-ColorText: #446384;
+  --checkbox-Border: 2px solid transparent;
+  --checkBox-FontSize: 14px;
+  --checkBox-LineHeight: 21px;
+  --checkBox-FontWeight: 400;
+
+  --checkbox-primary-BorderColor: #0f43f9;
+  --checkbox-primary-Checked-BorderColor: #0f43f9;
+  --checkBox-icon-primary-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.73047 10.7812C6.00391 11.0547 6.46875 11.0547 6.74219 10.7812L14.7812 2.74219C15.0547 2.46875 15.0547 2.00391 14.7812 1.73047L13.7969 0.746094C13.5234 0.472656 13.0859 0.472656 12.8125 0.746094L6.25 7.30859L3.16016 4.24609C2.88672 3.97266 2.44922 3.97266 2.17578 4.24609L1.19141 5.23047C0.917969 5.50391 0.917969 5.96875 1.19141 6.24219L5.73047 10.7812Z' fill='%230F43F9'/%3e%3c/svg%3e ");
+
+  --checkBox-default-BorderColor: #bfd3e4;
+  --checkBox-default-Checked-BorderColor: #0f43f9;
+  --checkBox-icon-default-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.73047 10.7812C6.00391 11.0547 6.46875 11.0547 6.74219 10.7812L14.7812 2.74219C15.0547 2.46875 15.0547 2.00391 14.7812 1.73047L13.7969 0.746094C13.5234 0.472656 13.0859 0.472656 12.8125 0.746094L6.25 7.30859L3.16016 4.24609C2.88672 3.97266 2.44922 3.97266 2.17578 4.24609L1.19141 5.23047C0.917969 5.50391 0.917969 5.96875 1.19141 6.24219L5.73047 10.7812Z' fill='%230F43F9'/%3e%3c/svg%3e ");
+
+  --checkBoxGroup-title-ColorText: #060d13;
+  --checkBoxGroup-title-FontSize: 14px;
+  --checkBoxGroup-title-FontWeight: 600;
+  --checkBoxGroup-title-LineHeight: 21px;
+
+  --checkBoxGroup-label-ColorText: #446384;
+  --checkBoxGroup-label-FontSize: 12px;
+  --checkBoxGroup-label-FontWeight: 400;
+  --checkBoxGroup-label-LineHeight: 18px;
+  --checkBoxGroup-BorderTop: 1px solid #ebf2f8;
+
+  --radioBox-Bg: #ffffff;
+  --radioBox-checked-small-Bg: #0f43f9;
+  --radioBox-BorderColor: #dadada;
+  --radioBox-checked-BorderColor: #0f43f9;
+  --radioBox-ColorText: #446384;
+
+  --traitDate-title-ColorText: #060d13;
+  --trait-input-price-Bg: #ffffff;
+  --traitInt-title-ColorText: #060d13;
+  --trait-BorderColor: #ebf2f8;
+  --trait-input-BorderRadius: 6px;
+
+  --input-datepicker-focus-BorderColor: #0f43f9;
+  --input-datepicker-Border: 2px solid #bfd3e4;
+  --input-datepicker-Padding: 10px 30px 8px 13px;
+  --input-datepicker-BgColor: #ffffff;
+  --input-datepicker-ColorText: #060d13;
+  --input-datepicker-placeholder-ColorText: #c0c9d1;
+
+  --datepicker-Bg: #ffffff;
+  --datepicker-ColorText: #000000;
+  --datepicker-time-ColorText: #060d13;
+  --datepicker-navigation-icon-BorderColor: #0f4ae3;
+  --datepicker-down-arrow-icon-BorderColor: #0f4ae3;
+  --datepicker-selected-Bg: #0f4ae3;
+  --datepicker-selected-ColorText: #ffffff;
+
+  --datepicker-button-close-Bg: none;
+  --datepicker-button-close-Position: 6px 6px auto auto;
+  --datepicker-button-close-Width: 28px;
+  --datepicker-button-close-Height: 26px;
+
+  --datepicker-icon-close-Width: 19px;
+  --datepicker-icon-close-Height: 16px;
+  --datepicker-icon-close-Bg: #0f43f9;
+  --datepicker-icon-close-ColorText: #ffffff;
+  --datepicker-day-in-range-Bg: #0f43f9;
+  --datepicker-day-in-selecting-range-Bg: rgba(15, 67, 249, 0.5);
+  --datepicker-day-selecting: 0.3rem;
+
+  --datepicker-header-Bg: none;
+  --datepicker-header-ColorText: #000000;
+  --datepicker-triangle-Color: #ffffff;
+
+  --option-Bg: #ebf2f8;
+  --option-Filter: none;
+  --option-ColorText: #446384;
+  --option-Border: 1px solid #ebf2f8;
+  --option-BorderColor-Hover: #0f43f9;
+  --option-active-BorderColor: #ebf2f8;
+  --option-icon-close-Fill: #0f43f9;
+  --option-icon-close-Fill-Hover: #0f43f9;
+  --option-icon-option-Fill: #0f43f9;
+  --option-onIcon-BgColor: #0f43f9;
+  --option-BorderRadius: 6px;
+  --option-padding: 10px 15px;
+  --option-margin: 0 0 10px;
+  --option-FontSize: 12px;
+  --option-FontWeight: 400;
+  --option-isActive-FontWeight: 600;
+  --option-LineHeight: 18px;
+
+  --badge-ColorText: #0f43f9;
+  --badge-BorderRadius: 2px;
+  --badge-FontSize: 12px;
+  --badge-FontWeight: 400;
+  --badge-LineHeight: 1;
+
+  --badge-medium-FontSize: 10px;
+  --badge-medium-LineHeight: 1;
+  --badge-medium-Padding: 4px 6px 3px;
+
+  --badge-small-FontSize: 9px;
+  --badge-small-LineHeight: 22px;
+  --badge-small-Padding: 0 6px;
+
+  --badge-icon-close-Fill: #0f43f9;
+  --badge-pill-BorderRadius: 20px;
+
+  --badge-primary-BgColor: #84aed3;
+  --badge-primary-ColorText: #ffffff;
+  --badge-primary-icon-close-Fill: #ffffff;
+
+  --badge-secondary-BgColor: #dff2ff;
+  --badge-secondary-ColorText: #446384;
+  --badge-secondary-icon-close-Fill: #446384;
+
+  --badge-light-BgColor: #ebf2f8;
+  --badge-light-ColorText: #446384;
+  --badge-light-icon-close-Fill: #446384;
+
+  --badge-white-BgColor: #ffffff;
+  --badge-white-ColorText: #31bc83;
+  --badge-white-icon-close-Fill: #31bc83;
+
+  --badge-dark-BgColor: #d9e6f2;
+  --badge-dark-ColorText: #31bc83;
+  --badge-dark-icon-close-Fill: #31bc83;
+
+  --burnBadge-BgColor: #f3faff;
+  --burnBadge-ColorText: #060d13;
+  --burnBadge-icon-Fill: #0f4ae3;
+  --burnBadge-FontSize: 12px;
+  --burnBadge-FonWeight: 600;
+  --burnBadge-LineHeight: 22px;
+
+  --accordion-Border: 1px solid #ebf2f8;
+  --accordion-Bg-primary: transparent;
+  --accordion-title-Margin-Right: 20px;
+  --accordion-title-BorderTop: 1px solid #ebf2f8;
+  --accordion-small-title-BorderTop: 1px solid #ebf2f8;
+  --accordion-title-primary-BorderTop: 1px solid #ebf2f8;
+  --accordion-title-First-BorderColor: #d9e6f2;
+  --accordion-default-title-icon-BorderColor: #bfd3e4;
+  --accordion-primary-title-icon-BorderColor: #0f43f9;
+  --accordion-height-large: 328px;
+
+  --accordion-title-small-FontSize: 14px;
+  --accordion-title-small-FontWeight: 600;
+  --accordion-title-small-LineHeight: 21px;
+
+  --accordion-text-fontSize: 12px;
+  --accordion-text-FontWeight: 400;
+  --accordion-text-LineHeight: 18px;
+
+  --accordion-title-fontSize: 16px;
+  --accordion-title-FontWeight: 600;
+  --accordion-title-LineHeight: 24px;
+
+  --accordion-paddingX-Large: 30px;
+
+  --accordion-paddingLeft-Large: 30px;
+  --accordion-paddingRight-Large: 30px;
+
+  --buySearchBlock-ColorText: #446384;
+
+  --table-ColorText: #446384;
+  --table-row-borderTop: 1px solid #e9eff4;
+  --table-row-borderBottom: #bfd3e4;
+
+  --scrollbar-track-Light: #ebf2f8;
+  --scrollbar-thumb-Light: #bfd3e4;
+  --scrollbar-thumb-Border-Light: 2px solid #ebf2f8;
+
+  --scrollbar-track-Primary: #ebf2f8;
+  --scrollbar-thumb-Primary: #0f43f9;
+  --scrollbar-thumb-Border-Primary: 2px solid #ebf2f8;
+
+  --icon-person-Circle-Fill: #0f43f9;
+  --icon-person-Circle-Stroke: #3f69fa;
+  --icon-validUser-Fill: #0f43f9;
+  --icon-rarityScore-Fill: #032447;
+  --icon-share-Fill: #bfd3e4;
+  --icon-binance-Fill: #bfd3e4;
+  --icon-eye-Fill: #c1d6e9;
+  --icon-openEye-Fill: #c1d6e9;
+  --icon-wallet-Circle-Fill: #f3faff;
+  --icon-wallet-Path-Fill: #0f4ae3;
+  --icon-Fill: #3f69fa;
+  --icon-Circle-Fill: #0f43f9;
+  --icon-check-activated-Fill: #84aed3;
+  --icon-attach-close-Fill: #ffffff;
+
+  --icon-favorite-clear-default-Fill: #bfd3e4;
+  --icon-favorite-default-Fill: #0f4ae3;
+
+  --icon-favorite-clear-primary-Fill: #bfd3e4;
+  --icon-favorite-primary-Fill: #0f4ae3;
+
+  --icon-close-Fill: #bfd3e4;
+
+  --back-to-collections-ColorText: #0f43f9;
+  --back-to-collections-icon-Fill: #0f43f9;
+
+  --packDetail-Padding: 0 30px 40px;
+
+  --packDetailInfo-ColorText: #446384;
+  --packDetailInfo-title-ColorText: #060d13;
+  --packDetailInfo-link-ColorText: #0f43f9;
+  --packDetailInfo-line-BorderTop: 1px solid #ebf2f8;
+  --packDetailInfo-badge-description-ColorText: #446384;
+  --packDetailInfo-price-header-ColorText: #446384;
+  --packContains-Bg: #f3faff;
+  --packContains-description-Bg: none;
+  --packContains-description-Border: 1px solid #ebf2f8;
+
+  --button-secondary-ColorText: #446384;
+  --button-secondary-ColorText-Hover: #446384;
+  --button-secondary-BgColor: #ebf2f8;
+  --button-secondary-BgColor-Hover: #ebf2f8;
+  --button-secondary-BorderColor: #ebf2f8;
+  --button-secondary-BorderColor-Hover: #ebf2f8;
+  --button-secondary-BoxShadow: none;
+
+  --button-secondary-active-ColorText: #ffffff;
+  --button-secondary-active-Bg-Image: none;
+  --button-secondary-active-BgColor: #446384;
+  --button-secondary-active-BorderColor: #446384;
+
+  --button-auction-ColorText: #446384;
+  --button-auction-ColorText-Hover: #446384;
+  --button-auction-BgColor: #f3faff;
+  --button-auction-BgColor-Hover: #f3faff;
+  --button-auction-BorderColor: #f3faff;
+  --button-auction-BorderColor-Hover: #f3faff;
+
+  --button-available-small-Width: 160px;
+  --button-available-large-Width: 277px;
+  --button-available-Padding: 11.5px 10px;
+
+  --button-forgot-password-Margin: 30px 0 0;
+  --button-forgot-password-Width: 220px;
+
+  --button-width-login: 380px;
+  --button-width-primary: 198px;
+
+  --button-width-: 375px;
+  --button-buyPack-FontSize: 18px;
+  --button-buyPack-FontWeight: 400;
+  --button-buyPack-LineHeight: 30px;
+
+  --button-withdraw-Width: 150px;
+  --button-withdraw-Padding: 8px 13px;
+  --button-withdraw-Padding-Large: 8px 13px;
+
+  --activatedBadge-BgColor: #dff2ff;
+  --activatedBadge-ColorText: #84aed3;
+
+  --changePassword-Bg: #f3faff;
+
+  --cardSettings-Bg: #f3faff;
+  --cardSettings-ColorText: #032447;
+  --cardSettings-line-Bg: #d9e6f2;
+  --cardSettings-BorderLeft: 1px solid #d9e6f2;
+  --cardSettings-title-ColorText: #060d13;
+
+  --settings-navButton-width: 100%;
+  --settings-navButton-Padding: 8px 16px;
+  --settings-navWrapper-BorderBottom: 1px solid #ebf2f8;
+  --settings-navWrapper-Margin: 17px 0 0;
+  --settings-userSettings-Margin: 52px 0 0;
+
+  --settings-heading-FontSize: 16px;
+  --settings-heading-FontWeight: 600;
+  --settings-heading-LineHeight: 26px;
+
+  --settings-card-Padding: 20px;
+  --settings-card-Padding-Large: 15px 30px;
+  --settings-card-title-FontSize: 14px;
+  --settings-card-title-FontWeight: 600;
+  --settings-card-title-LineHeight: 21px;
+
+  --settings-card-text-FontSize: 12px;
+  --settings-card-text-FontWeight: 400;
+  --settings-card-text-LineHeight: 18px;
+
+  --settings-cardText-FontSize: 12px;
+  --settings-cardText-FontWeight: 400;
+  --settings-cardText-LineHeight: 18px;
+
+  --settings-textHelper-FontSize: 12px;
+  --settings-textHelper-FontWeight: 400;
+  --settings-textHelper-LineHeight: 18px;
+  --settings-textHelper-heading-FontWeight: 600;
+  --settings-textHelper-Margin: 20px 0;
+
+  --textHelper-BorderLeft: 2px solid #0f4ae3;
+  --textHelper-ColorText: #032447;
+
+  --listIcon-icon-Fill: #0f43f9;
+  --listIcon-ColorText: #032447;
+
+  --getAuth-Bg: #ffffff;
+  --getAuth-Border: 2px solid #c1d6e9;
+  --getAuth-title-FontSize: 12px;
+  --getAuth-title-FonWeight: 600;
+  --getAuth-title-LineHeight: 18px;
+
+  --setKey-box-Bg: #ffffff;
+  --setKey-box-Border: 2px solid #c1d6e9;
+  --setKey-box-ColorText: #0f43f9;
+
+  --copy-code-ColorText: #0f43f9;
+  --copy-code-icon-Fill: #0f43f9;
+
+  --otp-input-FontSize: 18px;
+  --otp-input-FontWeight: 300;
+  --otp-input-LineHeight: 1;
+  --otp-input-Height: 48px;
+  --otp-input-Width: 48px;
+  --otp-input-ColorText: #060d13;
+  --otp-input-Bg: #ffffff;
+  --otp-input-Border: 2px solid #c1d6e9;
+  --otp-input-placeholder-ColorText: #c1d6e9;
+  --otp-input-outline-color: #0f43f9;
+
+  --error-ColorText: #fd7465;
+  --error-Border: 2px solid #fd7465;
+  --error-FontSize: 10px;
+  --error-FonTWeight: 400;
+  --error-LineHeight: 15px;
+  --error-Bottom: 0;
+
+  --sidebar-Bg: none;
+
+  --nav-FontSize: 14px;
+  --nav-FontWeight: 600;
+  --nav-LineHeight: 21px;
+
+  --nav-ColorText: #acb4bc;
+  --nav-active-ColorText: #0f43f9;
+  --nav-active-Bg: #0f43f9;
+  --nav-BorderColor: #ebf2f8;
+
+  --nav-column-FontSize: 16px;
+  --nav-column-FontWeight: 400;
+  --nav-column-LineHeight: 26px;
+  --nav-column-Padding: 8px 20px 9px;
+
+  --nav-pill-active-Bg: #ebf2f8;
+  --nav-pill-ColorText: #032447;
+  --nav-pill-active-ColorText: #0f43f9;
+
+  --navTab-ColorText: #acb4bc;
+  --navTab-FontSize: 14px;
+  --navTab-FontWeight: 600;
+  --navTab-LineHeight: 21px;
+
+  --navTab-settings-FontSize: 14px;
+  --navTab-settings-FontWeight: 500;
+  --navTab-settings-LineHeight: 16px;
+
+  --userNameLabel-ColorText: #0f43f9;
+  --userNameLabel-Bg: #ebf2f8;
+  --userNameLabel-fontSize: 12px;
+  --userNameLabel-LineHeight: 21px;
+  --userNameLabel-FontWeight: 400;
+
+  --carousel-Bg: #f3faff;
+  --carousel-dots-Bg: #c1d6e9;
+  --carousel-dots-active-Bg: #0f43f9;
+  --carousel-arrowWrapper-Border: 2px solid #84aed3;
+  --carousel-arrow-Bg: none;
+  --carousel-arrow-ColorText: #84aed3;
+  --carousel-arrow-BorderLeft: 2px solid #84aed3;
+  --carousel-arrow-BorderTop: 2px solid #84aed3;
+  --carousel-arrow-BorderColor: #84aed3;
+  --carousel-arrow-Width-Large: 40px;
+  --carousel-arrow-Height-Large: 40px;
+  --carousel-arrow-Width: 24px;
+  --carousel-arrow-Height: 24px;
+
+  --carousel-arrow-icon-Width: 8px;
+  --carousel-arrow-icon-Height: 8px;
+
+  --carousel-arrow-icon-Width-Large: 10px;
+  --carousel-arrow-icon-Height-Large: 10px;
+
+  --carousel-scrollbar-Bg: #ebf2f8;
+  --carousel-drag-Bg: #d9e6f2;
+  --carouselScrollbar-Template-Columns: 57px 1fr;
+  --carouselScrollbar-Template-Columns-Large: 90px 1fr;
+  --carouselScrollbar-Gap: 20px;
+  --carouselScrollbar-Gap-Large: 20px;
+
+  --carousel-arrow-secondary-Width-Large: 87px;
+  --carousel-arrow-secondary-Height-Large: 95px;
+
+  --carousel-arrow-secondary-BorderColor: transparent;
+  --carousel-arrow-secondary-Bg: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 87 95' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M87 47.5L43.5 6.36379L43.5 88.6362L87 47.5Z' fill='%23F3FAFF'/%3e%3cpath d='M74 47.5L30.5 6.36379L30.5 88.6362L74 47.5Z' fill='%23DFF2FF'/%3e%3cpath d='M58 47.5L14.5 6.36379L14.5 88.6362L58 47.5Z' fill='%2384AED3'/%3e%3c/svg%3e ");
+
+  --getNewNFT-Bg: #ffffff;
+  --getNewNFT-BorderColor: #ffffff;
+  --getNewNFT-FontWeight: 600;
+
+  --hr-line-bg: #ebf2f8;
+  --hr-line-Buy-bg: #ebf2f8;
+  --hr-line-Buy-Margin: 30px 0 0;
+  --hr-line-Collection-Margin: 30px 0;
+
+  --youHave-Bg: #0f43f9;
+  --youHave-ColorText: #ffffff;
+
+  --youHave-FontSize: 20px;
+  --youHave-LineHeight: 24px;
+  --youHave-FontWeight: 600;
+
+  --youHave-FontSize-Large: 28px;
+  --youHave-LineHeight-Large: 40px;
+
+  --toggleSwitch-Bg: #ebf2f8;
+  --toggleSwitch-BorderColor: #ebf2f8;
+  --toggleSwitch-slider-Bg: #ffffff;
+  --toggleSwitch-checked-Bg: #ebf2f8;
+  --toggleSwitch-checked-BorderColor: #ebf2f8;
+  --toggleSwitch-slider-checked-Bg: #0f43f9;
+
+  --section-highlight-Bg: #032447;
+  --section-highlight-ColorText: #ffffff;
+
+  --redeemItem-ColorText: #446384;
+  --redeemItem-Bg: #ffffff;
+  --redeemItem-Bg-Hover: #f3faff;
+  --redeemItem-filter: none;
+  --redeemItem-line-BorderColor: #ebf2f8;
+  --redeemItem-line-Border: 2px solid #bfd3e4;
+  --redeemItem-BoxShadow: none;
+  --redeemButton-Padding: 11px 16px;
+  --redeemButton-Width: 170px;
+  --redeemItem-text-ColorText: #446384;
+  --redeemItem-moreAbout-ColorText: #0f43f9;
+
+  --redeem-FontSize: 16px;
+  --redeem-LineHeight: 26px;
+  --redeem-FontWeight: 300;
+
+  --text-FontSize: 16px;
+  --text-LineHeight: 26px;
+  --text-FontWeight: 300;
+
+  --redeemItem-owner-FontSize: 12px;
+  --redeemItem-owner-LineHeight: 14px;
+  --redeemItem-owner-FontWeight: 400;
+
+  --redeemItem-experience-title-FontSize: 16px;
+  --redeemItem-experience-title-LineHeight: 24px;
+  --redeemItem-experience-title-FontWeight: 600;
+
+  --redeemItem-experience-text-FontSize: 12px;
+  --redeemItem-experience-text-LineHeight: 18px;
+  --redeemItem-experience-text-FontWeight: 400;
+
+  --redeemItem-details-FontSize: 12px;
+  --redeemItem-details-LineHeight: 21px;
+  --redeemItem-details-FontWeight: 400;
+
+  --buyPack-media-Width: 160px;
+  --buyPack-media-Height: 188px;
+  --buyPack-FontSize: 12px;
+  --buyPack-LineHeight: 18px;
+  --buyPack-FontWeight: 400;
+  --collection-PaddingTop: 60px;
+  --collection-text-MarginBottom: 59px;
+
+  --buy-PaddingTop: 60px;
+  --buy-text-MarginBottom: 59px;
+
+  --packPage-header-MarginTop: 38px;
+  --packPage-header-MarginBottom: 15px;
+  --packPage-text-MarginBottom: 61px;
+
+  --sticker-Bg: #032447;
+  --sticker-triangle-Bg: #bfd3e4;
+  --sticker-ColorText: #ffffff;
+
+  --pagination-Bg: none;
+  --pagination-BorderColor: transparent;
+  --pagination-ColorText: #0f43f9;
+  --pagination-arrow-Fill: #0f43f9;
+  --pagination-arrow-disabled-Fill: #bfd3e4;
+
+  --pagination-current-Bg: #ebf2f8;
+  --pagination-current-BorderColor: #ebf2f8;
+  --pagination-current-ColorText: #0f43f9;
+
+  --pagination-MarginTop: 50px;
+  --pagination-MarginBottom: 50px;
+
+  --shoppingCard-heading-ColorText: #032447;
+  --shoppingCard-Bg: #ebf2f8;
+  --shoppingCard-Filter: blur(4px);
+  --shoppingCard-icon-Fill: #446384;
+  --shoppingCard-Padding: 26px 30px 30px;
+
+  --loadingWave-Bg: #ffffff;
+  --loadingWave-BorderColor: #3f68fd;
+  --loadingWave-ColorText: #bfd3e4;
+  --loadingWave-circle-Bg: #ffffff;
+  --loadingWave-wave-primary-Bg: #3f68fd;
+  --loadingWave-wave-secondary-Bg: #99adfb;
+  --loadingWave-wave-third-Bg: #ffffff;
+
+  --modal-card-BgColor: #f3faff;
+  --modal-card-Bg: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 706 195' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M83.4375 31L95 51.625H82.0243L73.1597 31H83.4375ZM66.9931 31L75.8576 51.625H40.1424L49.0069 31H66.9931ZM32.5625 31H42.8403L33.9757 51.625H21L32.5625 31ZM21 55.75H33.9757L49.7778 88.2344C49.8634 88.4062 49.7778 88.5781 49.5208 88.75C49.3495 88.8359 49.2211 88.793 49.1354 88.6211L21 55.75ZM40.0139 55.75H75.9861L58.3854 96.7422C58.2998 96.9141 58.1713 97 58 97C57.8287 97 57.7002 96.9141 57.6146 96.7422L40.0139 55.75ZM66.2222 88.2344L82.0243 55.75H95L66.8646 88.6211C66.7789 88.793 66.6076 88.8359 66.3507 88.75C66.1794 88.5781 66.1366 88.4062 66.2222 88.2344Z' fill='%23DFF2FF'/%3e%3cpath d='M627.438 121L639 141.625H626.024L617.16 121H627.438ZM610.993 121L619.858 141.625H584.142L593.007 121H610.993ZM576.562 121H586.84L577.976 141.625H565L576.562 121ZM565 145.75H577.976L593.778 178.234C593.863 178.406 593.778 178.578 593.521 178.75C593.35 178.836 593.221 178.793 593.135 178.621L565 145.75ZM584.014 145.75H619.986L602.385 186.742C602.3 186.914 602.171 187 602 187C601.829 187 601.7 186.914 601.615 186.742L584.014 145.75ZM610.222 178.234L626.024 145.75H639L610.865 178.621C610.779 178.793 610.608 178.836 610.351 178.75C610.179 178.578 610.137 178.406 610.222 178.234Z' fill='%23DFF2FF'/%3e%3cpath d='M676.368 32.0745L676.908 46.0569L670.047 42.5288L670.933 29.2799L676.368 32.0745ZM667.672 27.6032L666.786 40.8521L647.901 31.1411L658.161 22.7128L667.672 27.6032ZM649.466 18.2415L654.9 21.0361L644.64 29.4643L637.778 25.9362L649.466 18.2415ZM636.664 28.1039L643.525 31.632L643.103 52.9994C643.102 53.113 643.01 53.18 642.828 53.2005C642.714 53.1991 642.658 53.1416 642.659 53.028L636.664 28.1039ZM646.718 33.2738L665.739 43.0547L645.356 59.8107C645.264 59.8778 645.173 59.888 645.082 59.8414C644.992 59.7948 644.947 59.7148 644.948 59.6011L646.718 33.2738ZM651.799 57.4707L668.932 44.6965L675.794 48.2246L652.034 57.8485C651.942 57.9156 651.84 57.8916 651.727 57.7766C651.683 57.6397 651.707 57.5377 651.799 57.4707Z' fill='%23DFF2FF'/%3e%3cpath d='M30.957 141.795L43.417 148.163L36.9836 152.421L25.8612 145.168L30.957 141.795ZM22.8037 147.192L33.9261 154.445L16.2182 166.167L13.8861 153.095L22.8037 147.192ZM5.73278 158.492L10.8286 155.119L13.1607 168.191L6.72724 172.45L5.73278 158.492ZM8.07269 174.482L14.5061 170.224L32.9363 181.043C33.0349 181.1 33.0485 181.213 32.9771 181.382C32.9202 181.48 32.8425 181.501 32.744 181.445L8.07269 174.482ZM17.4999 168.242L35.3352 156.436L39.979 182.411C39.9926 182.523 39.957 182.608 39.872 182.664C39.7871 182.72 39.6954 182.72 39.5969 182.664L17.4999 168.242ZM41.0896 175.646L38.329 154.454L44.7624 150.195L41.5342 175.626C41.5478 175.739 41.4769 175.816 41.3215 175.858C41.1805 175.83 41.1032 175.759 41.0896 175.646Z' fill='%23DFF2FF'/%3e%3cpath d='M577.915 43.8755L586.781 51.8195L580.564 53.9252L572.99 45.5433L577.915 43.8755ZM570.036 46.5441L577.609 54.9259L560.498 60.7218L561.418 49.4628L570.036 46.5441ZM553.54 52.1315L558.464 50.4636L557.543 61.7225L551.326 63.8282L553.54 52.1315ZM551.992 65.7923L558.208 63.6866L571.018 76.5894C571.087 76.6574 571.074 76.7531 570.978 76.8766C570.91 76.9453 570.842 76.9457 570.773 76.8778L551.992 65.7923ZM561.101 62.7067L578.336 56.8692L576.514 79.2435C576.501 79.3392 576.453 79.401 576.371 79.4288C576.289 79.4566 576.214 79.4365 576.145 79.3686L561.101 62.7067ZM578.897 73.9208L581.229 55.8893L587.446 53.7836L579.267 74.0007C579.254 74.0964 579.179 74.1447 579.042 74.1455C578.932 74.0914 578.884 74.0166 578.897 73.9208Z' fill='%23DFF2FF'/%3e%3cpath d='M170.185 107.031L172.044 118.79L165.893 116.497L165.313 105.216L170.185 107.031ZM162.39 104.126L162.97 115.408L146.042 109.098L153.865 100.948L162.39 104.126ZM146.07 98.0428L150.942 99.8587L143.119 108.008L136.968 105.715L146.07 98.0428ZM136.244 107.659L142.395 109.951L144.181 128.045C144.191 128.141 144.12 128.207 143.968 128.242C143.872 128.253 143.819 128.21 143.808 128.113L136.244 107.659ZM145.257 111.018L162.307 117.373L146.767 133.573C146.696 133.639 146.62 133.657 146.539 133.627C146.458 133.596 146.412 133.533 146.402 133.437L145.257 111.018ZM151.975 130.95L165.169 118.44L171.319 120.733L152.212 131.246C152.141 131.312 152.052 131.302 151.946 131.216C151.895 131.105 151.905 131.016 151.975 130.95Z' fill='%23DFF2FF'/%3e%3cpath d='M701.76 119.679L703.224 127.397L699.121 126.009L698.51 118.579L701.76 119.679ZM696.56 117.92L697.171 125.35L685.877 121.529L690.872 115.996L696.56 117.92ZM685.672 114.237L688.922 115.336L683.927 120.87L679.823 119.482L685.672 114.237ZM679.385 120.778L683.488 122.166L685.032 134.065C685.041 134.129 684.996 134.173 684.896 134.2C684.833 134.209 684.797 134.181 684.788 134.118L679.385 120.778ZM685.398 122.812L696.773 126.66L686.85 137.66C686.804 137.705 686.755 137.718 686.7 137.7C686.646 137.681 686.615 137.641 686.606 137.577L685.398 122.812ZM690.232 135.824L698.683 127.306L702.786 128.694L690.394 136.015C690.349 136.059 690.29 136.055 690.218 136C690.182 135.928 690.187 135.869 690.232 135.824Z' fill='%23DFF2FF'/%3e%3cpath d='M150.344 2.80059L157.965 4.70885L154.984 7.85174L147.983 5.29001L150.344 2.80059ZM146.566 6.78367L153.567 9.3454L145.362 17.9961L142.434 11.1402L146.566 6.78367ZM138.656 15.1232L141.017 12.6338L143.946 19.4898L140.965 22.6327L138.656 15.1232ZM141.958 23.5745L144.939 20.4316L156.388 24.0205C156.449 24.039 156.471 24.099 156.453 24.2005C156.435 24.2616 156.395 24.2829 156.334 24.2644L141.958 23.5745ZM146.326 18.969L154.59 10.2561L160.414 23.878C160.435 23.938 160.426 23.9888 160.387 24.0303C160.348 24.0717 160.298 24.0832 160.237 24.0647L146.326 18.969ZM160.166 20.0375L155.977 8.79352L158.958 5.65062L160.407 19.9702C160.428 20.0301 160.399 20.0814 160.32 20.1241C160.239 20.1263 160.188 20.0974 160.166 20.0375Z' fill='%23DFF2FF'/%3e%3cpath d='M125.017 168.166L128.822 175.039L124.491 175.004L121.586 168.138L125.017 168.166ZM119.527 168.122L122.432 174.988L110.51 174.893L113.523 168.074L119.527 168.122ZM108.034 168.031L111.465 168.058L108.451 174.877L104.119 174.842L108.034 168.031ZM104.109 176.211L108.44 176.245L113.629 187.064C113.658 187.121 113.629 187.178 113.542 187.234C113.485 187.263 113.442 187.248 113.414 187.191L104.109 176.211ZM110.456 176.261L122.464 176.357L116.48 189.909C116.451 189.966 116.408 189.994 116.351 189.994C116.294 189.993 116.251 189.965 116.223 189.907L110.456 176.261ZM119.119 187.108L124.48 176.373L128.811 176.407L119.332 187.238C119.303 187.295 119.246 187.308 119.161 187.279C119.104 187.222 119.09 187.165 119.119 187.108Z' fill='%23DFF2FF'/%3e%3c/svg%3e ");
+
+  --icon-dataPicker: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.04688 7.875H2.95312C2.73438 7.875 2.625 7.76562 2.625 7.54688V6.45312C2.625 6.23438 2.73438 6.125 2.95312 6.125H4.04688C4.26562 6.125 4.375 6.23438 4.375 6.45312V7.54688C4.375 7.76562 4.26562 7.875 4.04688 7.875ZM7 7.54688C7 7.76562 6.89062 7.875 6.67188 7.875H5.57812C5.35938 7.875 5.25 7.76562 5.25 7.54688V6.45312C5.25 6.23438 5.35938 6.125 5.57812 6.125H6.67188C6.89062 6.125 7 6.23438 7 6.45312V7.54688ZM9.625 7.54688C9.625 7.76562 9.51562 7.875 9.29688 7.875H8.20312C7.98438 7.875 7.875 7.76562 7.875 7.54688V6.45312C7.875 6.23438 7.98438 6.125 8.20312 6.125H9.29688C9.51562 6.125 9.625 6.23438 9.625 6.45312V7.54688ZM7 10.1719C7 10.3906 6.89062 10.5 6.67188 10.5H5.57812C5.35938 10.5 5.25 10.3906 5.25 10.1719V9.07812C5.25 8.85938 5.35938 8.75 5.57812 8.75H6.67188C6.89062 8.75 7 8.85938 7 9.07812V10.1719ZM4.375 10.1719C4.375 10.3906 4.26562 10.5 4.04688 10.5H2.95312C2.73438 10.5 2.625 10.3906 2.625 10.1719V9.07812C2.625 8.85938 2.73438 8.75 2.95312 8.75H4.04688C4.26562 8.75 4.375 8.85938 4.375 9.07812V10.1719ZM9.625 10.1719C9.625 10.3906 9.51562 10.5 9.29688 10.5H8.20312C7.98438 10.5 7.875 10.3906 7.875 10.1719V9.07812C7.875 8.85938 7.98438 8.75 8.20312 8.75H9.29688C9.51562 8.75 9.625 8.85938 9.625 9.07812V10.1719ZM12.25 3.0625V12.6875C12.25 13.0521 12.1224 13.362 11.8672 13.6172C11.612 13.8724 11.3021 14 10.9375 14H1.3125C0.947917 14 0.638021 13.8724 0.382812 13.6172C0.127604 13.362 0 13.0521 0 12.6875V3.0625C0 2.69792 0.127604 2.38802 0.382812 2.13281C0.638021 1.8776 0.947917 1.75 1.3125 1.75H2.625V0.328125C2.625 0.109375 2.73438 0 2.95312 0H4.04688C4.26562 0 4.375 0.109375 4.375 0.328125V1.75H7.875V0.328125C7.875 0.109375 7.98438 0 8.20312 0H9.29688C9.51562 0 9.625 0.109375 9.625 0.328125V1.75H10.9375C11.3021 1.75 11.612 1.8776 11.8672 2.13281C12.1224 2.38802 12.25 2.69792 12.25 3.0625ZM10.9375 12.5234V4.375H1.3125V12.5234C1.3125 12.6328 1.36719 12.6875 1.47656 12.6875H10.7734C10.8828 12.6875 10.9375 12.6328 10.9375 12.5234Z' fill='%230f43f9'/%3e%3c/svg%3e ");
+  --card-get-Bg: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 504 301' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M441.438 191L453 211.625H440.024L431.16 191H441.438ZM424.993 191L433.858 211.625H398.142L407.007 191H424.993ZM390.562 191H400.84L391.976 211.625H379L390.562 191ZM379 215.75H391.976L407.778 248.234C407.863 248.406 407.778 248.578 407.521 248.75C407.35 248.836 407.221 248.793 407.135 248.621L379 215.75ZM398.014 215.75H433.986L416.385 256.742C416.3 256.914 416.171 257 416 257C415.829 257 415.7 256.914 415.615 256.742L398.014 215.75ZM424.222 248.234L440.024 215.75H453L424.865 248.621C424.779 248.793 424.608 248.836 424.351 248.75C424.179 248.578 424.137 248.406 424.222 248.234Z' fill='%23DFF2FF'/%3e%3cpath d='M35.8083 229.369L53.6762 234.558L46.442 241.707L30.0782 235.031L35.8083 229.369ZM26.6402 238.428L43.004 245.104L23.0919 264.779L16.6125 248.337L26.6402 238.428ZM7.44439 257.396L13.1745 251.734L19.6539 268.176L12.4196 275.325L7.44439 257.396ZM14.704 277.636L21.9382 270.488L48.7372 279.988C48.8801 280.037 48.9276 280.181 48.8795 280.419C48.8316 280.561 48.7362 280.608 48.5932 280.559L14.704 277.636ZM25.3046 267.162L45.3599 247.345L58.2476 280.014C58.295 280.158 58.271 280.277 58.1755 280.371C58.08 280.465 57.9607 280.488 57.8178 280.439L25.3046 267.162ZM57.9054 270.929L48.7263 244.018L55.9606 236.87L58.4776 270.792C58.5251 270.935 58.4534 271.054 58.2625 271.147C58.0718 271.145 57.9528 271.072 57.9054 270.929Z' fill='%23DFF2FF'/%3e%3cpath d='M419.848 64.9768L420.389 78.9592L413.528 75.4311L414.413 62.1823L419.848 64.9768ZM411.152 60.5056L410.267 73.7544L391.381 64.0434L401.642 55.6151L411.152 60.5056ZM392.946 51.1439L398.381 53.9384L388.12 62.3667L381.259 58.8386L392.946 51.1439ZM380.144 61.0063L387.006 64.5344L386.584 85.9017C386.582 86.0154 386.491 86.0824 386.308 86.1028C386.195 86.1014 386.138 86.0439 386.139 85.9303L380.144 61.0063ZM390.198 66.1762L409.22 75.9571L388.836 92.7131C388.745 92.7801 388.653 92.7903 388.563 92.7438C388.472 92.6972 388.428 92.6171 388.429 92.5035L390.198 66.1762ZM395.279 90.373L412.413 77.5989L419.274 81.127L395.514 90.7509C395.423 90.8179 395.32 90.7939 395.208 90.6789C395.164 90.542 395.187 90.44 395.279 90.373Z' fill='%23DFF2FF'/%3e%3cpath d='M40.9722 30.5186L54.1651 35.1822L48.3515 40.2545L36.3674 34.5362L40.9722 30.5186ZM33.6045 36.9468L45.5886 42.665L29.587 56.6264L25.5461 43.9777L33.6045 36.9468ZM18.1784 50.4059L22.7833 46.3883L26.8241 59.0369L21.0105 64.1092L18.1784 50.4059ZM22.613 65.9459L28.4266 60.8736L48.1261 69.1604C48.2312 69.2035 48.2596 69.3135 48.2113 69.4905C48.1679 69.5957 48.0937 69.6268 47.9885 69.5837L22.613 65.9459ZM31.1319 58.5133L47.2487 44.4515L55.2877 69.5838C55.3161 69.6938 55.292 69.7823 55.2152 69.8493C55.1385 69.9162 55.0475 69.9282 54.9424 69.8851L31.1319 58.5133ZM55.4938 62.7322L49.954 42.0911L55.7676 37.0189L55.9318 62.6533C55.9602 62.7633 55.9001 62.8494 55.7516 62.9116C55.6081 62.902 55.5222 62.8422 55.4938 62.7322Z' fill='%23DFF2FF'/%3e%3cpath d='M486.913 100.875L495.779 108.82L489.562 110.925L481.988 102.543L486.913 100.875ZM479.034 103.544L486.607 111.926L469.496 117.722L470.416 106.463L479.034 103.544ZM462.538 109.131L467.462 107.464L466.541 118.723L460.324 120.828L462.538 109.131ZM460.99 122.792L467.206 120.687L480.016 133.589C480.085 133.657 480.072 133.753 479.976 133.877C479.908 133.945 479.84 133.946 479.771 133.878L460.99 122.792ZM470.099 119.707L487.334 113.869L485.512 136.243C485.499 136.339 485.451 136.401 485.369 136.429C485.287 136.457 485.212 136.437 485.143 136.369L470.099 119.707ZM487.895 130.921L490.227 112.889L496.444 110.784L488.265 131.001C488.252 131.096 488.177 131.145 488.04 131.145C487.93 131.091 487.882 131.017 487.895 130.921Z' fill='%23DFF2FF'/%3e%3cpath d='M425.758 138.679L427.222 146.397L423.119 145.009L422.508 137.579L425.758 138.679ZM420.558 136.92L421.169 144.35L409.875 140.529L414.87 134.996L420.558 136.92ZM409.67 133.237L412.92 134.336L407.925 139.87L403.821 138.482L409.67 133.237ZM403.383 139.778L407.486 141.166L409.03 153.065C409.039 153.129 408.994 153.173 408.894 153.2C408.831 153.209 408.795 153.181 408.786 153.118L403.383 139.778ZM409.396 141.812L420.771 145.66L410.848 156.66C410.802 156.705 410.753 156.718 410.698 156.7C410.644 156.681 410.613 156.641 410.604 156.577L409.396 141.812ZM414.23 154.824L422.681 146.306L426.784 147.694L414.392 155.015C414.347 155.059 414.288 155.055 414.216 155C414.18 154.928 414.185 154.869 414.23 154.824Z' fill='%23DFF2FF'/%3e%3cpath d='M460.452 1.99841L466.671 4.74447L463.667 6.98697L458.073 3.77465L460.452 1.99841ZM456.646 4.84039L462.24 8.05272L453.973 14.2251L452.483 7.94881L456.646 4.84039ZM448.676 10.7908L451.055 9.01455L452.546 15.2909L449.542 17.5334L448.676 10.7908ZM450.251 18.4823L453.254 16.2398L462.491 20.9811C462.54 21.0058 462.55 21.0602 462.52 21.1441C462.495 21.1935 462.458 21.2058 462.409 21.1811L450.251 18.4823ZM454.652 15.1962L462.978 8.97938L465.945 21.4505C465.954 21.5049 465.939 21.5468 465.9 21.5765C465.86 21.6061 465.816 21.6085 465.766 21.5838L454.652 15.1962ZM466.297 18.1391L464.376 7.93584L467.379 5.69333L466.512 18.1171C466.522 18.1714 466.49 18.2109 466.416 18.2355C466.347 18.2256 466.307 18.1935 466.297 18.1391Z' fill='%23DFF2FF'/%3e%3c/svg%3e ");
+
+  --maintenance-Bg-Footer: url('/assets/img/bg_footer.png');
+
+  --404-page-PaddingTop: 50px;
+  --404-page-PaddingBottom: 50px;
+  --404-page-header-ColorText: #0f43f9;
+  --404-page-header-textShadow: none;
+  --404-page-ColorText: #000000;
+  --404-page-title-ColorText: #182f43;
+  --404-page-button-Bg-Image: none;
+  --404-page-button-Width: 380px;
+  --404-page-Bg: url("data:image/svg+xml;charset=UTF-8,%3csvg  viewBox='0 0 777 179' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M83.4375 15.0547L95 35.6797H82.0243L73.1597 15.0547H83.4375ZM66.9931 15.0547L75.8576 35.6797H40.1424L49.0069 15.0547H66.9931ZM32.5625 15.0547H42.8403L33.9757 35.6797H21L32.5625 15.0547ZM21 39.8047H33.9757L49.7778 72.2891C49.8634 72.4609 49.7778 72.6328 49.5208 72.8047C49.3495 72.8906 49.2211 72.8477 49.1354 72.6758L21 39.8047ZM40.0139 39.8047H75.9861L58.3854 80.7969C58.2998 80.9688 58.1713 81.0547 58 81.0547C57.8287 81.0547 57.7002 80.9688 57.6146 80.7969L40.0139 39.8047ZM66.2222 72.2891L82.0243 39.8047H95L66.8646 72.6758C66.7789 72.8477 66.6076 72.8906 66.3507 72.8047C66.1794 72.6328 66.1366 72.4609 66.2222 72.2891Z' fill='%23DFF2FF'/%3e%3cpath d='M698.438 105.902L710 126.527H697.024L688.16 105.902H698.438ZM681.993 105.902L690.858 126.527H655.142L664.007 105.902H681.993ZM647.562 105.902H657.84L648.976 126.527H636L647.562 105.902ZM636 130.652H648.976L664.778 163.137C664.863 163.309 664.778 163.48 664.521 163.652C664.35 163.738 664.221 163.695 664.135 163.523L636 130.652ZM655.014 130.652H690.986L673.385 171.645C673.3 171.816 673.171 171.902 673 171.902C672.829 171.902 672.7 171.816 672.615 171.645L655.014 130.652ZM681.222 163.137L697.024 130.652H710L681.865 163.523C681.779 163.695 681.608 163.738 681.351 163.652C681.179 163.48 681.137 163.309 681.222 163.137Z' fill='%23DFF2FF'/%3e%3cpath d='M747.368 16.9768L747.909 30.9592L741.048 27.4311L741.934 14.1823L747.368 16.9768ZM738.673 12.5056L737.787 25.7544L718.902 16.0434L729.162 7.61512L738.673 12.5056ZM720.467 3.14386L725.901 5.93839L715.641 14.3667L708.779 10.8386L720.467 3.14386ZM707.665 13.0063L714.526 16.5344L714.104 37.9017C714.103 38.0154 714.011 38.0824 713.829 38.1028C713.715 38.1014 713.659 38.0439 713.66 37.9303L707.665 13.0063ZM717.719 18.1762L736.74 27.9571L716.357 44.7131C716.265 44.7801 716.174 44.7903 716.083 44.7438C715.993 44.6972 715.948 44.6171 715.949 44.5035L717.719 18.1762ZM722.8 42.373L739.933 29.5989L746.795 33.127L723.035 42.7509C722.943 42.8179 722.841 42.7939 722.728 42.6789C722.684 42.542 722.708 42.44 722.8 42.373Z' fill='%23DFF2FF'/%3e%3cpath d='M30.957 125.852L43.417 132.219L36.9836 136.478L25.8612 129.225L30.957 125.852ZM22.8037 131.249L33.9261 138.502L16.2182 150.224L13.8861 137.152L22.8037 131.249ZM5.73278 142.549L10.8286 139.176L13.1607 152.248L6.72724 156.506L5.73278 142.549ZM8.07269 158.539L14.5061 154.28L32.9363 165.1C33.0349 165.157 33.0485 165.27 32.9771 165.439C32.9202 165.537 32.8425 165.558 32.744 165.502L8.07269 158.539ZM17.4999 152.299L35.3352 140.492L39.979 166.467C39.9926 166.58 39.957 166.664 39.872 166.721C39.7871 166.777 39.6954 166.777 39.5969 166.72L17.4999 152.299ZM41.0896 159.703L38.329 138.511L44.7624 134.252L41.5342 159.683C41.5478 159.796 41.4769 159.873 41.3215 159.915C41.1805 159.886 41.1032 159.816 41.0896 159.703Z' fill='%23DFF2FF'/%3e%3cpath d='M648.915 28.7778L657.781 36.7219L651.564 38.8276L643.99 30.4457L648.915 28.7778ZM641.036 31.4464L648.609 39.8283L631.498 45.6242L632.418 34.3652L641.036 31.4464ZM624.54 37.0338L629.464 35.3659L628.543 46.6249L622.326 48.7306L624.54 37.0338ZM622.992 50.6947L629.208 48.589L642.018 61.4918C642.087 61.5597 642.074 61.6554 641.978 61.779C641.91 61.8477 641.842 61.8481 641.773 61.7801L622.992 50.6947ZM632.101 47.6091L649.336 41.7715L647.514 64.1458C647.501 64.2416 647.453 64.3033 647.371 64.3311C647.289 64.3589 647.214 64.3389 647.145 64.2709L632.101 47.6091ZM649.897 58.8232L652.229 40.7916L658.446 38.6859L650.267 58.9031C650.254 58.9988 650.179 59.047 650.042 59.0478C649.932 58.9938 649.884 58.9189 649.897 58.8232Z' fill='%23DFF2FF'/%3e%3cpath d='M170.184 91.0861L172.043 102.844L165.892 100.552L165.312 89.2702L170.184 91.0861ZM162.389 88.1807L162.969 99.4623L146.041 93.1522L153.864 85.0029L162.389 88.1807ZM146.069 82.0975L150.941 83.9134L143.118 92.0627L136.967 89.7701L146.069 82.0975ZM136.243 91.7132L142.394 94.0058L144.18 112.1C144.19 112.196 144.119 112.261 143.968 112.297C143.871 112.307 143.818 112.264 143.807 112.168L136.243 91.7132ZM145.256 95.0726L162.306 101.428L146.766 117.628C146.695 117.694 146.619 117.712 146.538 117.681C146.457 117.651 146.411 117.588 146.401 117.492L145.256 95.0726ZM151.974 115.005L165.168 102.495L171.318 104.787L152.211 115.301C152.14 115.366 152.051 115.356 151.945 115.27C151.894 115.159 151.904 115.071 151.974 115.005Z' fill='%23DFF2FF'/%3e%3cpath d='M772.76 104.581L774.224 112.3L770.121 110.912L769.51 103.482L772.76 104.581ZM767.56 102.822L768.171 110.252L756.877 106.432L761.872 100.898L767.56 102.822ZM756.672 99.1391L759.922 100.238L754.927 105.772L750.823 104.384L756.672 99.1391ZM750.385 105.681L754.488 107.069L756.032 118.968C756.041 119.031 755.996 119.076 755.896 119.102C755.833 119.111 755.797 119.084 755.788 119.021L750.385 105.681ZM756.398 107.714L767.773 111.562L757.85 122.562C757.804 122.607 757.755 122.62 757.7 122.602C757.646 122.584 757.615 122.543 757.606 122.48L756.398 107.714ZM761.232 120.727L769.683 112.208L773.786 113.596L761.394 120.917C761.349 120.962 761.29 120.957 761.218 120.902C761.182 120.83 761.187 120.772 761.232 120.727Z' fill='%23DFF2FF'/%3e%3cpath d='M175.344 7.80254L182.965 9.7108L179.984 12.8537L172.983 10.292L175.344 7.80254ZM171.566 11.7856L178.567 14.3474L170.362 22.9981L167.434 16.1421L171.566 11.7856ZM163.656 20.1252L166.017 17.6358L168.946 24.4917L165.965 27.6346L163.656 20.1252ZM166.958 28.5764L169.939 25.4335L181.388 29.0225C181.449 29.041 181.471 29.101 181.453 29.2024C181.435 29.2635 181.395 29.2849 181.334 29.2664L166.958 28.5764ZM171.326 23.971L179.59 15.258L185.414 28.88C185.435 28.94 185.426 28.9907 185.387 29.0322C185.348 29.0737 185.298 29.0852 185.237 29.0667L171.326 23.971ZM185.166 25.0394L180.977 13.7955L183.958 10.6526L185.407 24.9721C185.428 25.0321 185.399 25.0834 185.32 25.126C185.239 25.1283 185.188 25.0994 185.166 25.0394Z' fill='%23DFF2FF'/%3e%3cpath d='M125.017 152.22L128.822 159.094L124.491 159.059L121.586 152.193L125.017 152.22ZM119.527 152.177L122.432 159.043L110.51 158.948L113.523 152.129L119.527 152.177ZM108.034 152.085L111.465 152.113L108.451 158.932L104.119 158.897L108.034 152.085ZM104.109 160.266L108.44 160.3L113.629 171.119C113.658 171.176 113.629 171.233 113.542 171.289C113.485 171.317 113.442 171.303 113.414 171.245L104.109 160.266ZM110.456 160.316L122.464 160.412L116.48 173.964C116.451 174.021 116.408 174.049 116.351 174.049C116.294 174.048 116.251 174.019 116.223 173.962L110.456 160.316ZM119.119 171.162L124.48 160.428L128.811 160.462L119.332 171.292C119.303 171.349 119.246 171.363 119.161 171.334C119.104 171.276 119.09 171.219 119.119 171.162Z' fill='%23DFF2FF'/%3e%3c/svg%3e ");
+
+  --maintenance-media-Bg-Image: url('/public/assets/img/mainTainance.webp');
+
+  --signin-input-Margin: 11px 0 0;
+  --signin-Padding: 50px 20px;
+
+  --heading-2fa-FontSize: 28px;
+  --heading-2fa-LineHeight: 44px;
+  --heading-2fa-FontWeight: 600;
+  --heading-2fa-Margin: 6px 0;
+
+  --subTitle-2fa-FontSize: 16px;
+  --subTitle-2fa-LineHeight: 24px;
+  --subTitle-2fa-FontWeight: 400;
+
+  --avatar-2fa-Bg: #0f43f9;
+  --avatar-2fa-Border: none;
+  --avatar-large-Padding: 8px;
+  --avatar-large-Width: 116px;
+  --avatar-large-Height: 116px;
+
+  --tipsText-signUp-ColorText: #0f43f9;
+  --tipsText-signUp-FontWeight: 400;
+  --tipsText-signUp-FontSize: 12px;
+  --tipsText-signUp-LineHeight: 18px;
+
+  --heading-forgot-password-Margin: 0 0 20px;
+  --forgot-password-Padding: 67px 0 0;
+  --success-password-Padding: 67px 0 0;
+  --siginup--checkBox-margin: 31.5px 0 0;
+
+  --heading-checkEmail-Margin: 0 0 21px;
+  --heading-success-Margin: 29px 0;
+  --subTitle-checkEmail-FontSize: 16px;
+  --subTitle-checkEmail-LineHeight: 24px;
+  --subTitle-checkEmail-FontWeight: 400;
+  --listWrapper-Margin: 0 0 0 -28px;
+
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+  ---toastify-toast-width: 320px;
+  ---toastify-toast-width-Large: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: -var(--font-family-base);
+  --toastify-z-index: 9999;
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+
+  --toastify-close-button-fill: #fff;
+  --toastify-close-button-color: #000;
+  --toastify-close-button-opacity: 0.3;
+  --toastify-border-radius: 4px;
+  --toastify-border-color: transparent;
+
+  --toastify-font-size: 16px;
+  --toastify-font-weight: 400;
+  --toastify-line-height: 18px;
+
+  --toastify__progress-bar-bottom: 0;
+
+  --toastify-border-color-info: transparent;
+  --toastify-border-color-success: transparent;
+  --toastify-border-color-warning: transparent;
+  --toastify-border-color-error: transparent;
+
+  --blockchain-network-them-color: #bfd3e4;
+  --blockchain-network-gradient-1: #bfd3e4;
+  --blockchain-network-gradient-2: #f1f1f1;
+  --blockchain-network-gradient-3: #182f43;
+
+  --profile-container-grid: minmax(177px, 205px) 1fr;
+  --profile-container-grid-Large: minmax(205px, 308px) 1fr;
+  --profile-container-gap: 0;
+  --profile-you-have-Padding: 20px 20px 20px 0;
+  --profile-button-youHave-Width: 175px;
+  --profile-button-youHave-Padding: 11px 10px;
+  --profile-button-youHave-Margin: 40px 0 0;
+
+  --bsc-label-FontSize: 12px;
+  --bsc-label-FontWeight: 400;
+  --bsc-label-LineHeight: 14px;
+  --buyWith-ColorText: #446384;
+
+  --termsCheckbox-FontWeight: 400;
+  --termsCheckbox-FontSize: 12px;
+  --termsCheckbox-LineHeight: 18px;
+  --termsCheckbox-ColorText: #446384;
+  --termsCheckbox-link-ColorText: #0f43f9;
+}

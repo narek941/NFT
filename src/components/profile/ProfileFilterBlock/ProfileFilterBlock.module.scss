@@ -1,0 +1,33 @@
+@use '../../../styles/index.scss' as *;
+.profile-filter-block {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: var(--filterBlock-header-Padding);
+    @include respond-to('medium') {
+      padding: 0;
+    }
+  }
+
+  &-header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    padding: var(--filterBlock-header-Padding);
+  }
+}
+.label {
+  font-size: 12px;
+  line-height: 18px;
+
+  &-counter {
+    color: var(--filter-counter-ColorText);
+  }
+  &-large {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &-bold {
+    font-weight: 600;
+  }
+}

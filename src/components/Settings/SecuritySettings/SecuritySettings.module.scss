@@ -1,0 +1,40 @@
+@use '../../../styles/index.scss' as *;
+
+.cardSettings {
+  background: var(--cardSettings-Bg);
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 10px;
+
+  @include respond-to('small') {
+    padding: 27px 30px 26px;
+  }
+  .cardBody {
+    display: grid;
+    gap: 10px;
+    @include respond-to('xmedium') {
+      grid-template-columns: minmax(190px, 260px) minmax(187px, 253px) auto;
+      justify-content: space-between;
+    }
+  }
+
+  .cardTitle {
+    font-weight: var(--settings-card-title-FontWeight);
+    font-size: var(--settings-card-title-FontSize);
+    line-height: var(--settings-card-title-LineHeight);
+    color: var(--cardSettings-title-ColorText);
+
+    @include respond-to('medium') {
+      margin: 8px 0;
+    }
+  }
+  .cardText {
+    font-size: var(--settings-card-text-FontSize);
+    line-height: var(--settings-card-text-LineHeight);
+    font-weight: var(--settings-card-text-FontWeight);
+    color: var(--cardSettings-ColorText);
+    @include respond-to('medium') {
+      margin: 9px 0 0;
+    }
+  }
+}

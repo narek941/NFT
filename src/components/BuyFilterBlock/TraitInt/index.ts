@@ -1,0 +1,1 @@
+export { TraitInt } from './TraitInt';

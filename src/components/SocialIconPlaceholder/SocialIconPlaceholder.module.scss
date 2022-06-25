@@ -1,0 +1,22 @@
+@use '../../styles/index.scss' as *;
+
+.placeholder {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--social-icon-BgColor);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover {
+    background: var(--social-icon-BgColor);
+  }
+  svg {
+    fill: blue;
+  }
+}

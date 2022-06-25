@@ -1,0 +1,147 @@
+@use '@styles/index.scss' as *;
+
+.outer-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+
+  background: var(--carousel-Bg);
+}
+
+.inner-wrapper {
+  position: relative;
+  display: flex;
+  &-sliding {
+    transition: left 2s ease-in-out;
+  }
+}
+
+.slide {
+  position: relative;
+  width: 100vw;
+
+  background: var(--carousel-Bg);
+  @include respond-to('medium') {
+    padding: 0 73px 0;
+
+    min-height: 370px;
+    max-height: 500px;
+  }
+
+  &-content {
+    max-width: 1054px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    @include respond-to('medium') {
+      flex-direction: row;
+    }
+  }
+  &-holder {
+    max-width: 568px;
+    width: 100%;
+    padding: 40px 20px 60px;
+    text-align: center;
+
+    position: relative;
+    z-index: 2;
+
+    @include respond-to('medium') {
+      padding: 70px 0 68px;
+      text-align: left;
+    }
+  }
+  &-media {
+    width: 100%;
+    max-width: 650px;
+    height: 320px;
+    @include respond-to('medium') {
+      position: absolute;
+      width: 650px;
+      height: 100%;
+      right: 0;
+      top: 0;
+    }
+    @include respond-to('large') {
+      width: 45%;
+    }
+  }
+  &-image {
+    height: 320px;
+    width: 100%;
+    @include respond-to('medium') {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      height: 100%;
+    }
+  }
+  &-title {
+    margin-bottom: 15px;
+
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+    @include respond-to('medium') {
+      font-size: 38px;
+      line-height: 52px;
+    }
+  }
+
+  &-description {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+
+    @include ellipsis(5);
+    @include respond-to('medium') {
+      max-width: 523px;
+      width: 100%;
+    }
+  }
+
+  &-button {
+    min-width: 173px;
+    padding: 11.5px 10px;
+  }
+}
+.arrowWrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin-top: -50px;
+
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  @include respond-to('medium') {
+    margin-top: 0;
+  }
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 29px;
+  transform: translateX(-50%);
+
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
+}

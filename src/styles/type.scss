@@ -1,0 +1,60 @@
+//
+// Headings
+//
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: var(--heading-font-weight);
+}
+h1,
+.h1 {
+  font-size: var(--display1-font-size);
+  line-height: var(--display1-line-height);
+}
+h2,
+.h2 {
+  font-size: var(--display2-font-size);
+  line-height: var(--display2-line-height);
+}
+h3,
+.h3 {
+  font-size: var(--display3-font-size);
+  line-height: var(--display3-line-height);
+}
+h4,
+.h4 {
+  font-size: var(--display4-font-size);
+  line-height: var(--display4-line-height);
+}
+h5,
+.h5 {
+  font-size: var(--display4-font-size);
+  line-height: var(--display4-line-height);
+}
+h6,
+.h6 {
+  font-size: var(--display6-font-size);
+  line-height: var(--display6-line-height);
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-bold {
+    font-weight: bold;
+  }
+  &-fz-14 {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}

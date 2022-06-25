@@ -1,0 +1,82 @@
+@use '@styles/index.scss' as *;
+
+.search-wrapper {
+  position: relative;
+  z-index: 4;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'countEl countEl'
+    'search sortBy';
+  @include respond-to('small') {
+    column-gap: 20px;
+    row-gap: 0;
+    align-items: center;
+    grid-template-columns: minmax(auto, 183px) minmax(260px, 583px) auto;
+    grid-template-areas: 'countEl search sortBy';
+  }
+
+  .search-block {
+    grid-column: search;
+    @include respond-to('small') {
+      grid-column: auto;
+    }
+  }
+
+  .searchInput {
+    margin: 0;
+    max-width: 583px;
+    input {
+      height: 36px;
+    }
+  }
+}
+
+.count {
+  &-elem {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--buySearchBlock-ColorText);
+
+    white-space: nowrap;
+
+    grid-area: countEl;
+
+    @include respond-to('small') {
+      grid-column: auto;
+    }
+  }
+  &-value {
+    font-weight: 600;
+  }
+}
+
+.sortBy {
+  margin-left: auto;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+  grid-column: sortBy;
+
+  @include respond-to('small') {
+    grid-column: auto;
+  }
+
+  .sortBy-title {
+    font-size: var(--sortBy-title-FontSize);
+    line-height: var(--sortBy-title-LineHeight);
+    font-weight: var(--sortBy-title-FontWeight);
+    white-space: nowrap;
+  }
+  .sortBy-dropDown {
+    width: 188px;
+  }
+}

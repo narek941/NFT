@@ -1,0 +1,30 @@
+.content {
+  width: 100%;
+  margin: 56px auto 100px;
+  padding: 66px 0;
+  max-width: 1200px;
+  border-radius: 8px;
+  border: var(--myProfile-empty-Border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--myProfile-empty-ColorText);
+    margin: 20px 0;
+  }
+
+  &__emoji {
+    font-size: 36px;
+    line-height: 30px;
+  }
+
+  &__button {
+    margin: 0;
+    min-width: 175px;
+  }
+}

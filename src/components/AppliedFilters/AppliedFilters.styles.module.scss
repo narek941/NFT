@@ -1,0 +1,16 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  height: auto;
+  border-top: var(--accordion-small-title-BorderTop);
+  .accordion {
+    > div {
+      padding-left: var(--filterBlock-Padding-Left);
+      padding-right: var(--filterBlock-Padding-Right);
+      @include respond-to('medium') {
+        padding-left: var(--filterBlock-Padding-Left-Large);
+        padding-right: var(--filterBlock-Padding-Right-Large);
+      }
+    }
+  }
+}

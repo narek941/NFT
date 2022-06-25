@@ -1,0 +1,13 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.text-content {
+  font-size: 28px;
+  font-weight: 600;
+}

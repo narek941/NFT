@@ -1,0 +1,93 @@
+@use '../../styles/index.scss' as *;
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  @include respond-to('medium') {
+    display: flex;
+  }
+}
+.settingsWrapper {
+  flex-grow: 1;
+
+  position: relative;
+
+  padding: 30px 0 30px;
+
+  @include respond-to('medium') {
+    padding: 40px 20px 60px 20px;
+  }
+  @include respond-to('large') {
+    padding: 40px 20px 60px 56px;
+  }
+}
+
+.settingsContainer {
+  & + & {
+    margin-top: 65px;
+  }
+  .heading {
+    font-weight: var(--settings-heading-FontWeight);
+    font-size: var(--settings-heading-FontSize);
+    line-height: var(--settings-heading-LineHeight);
+    margin-bottom: 20px;
+    @include respond-to('small') {
+      margin-bottom: 30px;
+    }
+  }
+}
+.settingsBottom {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 790px;
+  width: 100%;
+}
+
+.navWrapper {
+  margin: var(--settings-navWrapper-Margin);
+  width: 100%;
+
+  .navTabs {
+    a {
+      font-weight: var(--navTab-settings-FontWeight);
+      font-size: var(--navTab-settings-FontSize);
+      line-height: var(--navTab-settings-LineHeight);
+    }
+  }
+}
+.navButton {
+  margin-top: 30px;
+
+  button {
+    padding: var(--button-small-Padding);
+    min-width: var(--settings-navButton-width);
+    @include respond-to('medium') {
+      padding: var(--settings-navButton-Padding);
+    }
+  }
+}
+
+.sidebar {
+  margin-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  ul {
+    display: none;
+  }
+  @include respond-to('medium') {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 43px;
+    ul {
+      display: flex;
+    }
+  }
+}
+.userSettings {
+  margin: var(--settings-userSettings-Margin);
+}

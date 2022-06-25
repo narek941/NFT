@@ -1,0 +1,17 @@
+@use '@styles/index.scss' as *;
+
+.subTitleStyles {
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  font-size: var(--modal-subTitle-FontSize);
+  line-height: var(--modal-subTitle-LineHeight);
+  font-weight: var(--modal-subTitle-FontWeight);
+  @include respond-to('medium') {
+    font-size: var(--modal-subTitle-FontSize-Large);
+    line-height: var(--modal-subTitle-LineHeight-Large);
+  }
+}
+.bold {
+  font-weight: var(--modal-subTitle-bold);
+}

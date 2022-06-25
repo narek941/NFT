@@ -1,0 +1,22 @@
+.modal {
+  max-width: 800px;
+  border-radius: 8px;
+  border: none;
+}
+
+.container {
+  position: relative;
+  padding-bottom: 69px;
+  .card {
+    margin: 0 auto;
+  }
+}
+
+.heading {
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--modal-title-ColorText);
+}

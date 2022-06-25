@@ -1,0 +1,20 @@
+@use '../../../styles/index.scss' as *;
+
+.warning-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--info-hint-ColorText);
+  border-radius: 14px;
+  background: var(--info-hint-Bg);
+  .icon {
+    flex-shrink: 0;
+    margin-right: 5px;
+    path {
+      fill: var(--info-hint-ColorText);
+    }
+  }
+}

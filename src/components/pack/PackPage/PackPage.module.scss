@@ -1,0 +1,23 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  padding-top: 20px;
+}
+
+.header {
+  margin-top: var(--packPage-header-MarginTop);
+  margin-bottom: var(--packPage-header-MarginBottom);
+}
+
+.description {
+  max-width: 585px;
+  width: 100%;
+  margin: 0 auto var(--packPage-text-MarginBottom);
+  position: relative;
+  z-index: 1;
+
+  font-weight: var(--text-FontWeight);
+  font-size: var(--text-FontSize);
+  line-height: var(--text-LineHeight);
+  text-align: center;
+}

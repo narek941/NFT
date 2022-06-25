@@ -1,0 +1,68 @@
+@use '../../../styles/index.scss' as *;
+
+.scrolling {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  &.height {
+    &-small {
+      max-height: 110px;
+    }
+    &-medium {
+      max-height: 300px;
+    }
+    &-large {
+      max-height: 328px;
+    }
+  }
+
+  &-small {
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+    }
+  }
+  &-medium {
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 6px;
+    }
+  }
+  &-large {
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+    }
+  }
+  &-light {
+    &::-webkit-scrollbar-track {
+      background: var(--scrollbar-track-Light);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb-Light);
+      border: var(--scrollbar-thumb-Border-Light);
+    }
+  }
+  &-primary {
+    &::-webkit-scrollbar-track {
+      background: var(--scrollbar-track-Primary);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-track-Primary);
+    }
+  }
+}

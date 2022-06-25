@@ -1,0 +1,49 @@
+.media {
+  padding-top: 67px;
+  padding-left: 237px;
+  padding-right: 237px;
+  text-align: center;
+}
+
+.title {
+  padding-top: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.action {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  Button {
+    width: var(--button-connect-Width);
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  svg {
+    width: var(--button-connect-icon-Width);
+    height: var(--button-connect-icon-Height);
+  }
+}
+.icon-wallet {
+  circle {
+    fill: var(--icon-wallet-Circle-Fill);
+  }
+  path {
+    fill: var(--icon-wallet-Path-Fill);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #logo-container svg {
+    width: 20px;
+    height: auto;
+  }
+}

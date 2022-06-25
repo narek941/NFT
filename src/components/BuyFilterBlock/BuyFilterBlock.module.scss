@@ -1,0 +1,155 @@
+@use '@styles/index.scss' as *;
+
+.buy-filter-block {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+
+    .accordion {
+      > div {
+        padding-left: var(--filterBlock-Padding-Left);
+        padding-right: var(--filterBlock-Padding-Right);
+
+        @include respond-to('medium') {
+          padding-left: var(--filterBlock-Padding-Left-Large);
+          padding-right: var(--filterBlock-Padding-Right-Large);
+        }
+      }
+    }
+  }
+
+  &-header {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    transform: scale(0);
+    display: none;
+
+    &-show {
+      transform: scale(1);
+      display: block;
+    }
+  }
+}
+
+.collection-filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  > div {
+    &:first-child {
+      border-top: var(--filterBlock-header-BorderTop);
+    }
+  }
+}
+
+.label {
+  font-size: 12px;
+  line-height: 18px;
+
+  &-counter {
+    color: var(--filter-counter-ColorText);
+  }
+
+  &-large {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &-bold {
+    font-weight: 600;
+  }
+}
+
+.trait-text {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--filter-trait-label-ColorText);
+}
+
+.trait-value {
+  color: var(--filter-trait-value-ColorText);
+}
+
+.checkBoxGroup {
+  padding-left: var(--filterBlock-Padding-Left-Large);
+  padding-right: var(--filterBlock-Padding-Right-Large);
+}
+
+.checkBoxGroup-trait {
+  background: pink;
+}
+
+.titleCheckBox {
+  background: pink;
+
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.checkbox-group-mergeable {
+  margin-top: 0 !important;
+}
+
+.price-container {
+  width: 100%;
+}
+
+.buy-filter-form {
+  border-top: var(--accordion-title-BorderTop-Small);
+  .accordion:not(.accordion-traits) {
+    > div {
+      padding-left: var(--filterBlock-form-Padding-Left);
+      padding-right: var(--filterBlock-form-Padding-Right);
+
+      @include respond-to('medium') {
+        padding-left: var(--filterBlock-Padding-Left-Large);
+        padding-right: var(--filterBlock-Padding-Right-Large);
+      }
+    }
+  }
+}
+
+.accordion-traits {
+  > div:first-child {
+    padding-left: var(--filterBlock-Padding-Left);
+    padding-right: var(--filterBlock-Padding-Right);
+
+    @include respond-to('medium') {
+      padding-left: var(--filterBlock-Padding-Left-Large);
+      padding-right: var(--filterBlock-Padding-Right-Large);
+    }
+  }
+
+  .subAccordion {
+    padding-left: var(--filterBlock-Padding-Left);
+    padding-right: var(--filterBlock-Padding-Right);
+
+    @include respond-to('medium') {
+      padding-left: var(--filterBlock-Padding-Left-Large);
+      padding-right: var(--filterBlock-Padding-Right-Large);
+    }
+  }
+}
+
+.subAccordion {
+  > div {
+    &:first-child {
+      border-top: none;
+      font-size: var(--filterBlock-subHeading-FontSize);
+      font-weight: var(--filterBlock-subHeading-FontWeight);
+      line-height: var(--filterBlock-subHeading-LineHeight);
+    }
+
+    padding-left: var(--filterBlock-Padding-Left);
+    padding-right: var(--filterBlock-Padding-Right);
+
+    @include respond-to('medium') {
+      padding-left: var(--filterBlock-Padding-Left-Large);
+      padding-right: var(--filterBlock-Padding-Right-Large);
+    }
+  }
+}

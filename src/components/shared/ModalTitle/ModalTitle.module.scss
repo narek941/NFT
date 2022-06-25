@@ -1,0 +1,20 @@
+@use '@styles/index.scss' as *;
+
+.headingStyles {
+  color: var(--modal-title-ColorText);
+  font-weight: var(--modal-heading-FontWeight);
+  font-size: var(--modal-heading-FontSize);
+  line-height: var(--modal-heading-LineHeight);
+
+  &:empty {
+    display: none;
+  }
+  @include respond-to('medium') {
+    font-size: var(--modal-heading-FontSize-Large);
+    line-height: var(--modal-heading-LineHeight-Large);
+  }
+}
+.highLightedTextStyles {
+  color: var(--modal-highLight-title-ColorText);
+  text-transform: var(--modal-highLight-title-TextTransform);
+}

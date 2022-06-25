@@ -1,0 +1,59 @@
+@use './index.scss' as *;
+
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: var(--body-Bg);
+  color: var(--colorText-base);
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  height: 100%;
+  @include respond-to('medium') {
+    min-height: 100vh;
+    height: auto;
+  }
+}
+#__next {
+  min-height: 100%;
+  height: 100%;
+  @include respond-to('medium') {
+    min-height: 100vh;
+  }
+}
+.basicLayout {
+  position: relative;
+
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 24px;
+  @include respond-to('medium') {
+    overflow: hidden;
+  }
+}
+
+@import './type.scss';
+@import './space.scss';
+@import './dataPicker.scss';
+@import '/node_modules/react-toastify/scss/main.scss';
+@import './components/swiper.scss';
+@import './toastify.scss';

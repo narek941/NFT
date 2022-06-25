@@ -1,0 +1,19 @@
+@use '@styles/index.scss' as *;
+
+.navigation {
+  margin: 0;
+}
+.navUl {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to('medium') {
+    margin: var(--header-navUl-Margin-Large);
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

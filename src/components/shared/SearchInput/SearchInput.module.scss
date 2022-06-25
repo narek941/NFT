@@ -1,0 +1,95 @@
+@use '../../../styles/index' as *;
+
+.container {
+  position: relative;
+
+  @include animate(width max-width background);
+}
+
+.input {
+  padding: var(--searchInput-input-Padding);
+
+  color: var(--searchInput-input-ColorText);
+  font-family: var(--font-family-base);
+  font-size: var(--searchInput-input-FontSize);
+  line-height: var(--searchInput-input-LineHeight);
+  font-weight: var(--searchInput-input-FontWeight);
+  height: var(--searchInput-input-Height);
+
+  @include respond-to('large') {
+    height: var(--searchInput-input-Height-Large);
+  }
+
+  border: var(--searchInput-input-Border);
+  background: var(--searchInput-input-Bg);
+  border-radius: var(--searchInput-input-BorderRadius);
+  width: 100%;
+  @include animate(width border-radius padding);
+
+  outline-color: var(--searchInput-input-ouLine-Color);
+
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    display: block;
+    background-image: var(--searchInput-input-cancel-button-bg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    cursor: pointer;
+  }
+
+  &::placeholder {
+    color: var(--searchInput-input-Placeholder-ColorText);
+  }
+  &-medium {
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 21px;
+
+    padding: 11.5px 16px 11.5px 36px;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+
+  left: 2px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include animate(left);
+
+  @include respond-to('small') {
+    left: var(--searchInput-search-icon-Left);
+  }
+
+  svg {
+    width: var(--searchInput-search-icon-Width);
+    height: var(--searchInput-search-icon-Height);
+    fill: var(--searchInput-search-icon-Fill);
+  }
+}
+.input-errorMsg {
+  position: absolute;
+  left: 0;
+  bottom: var(--error-Bottom);
+  transform: translate(0, 100%);
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}
+
+@include respond-to('small') {
+  .toggleInput {
+    .search-icon {
+      left: var(--searchInput-search-icon-toggle-Left);
+    }
+  }
+}

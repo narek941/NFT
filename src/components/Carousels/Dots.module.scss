@@ -1,0 +1,22 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  width: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background: var(--carousel-dots-Bg);
+  cursor: pointer;
+
+  &-active {
+    background-color: var(--carousel-dots-active-Bg);
+  }
+}

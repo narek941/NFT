@@ -1,0 +1,30 @@
+.currency {
+  color: var(--buySearchBlock-ColorText);
+  display: inline-flex;
+}
+
+.currency-dropDown {
+  flex: 0 0 42px;
+  width: 42px;
+  margin-left: 5px;
+  > div:first-child {
+    padding: 0;
+    background: var(--dropDownHeader-currency-Bg);
+    font-size: var(--dropDownHeader-currency-FonSize);
+    svg {
+      flex: var(--dropDownHeader-currency-icon-arrow-Width);
+      width: var(--dropDownHeader-currency-icon-arrow-Width);
+    }
+  }
+  > div {
+    min-width: auto;
+    width: auto;
+    column-gap: 2px;
+  }
+  > div + div {
+    min-width: 53px;
+    width: 53px;
+
+    justify-content: flex-start;
+  }
+}

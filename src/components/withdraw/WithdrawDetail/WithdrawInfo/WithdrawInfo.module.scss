@@ -1,0 +1,214 @@
+@use '../../../../styles/index' as *;
+
+.media {
+  display: flex;
+  align-items: center;
+  .image {
+    width: 293px;
+    height: 293px;
+    img {
+      border-radius: 8px;
+    }
+  }
+}
+
+.general {
+  padding: 00px 40px 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.closeModal {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.main {
+  display: flex;
+  margin-bottom: 30px;
+
+  .info-block {
+    margin-left: 35px;
+    width: 100%;
+    flex: 1;
+  }
+}
+
+.back-button-text {
+  :first-child {
+    margin-right: 10px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.sub-statistic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes {
+  display: flex;
+  font-size: 10px;
+  line-height: 15px;
+  align-items: center;
+  justify-content: center;
+
+  :not(:first-child) {
+    margin-left: 5px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    :last-child {
+      margin-left: 5px;
+    }
+
+    &-text {
+      margin-left: 3px;
+    }
+  }
+}
+
+.owner {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  // margin-bottom: 10px;
+
+  .img {
+    width: 18px;
+    height: 16px;
+  }
+
+  > * {
+    margin-right: 5px;
+  }
+
+  &--bold {
+    font-weight: 600;
+    color: var(--modal-label-text-secondary-ColorText);
+  }
+}
+
+.line-modal {
+  border: none;
+  border-top: 1px solid var(--modal-line-BorderColor);
+  width: 100%;
+}
+
+.badge-list {
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 15px;
+
+  > :not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.details {
+  &__meta {
+    margin-top: 15px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  &__label {
+    color: grey;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__text--price {
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+.actions {
+  display: flex;
+  > button {
+    min-width: 120px;
+  }
+  > button:first-child {
+    margin-right: 15px;
+  }
+}
+.icon-rarityScore {
+  fill: var(--icon-rarityScore-Fill);
+}
+
+.icon-person {
+  g {
+    circle:first-child {
+      fill: var(--icon-person-Circle-Fill);
+    }
+    circle:last-child {
+      stroke: var(--icon-person-Circle-Stroke);
+    }
+  }
+}
+
+.icon-validUser {
+  fill: var(--icon-validUser-Fill);
+}
+
+.icon-open-eye {
+  fill: var(--icon-openEye-Fill);
+}

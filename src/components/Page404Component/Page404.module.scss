@@ -1,0 +1,54 @@
+@use '../../styles/index.scss' as *;
+
+.container {
+  position: relative;
+  z-index: 3;
+  padding-top: var(--404-page-PaddingTop);
+  padding-bottom: var(--404-page-PaddingBottom);
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: var(--404-page-Bg);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--404-page-ColorText);
+
+  p {
+    margin: 0 0 20px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--404-page-header-ColorText);
+    text-shadow: var(--404-page-header-textShadow);
+
+    @include respond-to('medium') {
+      font-size: 200px;
+    }
+  }
+  .header {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    color: var(--404-page-title-ColorText);
+    margin-bottom: 10px;
+  }
+  .button {
+    margin-top: 20px;
+
+    display: inline-block;
+    text-align: center;
+    background-image: var(--404-page-button-Bg-Image);
+    @include respond-to('medium') {
+      min-width: var(--404-page-button-Width);
+    }
+  }
+}

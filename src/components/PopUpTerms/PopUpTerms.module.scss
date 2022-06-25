@@ -1,0 +1,45 @@
+.modal {
+  max-width: 800px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  padding: 5px 0 30px 30px;
+  text-align: left;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  color: var(--modal-title-ColorText);
+}
+.content {
+  overflow-y: auto;
+  max-height: 490px;
+  padding-right: 30px;
+}
+.section:first-child {
+  margin-bottom: 30px;
+}
+
+.subHeading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  color: var(--modal-title-ColorText);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 auto;
+  color: #0c1524;
+  color: var(--modal-text-ColorText);
+}

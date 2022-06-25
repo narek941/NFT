@@ -1,0 +1,51 @@
+@use '@styles/index.scss' as *;
+.heading {
+  font-size: 28px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--modal-text-ColorText);
+  margin-top: 20px;
+  margin-bottom: 20.5px;
+
+  &__bottom {
+    margin-bottom: 0;
+  }
+}
+
+.labelWrapper {
+  label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.labelWrapper + .labelWrapper {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-grow: 1;
+
+  .content {
+    flex: 1;
+    @include respond-to('medium') {
+      padding: var(--signin-Padding);
+    }
+  }
+}
+
+.signin-bottom {
+  margin-top: 64px;
+  margin-bottom: 50px;
+
+  display: var(--poweredBy-display);
+}
+.poweredBy {
+  span {
+    color: var(--poweredBy-logo-signIn-ColorText);
+  }
+}

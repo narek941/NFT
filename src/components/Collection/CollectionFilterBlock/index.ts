@@ -1,0 +1,1 @@
+export { CollectionFilterBlock } from './CollectionFilterBlock';

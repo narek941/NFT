@@ -1,0 +1,23 @@
+@use '@styles/index.scss' as *;
+.wrapper {
+  display: flex;
+  column-gap: 5px;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  padding-left: var(--filterBlock-Padding-Left);
+  padding-right: var(--filterBlock-Padding-Right);
+  @include respond-to('medium') {
+    padding-left: var(--filterBlock-Padding-Left-Large);
+    padding-right: var(--filterBlock-Padding-Right-Large);
+  }
+}
+.title {
+  font-size: 12px;
+  line-height: 18px;
+}
+.header {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}

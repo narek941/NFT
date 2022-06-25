@@ -1,0 +1,22 @@
+@use '../../../../styles/index.scss' as *;
+
+.activatedBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16.5px;
+  column-gap: 12px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 400;
+  white-space: nowrap;
+  @include border-radius(20px);
+  min-width: 117px;
+  min-height: 32px;
+  background-color: var(--activatedBadge-BgColor);
+  color: var(--activatedBadge-ColorText);
+
+  svg {
+    fill: var(--icon-check-activated-Fill);
+  }
+}

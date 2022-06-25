@@ -1,0 +1,16 @@
+@use '../../styles/index.scss' as *;
+
+.userNameLabel {
+  padding: 7.5px 15.5px;
+  margin-bottom: 10px;
+  background: var(--userNameLabel-Bg);
+  border-radius: 60px;
+
+  font-size: var(--userNameLabel-fontSize);
+  line-height: var(--userNameLabel-LineHeight);
+  font-weight: var(--userNameLabel-FontWeight);
+  color: var(--userNameLabel-ColorText);
+  &:empty {
+    display: none;
+  }
+}

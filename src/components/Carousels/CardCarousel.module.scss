@@ -1,0 +1,20 @@
+@use '../../styles/index.scss' as *;
+
+.outer-wrapper {
+  position: relative;
+  padding-bottom: 47px;
+  display: flex;
+  width: calc(50vw + 151px);
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  > div {
+    scroll-snap-align: start;
+  }
+}

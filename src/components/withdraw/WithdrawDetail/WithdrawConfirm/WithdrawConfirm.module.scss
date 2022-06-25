@@ -1,0 +1,35 @@
+.media {
+  padding-top: 67px;
+  padding-left: 237px;
+  padding-right: 237px;
+  text-align: center;
+}
+
+.title {
+  padding-top: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.successText {
+  text-align: center;
+  padding-top: 10px;
+  .sBadge {
+    width: 80px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0 5px 5px 10px;
+  }
+}
+
+.action {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  > button {
+    width: 160px;
+    margin: 0px 10px;
+  }
+}

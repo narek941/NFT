@@ -1,0 +1,68 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+
+  flex: 1;
+  width: 100%;
+}
+.container {
+  padding-top: 40px;
+  padding-bottom: 250px;
+  text-align: center;
+  color: var(--modal-text-ColorText);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .media {
+    margin: 0 auto 20px;
+    width: 184px;
+    height: 130px;
+    background-image: var(--maintenance-media-Bg-Image);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    @include respond-to('medium') {
+      width: 284px;
+      height: 200px;
+      margin-bottom: 40px;
+    }
+  }
+  .content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 20px;
+    @include respond-to('medium') {
+      margin-bottom: 40px;
+    }
+  }
+  .heading {
+    color: var(--cardSettings-title-ColorText);
+  }
+}
+
+.footer {
+  background-image: var(--maintenance-Bg-Footer);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include respond-to('medium') {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+}

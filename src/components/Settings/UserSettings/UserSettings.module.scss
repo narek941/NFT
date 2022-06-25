@@ -1,0 +1,11 @@
+.userSettings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: var(--pageHeading-userSettings-Margin);
+  }
+}

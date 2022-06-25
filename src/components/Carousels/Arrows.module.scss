@@ -1,0 +1,53 @@
+@use '@styles/index.scss' as *;
+
+.arrow {
+  font-size: 0;
+  line-height: 0;
+  width: var(--carousel-arrow-Width);
+  height: var(--carousel-arrow-Height);
+  border: var(--carousel-arrowWrapper-Border);
+  background: var(--carousel-arrow-Bg);
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--carousel-arrow-ColorText);
+
+  z-index: 1;
+  flex-shrink: 0;
+
+  &-next {
+    transform: scaleX(-1);
+  }
+
+  @include respond-to('small') {
+    width: var(--carousel-arrow-Width-Large);
+    height: var(--carousel-arrow-Height-Large);
+  }
+
+  &-prev:after,
+  &-next:after {
+    content: '';
+    width: var(--carousel-arrow-icon-Width);
+    height: var(--carousel-arrow-icon-Height);
+    margin-left: 3px;
+
+    border-top: var(--carousel-arrow-BorderTop);
+    border-left: var(--carousel-arrow-BorderLeft);
+    @include respond-to('small') {
+      width: var(--carousel-arrow-icon-Width-Large);
+      height: var(--carousel-arrow-icon-Height-Large);
+    }
+  }
+  &-prev:after {
+    transform: rotate(-45deg);
+    margin-left: 3px;
+  }
+  &-next:after {
+    transform: scale(1) rotate(322deg);
+  }
+}

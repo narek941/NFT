@@ -1,0 +1,24 @@
+@use '@styles/index.scss' as *;
+
+.datePickerWrapper {
+  margin-top: 10px;
+
+  .subAccordion {
+    > div {
+      &:first-child {
+        border-top: var(--filterBlock-subHeading-BorderTop);
+        font-size: var(--filterBlock-subHeading-FontSize);
+        font-weight: var(--filterBlock-subHeading-FontWeight);
+        line-height: var(--filterBlock-subHeading-LineHeight);
+      }
+
+      padding-left: var(--filterBlock-Padding-Left);
+      padding-right: var(--filterBlock-Padding-Right);
+
+      @include respond-to('medium') {
+        padding-left: var(--filterBlock-Padding-Left-Large);
+        padding-right: var(--filterBlock-Padding-Right-Large);
+      }
+    }
+  }
+}

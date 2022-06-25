@@ -1,0 +1,51 @@
+.media {
+  padding-top: 67px;
+  padding-left: 237px;
+  padding-right: 237px;
+  text-align: center;
+}
+
+.title {
+  padding-top: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.action {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+
+  > button {
+    width: 160px;
+    margin: 0 10px;
+  }
+}
+
+.buyText {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ebf2f8;
+  }
+
+  &:not(:empty)::before {
+    margin-right: 1.25em;
+  }
+
+  &:not(:empty)::after {
+    margin-left: 1.25em;
+  }
+}
+
+.footerText {
+  color: var(--buyWith-ColorText);
+  font-size: 12px;
+}

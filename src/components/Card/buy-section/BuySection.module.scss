@@ -1,0 +1,32 @@
+@use '@styles/index.scss' as *;
+
+.footer {
+  padding: 9px 26px;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  .price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--card-price-ColorText);
+  }
+  .buy {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--card-buy-value-ColorText);
+    text-decoration: none;
+    .icon {
+      margin-right: 8px;
+      :first-child {
+        fill: var(--card-buy-value-ColorText);
+      }
+    }
+  }
+}

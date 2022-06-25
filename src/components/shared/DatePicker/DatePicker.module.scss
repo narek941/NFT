@@ -1,0 +1,18 @@
+@use '@styles/index.scss' as *;
+
+.input {
+  width: 100%;
+  padding: var(--input-datepicker-Padding);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--input-datepicker-ColorText);
+  background: var(--input-datepicker-BgColor);
+  border: var(--input-datepicker-Border);
+  border-radius: 6px;
+
+  &::placeholder {
+    color: var(--input-datepicker-placeholder-ColorText);
+  }
+}

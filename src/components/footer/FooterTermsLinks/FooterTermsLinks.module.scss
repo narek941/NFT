@@ -1,0 +1,40 @@
+@use '../../../styles/index.scss' as *;
+
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--footer-terms-FontSize);
+  line-height: var(--footer-terms-LineHeight);
+  text-decoration: none;
+  align-items: center;
+  @include respond-to('small') {
+    flex-direction: row;
+  }
+  @include respond-to('xmedium') {
+    align-self: var(--footer-terms-align-self);
+  }
+}
+.terms-links {
+  padding: 5px 0;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  color: var(--footer-terms-links-ColorText);
+
+  &:hover {
+    text-decoration: underline;
+  }
+  @include respond-to('small') {
+    padding: 0;
+    &:not(:first-of-type) {
+      &::before {
+        content: '';
+        border-left: 1px solid var(--footer-terms-separator-BgColor);
+        height: var(--footer-terms-separator-Height);
+        margin: 0 16px;
+        pointer-events: none;
+        align-self: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.errorMessage {
+  width: 100%;
+  top: 0;
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+
+  &__bigger {
+    font-size: 16px;
+  }
+}

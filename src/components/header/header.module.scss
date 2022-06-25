@@ -1,0 +1,34 @@
+@use '@styles/index.scss' as *;
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 10px 20px;
+
+  height: var(--header-Height);
+
+  background: var(--header-bg-color);
+  border-bottom: 1px solid var(--header-border-color);
+
+  @include animate(background height padding);
+
+  @include respond-to('medium') {
+    height: var(--header-Height-Large);
+    padding: var(--header-Padding);
+  }
+}
+
+.headerScroll {
+  height: var(--headerScroll-Height);
+  box-shadow: var(--header-navigation-BoxShadow);
+  background: var(--headerScroll-bg);
+  border-color: var(--headerScroll-BorderColor);
+
+  @include respond-to('medium') {
+    height: var(--headerScroll-Height-Large);
+    padding: var(--headerScroll-Padding);
+  }
+}

@@ -1,0 +1,25 @@
+.form-subscribe {
+  max-width: 570px;
+  margin: 0 auto;
+  position: relative;
+
+  .form-group {
+    display: flex;
+  }
+
+  .input {
+    margin-top: 0;
+  }
+  .button {
+    min-width: 160px;
+    margin: 0 0 0 30px;
+  }
+}
+.success {
+  position: absolute;
+  font-size: 14px;
+  align-items: center;
+  .icon {
+    margin-right: 5px;
+  }
+}

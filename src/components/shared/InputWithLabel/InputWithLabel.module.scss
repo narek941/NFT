@@ -1,0 +1,15 @@
+.general {
+  width: 100%;
+
+  text-align: left;
+  & + & {
+    margin: var(--input-wrapper-Margin);
+  }
+}
+.label {
+  margin: 0;
+}
+.label-text {
+  font-size: var(--input-FontSize);
+  padding: var(--input-label-text-Padding);
+}

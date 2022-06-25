@@ -1,0 +1,1 @@
+export { NFTDetail } from './NFTDetail';

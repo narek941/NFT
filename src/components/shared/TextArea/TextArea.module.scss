@@ -1,0 +1,74 @@
+@use '../../../styles/index.scss' as *;
+
+.textArea-wrapper {
+  position: relative;
+
+  width: 100%;
+  & + & {
+    margin-top: 20.5px;
+  }
+}
+.textArea {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: var(--font-family-base);
+  padding: var(--input-Padding);
+  border: var(--input-Border);
+  border-radius: var(--input-BorderRadius);
+  width: 100%;
+  resize: vertical;
+  background: var(--input-Bg);
+  color: var(--input-ColorText);
+
+  outline-color: var(--input-Outline-ColorText);
+
+  @include respond-to('medium') {
+    padding: var(--input-Padding-Large);
+    border-radius: var(--input-BorderRadius-Large);
+  }
+
+  &::placeholder {
+    color: var(--input-Placeholder-ColorText);
+  }
+  &.textarea-large {
+    height: 360px;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 11.5px;
+  right: 16px;
+  cursor: pointer;
+  @include respond-to('medium') {
+    right: var(--input-icon-right-Large);
+  }
+}
+.input-icon-validation {
+  width: var(--input-icon-Width);
+  height: var(--input-icon-Height);
+}
+.errorMsg {
+  position: absolute;
+  left: 0;
+  bottom: var(--error-Bottom);
+  transform: translate(0, 100%);
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}
+
+.label {
+  display: block;
+  text-align: left;
+  padding: var(--input-label-text-Padding);
+  margin: 0 0 8.5px;
+}
+
+.input-icon-valid {
+  fill: var(--input-icon-valid-Fill);
+}
+.input-icon-error {
+  fill: var(--input-icon-error-Fill);
+}

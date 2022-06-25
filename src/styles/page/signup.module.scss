@@ -1,0 +1,57 @@
+@use '@styles/index.scss' as *;
+
+.checkBox-signup {
+  margin: var(--siginup--checkBox-margin);
+  .checkBox {
+    input {
+      border-width: 2px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-grow: 1;
+
+  .content {
+    flex: 1;
+    padding: var(--forgot-password-Padding);
+
+    .tipsText {
+      font-weight: var(--tipsText-signUp-FontWeight);
+      font-size: var(--tipsText-signUp-FontSize);
+      line-height: var(--tipsText-signUp-LineHeight);
+      color: var(--tipsText-signUp-ColorText);
+      a {
+        color: var(--tipsText-ColorText);
+      }
+    }
+  }
+}
+
+.heading {
+  margin-bottom: 35px;
+}
+.icon-placeholder {
+  margin-bottom: 27px;
+}
+.heading-signUp-active {
+  margin-bottom: 27px;
+}
+.subtitle-signUp-active {
+  margin-bottom: 0;
+}
+.signup-bottom {
+  margin-top: 40px;
+  margin-bottom: 50px;
+
+  display: var(--poweredBy-display);
+}
+.poweredBy {
+  span {
+    color: var(--poweredBy-logo-signIn-ColorText);
+  }
+}

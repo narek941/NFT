@@ -1,0 +1,21 @@
+@use '../../styles/index.scss' as *;
+
+.general {
+  margin-top: 15px;
+  font-size: var(--tipsText-FontSize);
+  line-height: var(--tipsText-LineHeight);
+  font-weight: var(--tipsText-FontWeight);
+  color: var(--tipsText-ColorText);
+  .text {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .link {
+    text-decoration: none;
+    color: var(--tipsText-link-ColorText);
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

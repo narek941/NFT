@@ -1,0 +1,46 @@
+@use '@styles/index.scss' as *;
+
+.media {
+  padding-left: 237px;
+  padding-right: 237px;
+  text-align: center;
+
+  .icon {
+    circle {
+      fill: var(--icon-Circle-Fill);
+    }
+    path {
+      fill: var(--icon-Fill);
+    }
+  }
+}
+
+.title {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.confirmText {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.confirmEmail {
+  font-weight: bold;
+  text-align: center;
+}
+.wrapper {
+  position: relative;
+  z-index: 2;
+
+  @include respond-to('medium') {
+    min-height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 45px;
+  }
+}

@@ -1,0 +1,52 @@
+@use '../../styles/index.scss' as *;
+
+.wrapper {
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+
+  .image {
+    width: 48px;
+    fill: var(--icon-Fill);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .round {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: var(--modal-icon-placeholder-Bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--modal-text-ColorText);
+  }
+
+  div:last-of-type {
+    //BlockButton z-index
+    z-index: 1;
+  }
+}
+
+.heading {
+  margin-bottom: 7px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: var(--modal-title-ColorText);
+}

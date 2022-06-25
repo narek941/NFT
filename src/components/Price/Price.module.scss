@@ -1,0 +1,32 @@
+@use '../../styles/index.scss' as *;
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  input {
+    max-width: 90px;
+    width: 100%;
+    flex: 1 0 90px;
+    outline: none;
+    background: var(--input-price-Bg);
+    border: var(--input-price-Border);
+    border-radius: var(--input-price-BorderRadius);
+    &::placeholder {
+      color: var(--input-price-Placeholder-ColorText);
+    }
+  }
+}
+.priceTo {
+  min-width: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 7px;
+}
+.priceError {
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}

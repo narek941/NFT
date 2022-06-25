@@ -1,0 +1,13 @@
+@use '../../../styles/index.scss' as *;
+
+.list {
+  display: flex;
+  min-width: 1200px;
+  padding-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > div {
+    margin: 20px;
+  }
+}

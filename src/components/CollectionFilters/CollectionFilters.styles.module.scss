@@ -1,0 +1,12 @@
+@use '@styles/index.scss' as *;
+
+.collection-filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--accordion-title-BorderTop-Small);
+  & > .checkbox-group {
+    padding-left: var(--filterBlock-Padding-Left);
+    padding-right: var(--filterBlock-Padding-Right);
+    margin-bottom: 15px;
+  }
+}

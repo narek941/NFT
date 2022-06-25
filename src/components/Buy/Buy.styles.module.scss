@@ -1,0 +1,87 @@
+@use '@styles/index.scss' as *;
+
+.container {
+  position: relative;
+
+  @include respond-to('xxlarge') {
+    max-width: 1320px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.general {
+  position: relative;
+  padding-top: var(--buy-PaddingTop);
+  width: 100%;
+}
+
+.titleBlock {
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.listWrapper {
+  grid-row: 3/4;
+
+  @include animate(width);
+  @include respond-to('medium') {
+    margin: var(--listWrapper-Margin);
+    grid-row: auto;
+    grid-column: 2/4;
+  }
+}
+
+.list {
+  .collection-item {
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.text {
+  max-width: 605px;
+  margin: 0 auto var(--buy-text-MarginBottom);
+  padding: 0 20px;
+
+  text-align: center;
+  font-weight: var(--text-FontWeight);
+  font-size: var(--text-FontSize);
+  line-height: var(--text-LineHeight);
+}
+
+.paginationBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--pagination-MarginBottom);
+  margin-top: var(--pagination-MarginTop);
+}
+
+.content {
+  display: grid;
+  @include respond-to('medium') {
+    grid-template-columns: auto 1fr;
+    @include animate(width grid-template-columns);
+  }
+
+  &.isOpenMenu {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.line {
+  width: 100%;
+  margin: var(--hr-line-Buy-Margin);
+  border: none;
+
+  border-top: 1px solid var(--hr-line-Buy-bg);
+}
+
+.searchBlock {
+  width: 100%;
+}

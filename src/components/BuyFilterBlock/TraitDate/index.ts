@@ -1,0 +1,1 @@
+export { TraitDate } from './TraitDate';

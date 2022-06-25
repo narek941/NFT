@@ -1,0 +1,51 @@
+.wrapper {
+  order: 1;
+
+  padding: 38px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 580px;
+  width: 100%;
+
+  .button {
+    margin: 0;
+    min-width: 164px;
+  }
+}
+.content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.value-wrapper {
+  margin: 7px 15px 7px 11px;
+  padding: 3px 3px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  min-width: 76px;
+  max-width: 100px;
+
+  font-weight: var(--getNewNFT-FontWeight);
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+
+  border-radius: 4px;
+  background-color: var(--getNewNFT-Bg);
+  border: 1px solid var(--getNewNFT-BorderColor);
+  span {
+    padding: 0 3px;
+  }
+}
+
+.value {
+  &-current {
+    color: var(--primary);
+  }
+}

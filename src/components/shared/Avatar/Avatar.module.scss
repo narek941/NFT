@@ -1,0 +1,60 @@
+@use '../../../styles/index.scss' as *;
+
+.avatarWrapper {
+  border-radius: 50%;
+  border: var(--avatar-Border);
+  position: relative;
+  cursor: pointer;
+
+  .avatarBox {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  svg {
+    fill: var(--avatar-icon-Fill);
+  }
+
+  &.primary {
+    border: var(--avatar-Border-Primary);
+    background: var(--avatar-Bg-Primary);
+  }
+}
+.avatar-large {
+  width: var(--avatar-large-Width);
+  height: var(--avatar-large-Height);
+  padding: var(--avatar-large-Padding);
+}
+.avatar-small {
+  width: 38px;
+  height: 38px;
+  border: none;
+  @include respond-to('medium') {
+    width: 48px;
+    height: 48px;
+  }
+}
+.iconBox {
+  width: 28px;
+  height: 28px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: var(--avatar-icon-edit-BgColor);
+  border: 2px solid var(--avatar-icon-edit-BorderColor);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+@use '../../../styles/index.scss' as *;
+
+.hr {
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+
+  width: 100%;
+
+  &-light {
+    background: var(--hr-line-bg);
+  }
+}
+
+@for $i from 1 through 6 {
+  .hr-height-#{$i} {
+    height: #{$i}px;
+  }
+}

@@ -1,0 +1,26 @@
+@use '../../styles/index.scss' as *;
+
+.navLink {
+  display: block;
+  font-weight: var(--header-navLink-FontWeight);
+  font-size: var(--header-navLink-FontSize);
+  line-height: var(--header-navLink-LineHeight);
+  text-decoration: none;
+  color: var(--colorText-base);
+  padding: var(--header-navLink-Padding);
+  @include respond-to('medium') {
+    padding: var(--header-navLink-Padding-Large);
+  }
+
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: var(--header-colorText-hover);
+  }
+}
+.isActive {
+  .navLink {
+    color: var(--header-colorText-active);
+  }
+}

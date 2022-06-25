@@ -1,0 +1,16 @@
+@use '../../../styles/index.scss' as *;
+
+.formGroup {
+  margin-bottom: 30px;
+}
+.space {
+  &-small {
+    margin-bottom: 10px;
+  }
+  &-medium {
+    margin-bottom: 20px;
+  }
+  &-large {
+    margin-bottom: 30px;
+  }
+}

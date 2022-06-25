@@ -1,0 +1,20 @@
+@use '../../../styles/index.scss' as *;
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+
+  input {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 10px;
+    border: var(--searchInput-input-Border);
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    &::placeholder {
+      color: var(--searchInput-input-Placeholder-ColorText);
+    }
+  }
+}

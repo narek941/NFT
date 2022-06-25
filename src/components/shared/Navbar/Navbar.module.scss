@@ -1,0 +1,26 @@
+@use '@styles/index.scss' as *;
+.navbar-toggler {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid var(--navbar-toggler-BorderColor);
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.55);
+
+  &-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: var(--navbar-toggler-icon);
+  }
+  @include respond-to('medium') {
+    display: none;
+  }
+}

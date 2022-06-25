@@ -1,0 +1,53 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 177px;
+  position: relative;
+  z-index: 3;
+  @include respond-to('small') {
+    margin-left: auto;
+  }
+  @include respond-to('medium') {
+    width: 233px;
+  }
+}
+
+.total-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: var(--youHave-FontSize);
+  line-height: var(--youHave-LineHeight);
+  font-weight: var(--youHave-FontWeight);
+
+  @include respond-to('medium') {
+    font-size: var(--youHave-FontSize-Large);
+    line-height: var(--youHave-LineHeight-Large);
+  }
+}
+
+.total {
+  width: auto;
+  padding: 0 6px;
+  background: var(--youHave-Bg);
+  color: var(--youHave-ColorText);
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0 0;
+  min-width: var(--profile-button-youHave-Width);
+  @include respond-to('small') {
+    padding: var(--profile-button-youHave-Padding);
+    margin: 48px 0 0;
+  }
+}

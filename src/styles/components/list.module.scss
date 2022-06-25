@@ -1,0 +1,33 @@
+.listIcon {
+  margin: 6px 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    display: flex;
+  }
+  .icon {
+    flex: 1 0 20px;
+    width: 100%;
+    height: 20px;
+    max-width: 20px;
+    margin-right: 7px;
+    fill: var(--listIcon-icon-Fill);
+  }
+}
+.listNumbers {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  counter-reset: list;
+
+  li {
+    display: flex;
+
+    &:before {
+      margin-right: 5px;
+      counter-increment: list;
+      content: counters(list, '.') '. ';
+    }
+  }
+}

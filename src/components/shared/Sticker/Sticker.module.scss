@@ -1,0 +1,39 @@
+@use '@styles/index.scss' as *;
+
+.sticker-wrapper {
+  z-index: 1;
+  display: inline-flex;
+  .sticker {
+    position: relative;
+    padding: 5px 11px;
+    background: var(--sticker-Bg);
+    border-radius: 0 0 8px 8px;
+    color: var(--sticker-ColorText);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+    }
+    &:before {
+      left: -7px;
+      @include triangle(
+        7px 7px,
+        var(--sticker-triangle-Bg) transparent,
+        down-right
+      );
+    }
+    &:after {
+      right: -7px;
+      @include triangle(
+        7px 7px,
+        var(--sticker-triangle-Bg) transparent,
+        down-left
+      );
+    }
+  }
+}

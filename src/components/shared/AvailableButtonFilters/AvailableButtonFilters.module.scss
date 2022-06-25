@@ -1,0 +1,23 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  @include respond-to(small) {
+    gap: 30px;
+  }
+}
+
+.button {
+  margin-top: 0;
+  min-width: var(--button-available-large-Width);
+  padding: var(--button-available-Padding);
+
+  @include respond-to(small) {
+    min-width: var(--button-available-small-Width);
+  }
+}

@@ -1,0 +1,143 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 277px;
+  max-width: 100%;
+  overflow: hidden;
+  min-height: 420px;
+  background: var(--packCard-Bg);
+  backdrop-filter: var(--packCard-filter);
+
+  border-radius: 8px;
+  @include animate(background);
+  cursor: pointer;
+  &.home {
+    width: auto;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: var(--packCard-Border);
+    display: block;
+    border-radius: inherit;
+    z-index: var(--packCard-before-Z-Index);
+  }
+  &:hover {
+    background: var(--packCard-hover-Bg);
+    backdrop-filter: var(--packCard-hover-filter);
+
+    .btn-pack {
+      opacity: 1;
+    }
+  }
+  @include respond-to('medium') {
+    &:hover .button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .btn-pack {
+    margin: 0;
+    padding: var(--button-pack-Padding);
+    min-width: var(--button-pack-Width);
+    text-transform: var(--button-pack-TextTransform);
+    font-size: var(--button-pack-FontSize);
+    font-weight: var(--button-pack-FontWeight);
+  }
+}
+
+.media {
+  height: 325px;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--card-media-Bg);
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .icon {
+    width: 144px;
+    height: auto;
+  }
+
+  .image {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .button {
+    margin-top: 0;
+
+    position: absolute;
+    bottom: 16px;
+
+    @include respond-to('medium') {
+      visibility: hidden;
+      opacity: 0;
+      @include animate(visibility opacity);
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  padding: 9px 10px;
+  flex-direction: column;
+  align-items: center;
+  border-top: var(--packCard-description-BorderTop);
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+
+  @include ellipsis(2);
+}
+
+.collection {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+
+  @include ellipsis(2);
+
+  a {
+    text-decoration: none;
+    color: var(--link-ColorText);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  & > div:first-child {
+    margin-right: 5px;
+  }
+}
+
+.price {
+  font-size: 18px;
+  line-height: 28px;
+}

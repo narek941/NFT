@@ -1,0 +1,24 @@
+@use '../../../styles/index.scss' as *;
+.buy-filter-block {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.collection-filters-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-filter-form {
+  .accordion {
+    > div {
+      padding-left: var(--filterBlock-form-Padding-Left);
+      padding-right: var(--filterBlock-form-Padding-Right);
+      @include respond-to('medium') {
+        padding-left: var(--filterBlock-form-Padding-Left-Large);
+        padding-right: var(--filterBlock-form-Padding-Right-Large);
+      }
+    }
+  }
+}

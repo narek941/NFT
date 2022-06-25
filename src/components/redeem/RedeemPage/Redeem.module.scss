@@ -1,0 +1,40 @@
+@use '../../../styles/index' as *;
+
+.general {
+  min-height: 100vh;
+  padding-top: 60px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .line {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+.text {
+  text-align: center;
+  max-width: 605px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-weight: var(--redeem-FontWeight);
+  font-size: var(--redeem-FontSize);
+  line-height: var(--redeem-LineHeight);
+}
+.container {
+  max-width: 470px;
+  @include respond-to('medium') {
+    max-width: var(--container-width);
+  }
+}
+
+.paginationBlock {
+  margin: var(--pagination-MarginTop) auto;
+  width: max-content;
+}

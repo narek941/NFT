@@ -1,0 +1,39 @@
+@use '../../../styles/index.scss' as *;
+.tableWrapper {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  width: 100%;
+
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--table-ColorText);
+
+  tbody {
+    tr {
+      @include respond-to('medium') {
+        padding: 0;
+        display: table-row;
+        border-top: none;
+      }
+      &:not(:first-child) {
+        .sTd {
+          border-top: var(--table-row-borderTop);
+        }
+      }
+      & > td {
+        white-space: nowrap;
+      }
+      & > td:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+.sTd {
+  padding: 9px 40px 9px 0;
+
+  &:first-child {
+    padding: 9px 10px 9px 0;
+  }
+}

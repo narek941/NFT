@@ -1,0 +1,8 @@
+@use '../src/styles/index.scss' as *;
+
+.general {
+  margin: 0 120px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+@use '../../styles/index.scss' as *;
+
+.general {
+  padding-top: var(--collection-PaddingTop);
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.titleBlock {
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  .collection-item {
+    width: 100%;
+  }
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.text {
+  max-width: 605px;
+  padding: 0 20px;
+  margin: 0 auto var(--collection-text-MarginBottom);
+
+  text-align: center;
+  font-weight: var(--text-FontWeight);
+  font-size: var(--text-FontSize);
+  line-height: var(--text-LineHeight);
+}
+.container {
+  padding-bottom: 60px;
+}
+
+.paginationBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--pagination-MarginTop);
+}
+
+.content {
+  display: grid;
+  @include respond-to('medium') {
+    grid-template-columns: auto 1fr;
+    @include animate(width grid-template-columns);
+  }
+
+  &.isOpenMenu {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.listWrapper {
+  grid-row: 3/4;
+
+  @include animate(width);
+  @include respond-to('medium') {
+    margin: var(--listWrapper-Margin);
+    grid-row: auto;
+    grid-column: 2/4;
+  }
+}
+
+.line {
+  width: 100%;
+  margin: var(--hr-line-Collection-Margin);
+  border: none;
+  border-top: 1px solid var(--hr-line-Buy-bg);
+}
+
+.searchBlock {
+  width: 100%;
+}

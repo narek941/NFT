@@ -1,0 +1,93 @@
+@use '../../styles/index.scss' as *;
+
+.checkbox-group {
+  &:not(:first-child) {
+    border-top: var(--checkBoxGroup-BorderTop);
+    padding-top: 15px;
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: var(--checkBoxGroup-title-FontSize);
+    line-height: var(--checkBoxGroup-title-LineHeight);
+    font-weight: var(--checkBoxGroup-title-FontWeight);
+    margin-bottom: 10px;
+
+    color: var(--checkBoxGroup-title-ColorText);
+    text-transform: capitalize;
+
+    &-name {
+      font-weight: var(--checkBoxGroup-title-FontWeight);
+    }
+  }
+
+  &-small {
+    .title {
+      font-size: var(--checkBoxGroup-title-FontSize);
+      line-height: var(--checkBoxGroup-title-LineHeight);
+      font-weight: var(--checkBoxGroup-title-FontWeight);
+    }
+  }
+
+  &-medium {
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+.checkBox {
+  margin-bottom: 10px;
+
+  &:last-child,
+  &:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: var(--checkBoxGroup-label-FontSize);
+    line-height: var(--checkBoxGroup-label-LineHeight);
+    font-weight: var(--checkBoxGroup-label-FontWeight);
+    color: var(--checkBoxGroup-label-ColorText);
+  }
+}
+
+.see-more {
+  margin-top: 10px;
+
+  &:not(.show) {
+    margin-top: 0;
+  }
+
+  width: max-content;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--see-more-ColorText);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
+
+  &:not(.show) {
+    .see-more {
+      display: none;
+    }
+
+    .checkBox:nth-child(3) ~ .checkBox {
+      display: none;
+    }
+
+    .checkBox:nth-child(3) ~ .checkBox + .see-more {
+      display: block;
+    }
+  }
+}

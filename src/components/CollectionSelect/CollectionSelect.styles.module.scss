@@ -1,0 +1,31 @@
+@use '@styles/index.scss' as *;
+
+.collection-select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection-select-search {
+  padding: 0 10px 0 14px;
+}
+.collection-dropdown-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+  overflow-y: auto;
+  &:not(:only-child) {
+    padding: 0 0 5px 0;
+  }
+}
+.accordion {
+  > div {
+    margin-bottom: 0 !important;
+    padding-left: var(--filterBlock-form-Padding-Left);
+    padding-right: var(--filterBlock-form-Padding-Right);
+    @include respond-to('medium') {
+      padding-left: var(--filterBlock-Padding-Left-Large);
+      padding-right: var(--filterBlock-Padding-Right-Large);
+    }
+  }
+}

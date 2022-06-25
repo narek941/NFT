@@ -1,0 +1,56 @@
+@use '../../../styles/index.scss' as *;
+
+.paginationBox {
+  height: 50px;
+  display: inline-flex;
+  justify-content: space-around;
+  gap: 9.5px;
+
+  svg {
+    cursor: pointer;
+    fill: var(--pagination-arrow-Fill);
+  }
+}
+.optionLabelBox {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+
+  .optionItem + .optionItem {
+    margin-left: 4px;
+  }
+}
+.optionItem {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--pagination-Bg);
+  border: 1px solid var(--pagination-BorderColor);
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--pagination-ColorText);
+
+  &.isCurrent {
+    background: var(--pagination-current-Bg);
+    border-color: var(--pagination-current-BorderColor);
+    color: var(--pagination-current-ColorText);
+    font-weight: 600;
+  }
+
+  &.arrow {
+    border-color: var(--pagination-BorderColor);
+    svg {
+      fill: var(--pagination-arrow-Fill);
+    }
+  }
+  &.disabled {
+    pointer-events: none;
+    svg {
+      fill: var(--pagination-arrow-disabled-Fill);
+    }
+  }
+}

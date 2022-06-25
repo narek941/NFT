@@ -1,0 +1,1 @@
+export { PackDetail } from './PackDetail';

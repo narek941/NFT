@@ -1,0 +1,65 @@
+@use '../../../styles/index' as *;
+
+.item {
+  width: 387px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.card {
+  background-color: var(--card-withDraw-BgColor);
+  border-radius: 8px;
+  cursor: pointer;
+  .body {
+    margin: 0;
+  }
+  .media {
+    padding: 35px 27px 15px;
+  }
+
+  .badge {
+    padding-left: 27px;
+    padding-top: 11px;
+    span {
+      margin-left: 5px;
+      border-radius: 20px;
+      color: var(--card-withDraw-badge-ColorText);
+      background-color: var(--card-withDraw-badge-BgColor);
+      padding: 1px 10px;
+    }
+  }
+
+  .available {
+    color: var(--card-withDraw-available-BgColor);
+    padding-left: 27px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+  }
+
+  hr.line {
+    border: 1px solid var(--hr-line-bg);
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    .coast {
+      font-weight: 600;
+
+      padding-left: 27px;
+      padding-top: 11px;
+    }
+    .buy {
+      font-weight: 600;
+      color: var(--card-withDraw-buy-ColorText);
+      padding-right: 27px;
+      padding-top: 11px;
+      text-decoration: none;
+    }
+  }
+  .title {
+    padding-left: 28px;
+    font-weight: 600;
+  }
+}

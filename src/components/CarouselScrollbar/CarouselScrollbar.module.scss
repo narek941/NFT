@@ -1,0 +1,114 @@
+@use '@styles/index.scss' as *;
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+
+  display: grid;
+  row-gap: 30px;
+  column-gap: var(--carouselScrollbar-Gap);
+  grid-template-areas:
+    'slider slider'
+    'arrow scrollbar';
+  grid-template-columns: var(--carouselScrollbar-Template-Columns);
+  @include respond-to('medium') {
+    column-gap: var(--carouselScrollbar-Gap-Large);
+    grid-template-columns: var(--carouselScrollbar-Template-Columns-Large);
+  }
+}
+
+.scrollbar {
+  border-radius: 10px;
+  -ms-touch-action: none;
+  background: var(--carousel-scrollbar-Bg);
+
+  position: relative;
+  z-index: 50;
+  height: 6px;
+
+  &-wrapper {
+    grid-area: scrollbar;
+    margin: auto 0 auto;
+  }
+
+  &-drag {
+    background: var(--carousel-drag-Bg);
+    border-radius: inherit;
+    height: inherit;
+  }
+}
+.arrow {
+  font-size: 0;
+  line-height: 0;
+  width: var(--carousel-arrow-Width);
+  height: var(--carousel-arrow-Height);
+  border: var(--carousel-arrowWrapper-Border);
+  background: var(--carousel-arrow-Bg);
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--carousel-arrow-ColorText);
+  margin: 0;
+  padding: 0;
+
+  z-index: 1;
+  flex-shrink: 0;
+
+  &:disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  &-next {
+    transform: scaleX(-1);
+  }
+
+  @include respond-to('medium') {
+    width: var(--carousel-arrow-Width-Large);
+    height: var(--carousel-arrow-Height-Large);
+  }
+
+  &-prev:after,
+  &-next:after {
+    content: '';
+    width: var(--carousel-arrow-icon-Width);
+    height: var(--carousel-arrow-icon-Height);
+    margin-left: 3px;
+
+    border-top: var(--carousel-arrow-BorderTop);
+    border-left: var(--carousel-arrow-BorderLeft);
+    @include respond-to('medium') {
+      width: var(--carousel-arrow-icon-Width-Large);
+      height: var(--carousel-arrow-icon-Height-Large);
+    }
+  }
+  &-prev:after {
+    transform: rotate(-45deg);
+    margin-left: 3px;
+  }
+  &-next:after {
+    transform: scale(1) rotate(322deg);
+  }
+
+  &-wrapper {
+    grid-area: arrow;
+
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}

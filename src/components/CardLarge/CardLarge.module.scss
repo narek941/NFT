@@ -1,0 +1,48 @@
+@use '@styles/index.scss' as *;
+.card {
+  position: relative;
+  text-align: center;
+  .media {
+    position: relative;
+    width: 293px;
+    height: 293px;
+    margin: 0 auto 20px;
+    background: var(--card-media-secondary-Bg);
+    border-radius: 8px;
+  }
+  .image {
+    width: 293px;
+    height: 293px;
+    overflow: hidden;
+    border-radius: inherit;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 52px;
+    color: var(--modal-title-ColorText);
+
+    @include ellipsis(2);
+  }
+  .badges {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 15px;
+  }
+  .sBadge {
+    margin: 0;
+  }
+  .button {
+    min-width: 225px;
+  }
+}
+
+.sticker {
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+}

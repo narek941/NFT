@@ -1,0 +1,124 @@
+@use '@styles/index.scss' as *;
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: var(--header-container-justify-content);
+  align-items: center;
+  @include respond-to('medium') {
+    justify-content: var(--header-container-justify-content-Large);
+  }
+}
+
+.login {
+  font-size: 20px;
+  color: var(--header-login-ColorText);
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  @include respond-to('medium') {
+    display: none;
+    font-size: 24px;
+  }
+}
+
+.header-navigation {
+  display: flex;
+  flex-direction: column;
+  padding: var(--header-navigation-Padding);
+  background: var(--header-navigation-Bg);
+  position: fixed;
+  z-index: 100;
+  inset: 0 auto 0 0;
+  left: -100%;
+  height: -webkit-fill-available;
+  width: 288px;
+  box-shadow: var(--header-navigation-BoxShadow);
+  @include animate(left right);
+
+  @include respond-to('medium') {
+    display: block;
+    padding: var(--header-navigation-Padding-Large);
+    position: static;
+    background: none;
+    width: auto;
+    box-shadow: var(--header-navigation-BoxShadow-Large);
+  }
+
+  &.isActive {
+    left: 0;
+  }
+}
+.header {
+  padding: 0 20px;
+  @include respond-to('medium') {
+    padding: 0;
+  }
+}
+.navigation-wrapper {
+  overflow-y: auto;
+  height: 100%;
+  padding: 20px 20px 0;
+  @include respond-to('medium') {
+    overflow-y: unset;
+    height: auto;
+    padding: 0;
+  }
+}
+
+.navButton {
+  padding: 5px 16px;
+  @include respond-to('medium') {
+    max-width: var(--button-link-signUp-Width);
+    width: 100%;
+    padding: var(--button-medium-Padding-Large);
+  }
+}
+.icon-svg {
+  fill: var(--dropDownList-icon-Fill);
+}
+.navbar-close {
+  width: 34px;
+  height: 24px;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    fill: var(--navbar-close-icon-Fill);
+  }
+  @include respond-to('medium') {
+    display: none;
+  }
+}
+.header-navigation-overlay {
+  position: fixed;
+  z-index: 100;
+  inset: 0 auto 0 0;
+  left: -100%;
+  height: -webkit-fill-available;
+  width: 100%;
+  background: var(--header-navigation-overlay);
+
+  &.isActive {
+    left: 0;
+  }
+
+  @include respond-to('medium') {
+    display: none;
+  }
+}
+.userDropdownWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}

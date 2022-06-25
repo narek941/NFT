@@ -1,0 +1,220 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  display: inline-flex;
+  height: 100%;
+  @include animate(max-width height);
+  @include respond-to('large') {
+    min-width: 277px;
+  }
+
+  &--large {
+    min-width: 380px;
+    .card {
+      .media {
+        margin: 25px 25.5px 5px;
+      }
+      .footer {
+        padding: 11.5px 25.5px;
+      }
+    }
+  }
+}
+
+.card {
+  border: var(--card-Border);
+  border-radius: var(--card-BorderRadius);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+
+  background: var(--card-Bg);
+  overflow: hidden;
+  box-shadow: var(--card-title-BoxShadow);
+  backdrop-filter: var(--card-title-filter);
+  @include animate(background-color);
+
+  &:hover {
+    background: var(--card-Bg-Hover);
+  }
+
+  .body {
+    position: relative;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    // flex: 1;
+
+    .content {
+      min-height: 67px;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 2px;
+      padding: 0 0 8px;
+    }
+
+    .title {
+      padding: 0 25px 0;
+      font-size: 14px;
+      font-weight: 600;
+
+      @include ellipsis;
+      color: var(--card-title-ColorText);
+    }
+
+    .media {
+      position: relative;
+      margin: 0 20px 12px;
+      background: var(--card-media-Bg);
+      border-radius: 8px;
+
+      .icon-rarityScore {
+        margin-right: 2px;
+        fill: var(--icon-rarityScore-Fill);
+      }
+      &:first-child {
+        margin-top: 22px;
+      }
+      @include respond-to('small') {
+        margin: 0 27px 12px;
+      }
+    }
+
+    .favorite {
+      position: absolute;
+      z-index: 3;
+      display: inline-flex;
+      right: 12px;
+      top: 11px;
+    }
+
+    .media-icon {
+      position: absolute;
+      display: inline-flex;
+      left: 12px;
+      top: 11px;
+    }
+  }
+}
+
+.rankInfo {
+  margin: 14px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: 0.005em;
+  color: var(--card-rankInfo-ColorText);
+  &:empty {
+    margin-top: 36px;
+  }
+  @include respond-to('small') {
+    margin: 14px 27px 0;
+  }
+}
+.rankInfo-item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.image {
+  max-height: 325px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  @include respond-to('large') {
+    min-width: 220px;
+    min-height: 220px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 325px !important;
+  }
+}
+
+hr.line {
+  margin: auto 0 0;
+  padding: 0;
+  border: none;
+  border-top: var(--card-line-BorderTop);
+}
+
+.availableBlock {
+  font-size: 12px;
+  color: var(--card-availableBlock-ColorText);
+  padding: 0 25px;
+}
+
+.footer {
+  padding: 9px 26px;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+
+  .coast {
+    color: var(--card-coast-ColorText);
+
+    font-size: 12px;
+    line-height: 21px;
+    &--owned {
+      display: flex;
+      align-items: center;
+      color: var(--card-coast-ColorText);
+      font-weight: var(--card-coast-FontWeight);
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--card-price-ColorText);
+  }
+}
+.buy {
+  &-value {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--card-buy-value-ColorText);
+  }
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  &:empty {
+    display: none;
+  }
+
+  .sBadge {
+    margin: 0 5px 5px 0;
+    text-transform: uppercase;
+  }
+}
+.icon-rarityScore {
+  fill: var(--icon-rarityScore-Fill);
+
+  &:not(:only-child) {
+    margin-right: 3px;
+  }
+}
+.placeholder-wrapper {
+  width: 100%;
+  height: 100%;
+}

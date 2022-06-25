@@ -1,0 +1,113 @@
+@use '../../../styles/index.scss' as *;
+.sBadge {
+  padding: var(--badge-small-Padding);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+  font-size: var(--badge-FontSize);
+  font-weight: var(--badge-FontWeight);
+  line-height: var(--badge-LineHeight);
+  text-align: center;
+  white-space: nowrap;
+  border-radius: var(--badge-BorderRadius);
+  color: var(--badge-ColorText);
+  min-width: 45px;
+
+  .icon-close {
+    stroke: var(--badge-icon-close-Fill);
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+  }
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+  &[href] {
+    text-decoration: none;
+  }
+
+  &-primary {
+    background: var(--badge-primary-BgColor);
+    color: var(--badge-primary-ColorText);
+
+    .icon-close {
+      stroke: var(--badge-primary-icon-close-Fill);
+    }
+  }
+
+  &-secondary {
+    background-color: var(--badge-secondary-BgColor);
+    color: var(--badge-secondary-ColorText);
+
+    .icon-close {
+      stroke: var(--badge-secondary-icon-close-Fill);
+    }
+  }
+  &-light {
+    background-color: var(--badge-secondary-BgColor);
+    color: var(--badge-secondary-ColorText);
+
+    .icon-close {
+      stroke: var(--badge-secondary-icon-close-Fill);
+    }
+  }
+  &-white {
+    background-color: var(--badge-white-BgColor);
+    color: var(--badge-white-ColorText);
+
+    .icon-close {
+      stroke: var(--badge-white-icon-close-Fill);
+    }
+  }
+  &-dark {
+    background-color: var(--badge-dark-BgColor);
+    color: var(--badge-dark-ColorText);
+
+    .icon-close {
+      stroke: var(--badge-dark-icon-close-Fill);
+    }
+  }
+  &-medium {
+    font-size: var(--badge-medium-FontSize);
+    line-height: var(--badge-medium-LineHeight);
+    padding: var(--badge-medium-Padding);
+  }
+  &-small {
+    font-size: var(--badge-small-FontSize);
+    line-height: var(--badge-small-LineHeight);
+    padding: var(--badge-small-Padding);
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.rounded-pill {
+  border-radius: var(--badge-pill-BorderRadius);
+}
+
+// Quick fix for badges in buttons
+.btn .badge {
+  position: relative;
+  top: -1px;
+}
+
+.sBadgeList {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:empty {
+    display: none;
+  }
+}
+
+span.sBadge {
+  white-space: pre-wrap;
+  margin-right: 5px;
+  margin-bottom: 6px;
+}

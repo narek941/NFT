@@ -1,0 +1,12 @@
+@use '../../../../styles/index.scss' as *;
+.sTh {
+  text-align: left;
+  padding: 11px 10px;
+  margin: 0;
+  border-bottom: 1px solid var(--table-row-borderBottom);
+
+  &:first-child {
+    padding-left: 0;
+    font-weight: 400;
+  }
+}

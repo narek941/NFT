@@ -1,0 +1,20 @@
+@use '../../styles/index.scss' as *;
+
+.mainStyles {
+  padding: 50px 0;
+  background: var(--modalWrapper-Bg);
+  max-width: var(--modalWrapper-Width);
+  width: 100%;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include respond-to('medium') {
+  }
+}

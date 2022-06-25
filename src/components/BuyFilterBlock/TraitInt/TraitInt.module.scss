@@ -1,0 +1,54 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+
+  input {
+    max-width: 90px;
+    width: 100%;
+    flex: 1 0 90px;
+  }
+}
+.valueTo {
+  min-width: 16px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0 7px;
+}
+.priceError {
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--traitInt-title-ColorText);
+  text-transform: capitalize;
+}
+
+.trait-container {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid var(--trait-BorderColor);
+
+  .input-price {
+    margin: 0;
+    width: auto;
+    input {
+      border-radius: var(--trait-input-BorderRadius);
+      background: var(--input-price-Bg);
+      border: var(--input-price-Border);
+      &::placeholder {
+        color: var(--input-placeholder-ColorText);
+      }
+    }
+  }
+}

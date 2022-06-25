@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search {
+  width: 100%;
+  max-width: var(--searchInput-search-Width);
+}

@@ -1,0 +1,1573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  --font-family-base: 'Ubuntu', sans-serif;
+  --font-family-SansSerif: 'Roboto Condensed', sans-serif;
+
+  --primary: #fab72b;
+  --primaryDark: #182f43;
+
+  --body-Bg: #163929;
+  --colorText-base: #ffffff;
+  --container-width: 1240px;
+
+  --display1-font-size: 38px;
+  --display1-line-height: 52px;
+  --display2-font-size: 28px;
+  --display2-line-height: 44px;
+  --display3-font-size: 22px;
+  --display3-line-height: 35px;
+  --display4-font-size: 16px;
+  --display4-line-height: 26px;
+  --display5-font-size: 16px;
+  --display5-line-height: 26px;
+  --display6-font-size: 14px;
+  --display6-line-height: 21px;
+  --heading-font-weight: 700;
+
+  --header-bg-color: transparent;
+  --header-border-color: transparent;
+  --header-Padding: 39px 20px 20px;
+
+  --header-Height: 74px;
+  --header-Height-Large: 108px;
+
+  --headerScroll-bg: linear-gradient(
+    90deg,
+    #163929 0%,
+    rgba(0, 0, 0, 0.25) 302.2%
+  );
+  --headerScroll-BorderColor: rgba(255, 255, 255, 0.35);
+  --headerScroll-Padding: 16.5px 20px;
+  --headerScroll-Height: 60px;
+  --headerScroll-Height-Large: 80px;
+
+  --section-bgColor: transparent;
+  --border-bgColor: #ffffff;
+
+  --hero-container-PaddingTop: 36px;
+  --hero-container-PaddingBottom: 94px;
+  --hero-gridGap: 15px;
+  --hero-gridGap-large: 15px;
+  --hero-gridTemplate-rows-large: auto;
+  --hero-gridTemplate-columns-large: minmax(320px, 540px) minmax(320px, 613px);
+
+  // --hero-headerBlock-Height: 208px;
+  // --hero-headerBlock-Height-Large: 388px;
+  --hero-headerBlock-HeaderImage: url(/assets/img/jungle/hero-header.webp);
+
+  --hero-headerBlock-Padding: 17.5% 0;
+  --hero-headerBlock-Margin: 0 auto 0;
+  --hero-headerBlock-Margin-large: 26px 0 4px 0;
+  --hero-headerBlock-ColorText: rgba(255, 255, 255, 0);
+  --hero-headerBlock-Width: 540px;
+
+  --hero-header-Margin: 0;
+  --hero-header-FontSize: 80px;
+  --hero-header-FontSize-large: 120px;
+  --hero-header-FontWeight: 900;
+  --hero-header-LineHeight: 1;
+  --hero-header-LetterSpacing: normal;
+
+  --hero-headerSmall-FontSize: 42px;
+  --hero-headerSmall-FontSize-large: 72px;
+  --hero-headerSmall-FontWeight: 900;
+  --hero-headerSmall-LineHeight: 1.05;
+  --hero-headerSmall-LetterSpacing: normal;
+
+  --hero-decor-Width: 0;
+  --hero-decor-Width-large: 0;
+  --hero-decor-Height: 0;
+  --hero-decor-Height-large: 0;
+  --hero-decor-Bg: #fff;
+
+  --hero-imageBox-Height-large: 100%;
+  --hero-imageBox-Width-large: 613px;
+  --hero-imageBox-ColorText: #fff;
+  --hero-imageBox-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --hero-imageBox-BorderRadius: 8px;
+  --hero-imageBox-icon-Bg: #fff;
+  --hero-imageBox-Marge: 0 0 0 10px;
+  --hero-imageBox-Marge-Large: 0;
+  --hero-imageBox-image-Marge: 25px 0 0;
+
+  --homePage-desc-width: 69.5%;
+  --homePage-desc-width-Large: 849px;
+  --homePage-desc-FontSize: 18px;
+  --homePage-desc-LineHeight: 38px;
+  --homePage-desc-FontWeight: 500;
+
+  --homePage-header-Color: rgba(253, 198, 52, 0);
+  --homePage-header-FontSize: 38px;
+  --homePage-header-LineHeight: 1;
+  --homePage-header-Margin: 0 0 10px;
+  --homePage-header-Height: 0;
+
+  --HomePage-about-us-PaddingTop: 80px;
+  --HomePage-about-us-PaddingBottom: 77px;
+
+  --HomePage-news-PaddingTop: 80px;
+  --HomePage-news-PaddingBottom: 100px;
+  --HomePage-news-desc-Width: 84%;
+  --HomePage-news-desc-Width-Large: 1000px;
+
+  --HomePage-packs-Width: 1155px;
+  --HomePage-packs-PaddingTop-Large: 147px;
+  --HomePage-packs-PaddingBottom-Large: 16px;
+
+  --HomePage-packsSubscribe-Margin-Large: 110px 33px 0;
+
+  --homePage-news-desc-FontSize: 18px;
+  --homePage-news-desc-LineHeight: 38px;
+  --homePage-news-desc-FontWeight: 500;
+  --homePage-news-desc-MarginBottom: 88px;
+
+  --myNfts-height: 14.25%;
+  --packs-small-height: 8.85%;
+  --packs-height: 20%;
+
+  --packs-small-header-Margin: 0 0 28px;
+
+  --myNfts-Bg-Image: url(/assets/img/jungle/my_nfts.webp);
+  --packs-small-Bg-Image: url(/assets/img/jungle/my_packs.webp);
+  --packs-Bg-Image: url(/assets/img/jungle/my_packs_leaves.webp);
+
+  --countdown-link-colorText: #ffffff;
+  --countdown-danger-colorText: #eb5746;
+  --countdown-expired-notice-colorText: #eb5746;
+  --countdown-grid-template-columns: repeat(4, minmax(50px, 64px));
+  --countdown-grid-template-columns-Large: repeat(4, minmax(50px, 84px));
+
+  --countdown-name-FontSize: 14px;
+  --countdown-name-FontWeight: 400;
+  --countdown-name-LineHeight: 16px;
+  --countdown-name-Margin: 9px 0 0 0;
+  --countdown-name-LetterSpace: normal;
+
+  --countdown-separator: '';
+  --countdown-separator-Width: 11px;
+  --countdown-separator-Height: 0;
+  --countdown-separator-FontSize: 36px;
+  --countdown-separator-FontSize-large: 36px;
+  --countdown-separator-FontWeight: 700;
+
+  --countdown-value-FontSize: 28px;
+  --countdown-value-FontSize-medium: 38px;
+  --countdown-value-FontSize-large: 64px;
+  --countdown-value-LineHeight: 44px;
+  --countdown-value-LineHeight-medium: 54px;
+  --countdown-value-LineHeight-large: 87px;
+  --countdown-value-FontWeight: 300;
+  --countdown-value-Padding: 6px;
+
+  --countdown-value-bg: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --countdown-value-bg-bottom: rgba(255, 255, 255, 0.5);
+  --countdown-value-borderRadius: 2px;
+  --countdown-value-border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  --countdown-value-border-width: 1px;
+  --countdown-value-borderRadius-bottom: 0 0 2px;
+  --countdown-value-filter: blur(4px);
+
+  --countdown-link-Bg: transparent;
+  --countdown-link-Padding: 0 20px 0 20px;
+  --countdown-link-Height: none;
+  --countdown-link-Border: 2px solid transparent;
+  --countdown-link-BorderRadius: 0;
+
+  --dropDownList-Bg: linear-gradient(
+    90deg,
+    #163929 0%,
+    rgba(0, 0, 0, 0.25) 302.2%
+  );
+  --dropDownList-BoxShadow: none;
+  --dropDownList-filter: blur(92px);
+  --dropDownList-BorderColor: rgba(255, 255, 255, 0.35);
+  --dropDownList-item-Padding: 7px 10px 7px 14px;
+
+  --dropDownList-icon-Fill: #ffffff;
+  --dropDown-icon-arrow-Fill: #ffffff;
+  --dropDown-icon-arrow-Width: 14px;
+  --dropDown-icon-arrow-Height: 7px;
+  --dropDownList-scrollbar-track-Bg: #ebf2f8;
+  --dropDownList-scrollbar-thumb-Bg: #fdc634;
+  --dropDown-selectedOption-ColorText: #ffffff;
+
+  --dropDown-isSubmenu-BorderColor: #ffffff;
+  --dropDown-isSubmenu-icon-Fill: #ffffff;
+
+  --dropDownHeader-Bg: url(/assets/img/jungle/button_sorting.webp) no-repeat 50%
+    0;
+  --dropDownHeader-Border: none;
+  --dropDownHeader-BorderRadius: 50px;
+  --dropDownHeader-Padding: 8px 20px 7px 30px;
+  --dropDownHeader-Padding-Large: 13px 30px 14px 20px;
+  --dropDownHeader-FontSize: 14px;
+  --dropDownHeader-FontSize-Large: 18px;
+  --dropDownHeader-LineHeight: 21px;
+  --dropDownHeader-FontWeight: 500;
+
+  --dropDown-item-ColorText: #ffffff;
+  --dropDown-item-Bg: rgba(255, 255, 255, 0.5);
+  --dropDown-item-FontSize: 14px;
+  --dropDown-item-LineHeight: 16px;
+  --dropDown-item-FontWeight: 400;
+
+  --dropDownHeader-currency-Bg: transparent;
+  --dropDownHeader-currency-FonSize: 14px;
+  --dropDownHeader-currency-icon-arrow-Width: 10px;
+
+  --sortBy-dropDown-Width: 190px;
+  --sortBy-dropDown-Width-Large: 260px;
+  --sortBy-title-FontSize: 14px;
+  --sortBy-title-LineHeight: 18px;
+  --sortBy-title-FontWeight: 400;
+
+  --buySearchBlock-FontSize: 14px;
+  --buySearchBlock-LineHeight: 18px;
+  --buySearchBlock-FontWeight: 400;
+  --buySearchBlock-Padding: 10px 0 0;
+  --buySearchBlock-Margin: 0 0 35px;
+  --buySearchBlock-BorderColor: #ffffff;
+  --buySearchBlock-count-Padding: 0;
+  --buySearchBlock-template-columns: 277px 1fr auto;
+  --buySearchBlock-template-columns-Large: 277px minmax(auto, 477px) auto;
+
+  --profileSearchBlock-Padding: 33px 0 40px;
+
+  --card-footer-ColorText: #ffffff;
+  --card-Bg: rgba(21, 50, 36, 0.72);
+  --card-Bg-Hover: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --card-title-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --card-title-filter: blur(24px);
+  --card-title-ColorText: #ffffff;
+  --card-availableBlock-ColorText: #ffffff;
+  --card-price-ColorText: #ffffff;
+  --card-buy-value-ColorText: #fdc634;
+  --card-line-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+  --card-Border: 1px solid rgba(229, 229, 229, 0.5);
+  --card-BorderRadius: 10px;
+  --card-coast-ColorText: #ffffff;
+  --card-coast-FontWeight: 400;
+  --card-media-Bg: #fab72b;
+  --card-media-BorderColor: transparent;
+  --card-media-secondary-Bg: #fab72b;
+  --card-rankInfo-ColorText: #ffffff;
+
+  --packCard-Bg: rgba(21, 50, 36, 0.72);
+  --packCard-hover-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --packCard-filter: blur(24px);
+  --packCard-hover-filter: none;
+  --packCard-Border: 1px solid rgba(229, 229, 229, 0.5);
+  --packCard-description-BorderTop: 1px solid rgba(229, 229, 229, 0.5);
+  --packCard-link-ColorText: #ffffff;
+  --packCard-before-Z-Index: -1;
+
+  --button-pack-Padding: 2px 16px;
+  --button-pack-TextTransform: normal;
+  --button-pack-Width: 150px;
+  --button-pack-FontSize: 14px;
+  --button-pack-FontWeight: 500;
+
+  --card-subscribe-Width: 303px;
+  --card-subscribe-Padding-Large: 28px 20px 28px;
+  --card-subscribe-ColorText: #ffffff;
+  --card-subscribe-Bg: transparent;
+  --card-subscribe-Border: 1px solid transparent;
+
+  --card-subscribe-price-ColorText: #ffffff;
+  --card-subscribe-price-Margin: 26px 0 17px;
+
+  --card-subscribe-media-Height: 271px;
+  --card-subscribe-media-Width: 227px;
+
+  --card-subscribe-price-FontSize: 36px;
+  --card-subscribe-price-FontWeight: 700;
+  --card-subscribe-price-LineHeight: 41px;
+
+  --card-subscribe-body-FontSize: 14px;
+  --card-subscribe-body-FontWeight: 400;
+  --card-subscribe-body-LineHeight: 16px;
+  --card-subscribe-body-LetterSpace: 0;
+  --card-subscribe-body-Padding: 0;
+  --card-subscribe-body-Margin: 33px 0 0;
+
+  --card-subscribe-order-Media: 0;
+  --card-subscribe-order-Header: 1;
+  --card-subscribe-order-Price: 2;
+  --card-subscribe-order-Button: 3;
+  --card-subscribe-order-Body: 4;
+
+  --card-subscribe-media-Margin: 0;
+  --card-subscribe-header-Margin: 0;
+  --card-subscribe-header-ColorText: #fff;
+  --card-subscribe-header-FontSize: 0;
+  --card-subscribe-header-FontWeight: normal;
+  --card-subscribe-header-LineHeight: 0;
+  --card-subscribe-header-LetterSpacing: normal;
+
+  --card-subscribe-button-Width: 198px;
+  --card-subscribe-button-Padding: 14px 5px;
+
+  --card-subscribe-placeholder-BgColor: #fab72b;
+  --card-subscribe-placeholder-small-BgColor: #163828;
+
+  --card-withDraw-BgColor: rgba(21, 50, 36, 0.72);
+  --card-withDraw-badge-BgColor: #dfdfff;
+  --card-withDraw-badge-ColorText: #446384;
+  --card-withDraw-available-BgColor: #ffffff;
+  --card-withDraw-buy-ColorText: #fdc634;
+
+  --card-merge-active-Bg: linear-gradient(
+    153.9deg,
+    rgba(219, 242, 217, 0.2) 0%,
+    #163929 100%
+  );
+  --card-merge-Border-Width: 2px;
+  --card-merge-active-BorderColor: #e5e5e5;
+
+  --card-merge-media-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --card-merge-media-active-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+
+  --card-merge-media-BorderColor: #e5e5e5;
+  --card-merge-media-active-BorderColor: #e5e5e5;
+
+  --mergeTab-Bg: linear-gradient(
+      0deg,
+      rgba(22, 57, 41, 0.32),
+      rgba(22, 57, 41, 0.32)
+    ),
+    linear-gradient(
+      90deg,
+      rgba(22, 57, 41, 0.25) 0%,
+      rgba(255, 255, 255, 0.025) 155.56%
+    );
+  --mergeTab-BorderColor: rgba(255, 255, 255, 0.1);
+  --mergeTab-BoxShadow: none;
+  --mergeTab-triangle-before-Bg: #183a2a;
+  --mergeTab-triangle-after-Bg: rgba(255, 255, 255, 0.1);
+
+  --mergeTab-box-Bg: rgba(21, 50, 36, 0.72);
+  --mergeTab-box-BorderColor: rgba(229, 229, 229, 0.5);
+  --mergeTab-box-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --mergeTab-box-filter: blur(24px);
+
+  --button-link-signUp-Width: 198px;
+  --button-Width: 190px;
+  --button-BorderRadius: 50px;
+  --button-FontFamily: 'Ubuntu', sans-serif;
+  --button-FontWeight: 500;
+  --button-Bg-Position: 100% center;
+  --button-Bg-Image: url(/assets/img/jungle/button_large_bg.webp);
+  --button-BoxShadow: none;
+  --button-BoxShadow-Hover: inset 0px 4px 16px rgba(0, 0, 0, 0.25);
+  --button-Filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.09))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.09));
+
+  --button-blueFilled-BgColor: #b1a598;
+  --button-blueFilled-BgColor-Hover: #b1a598;
+  --button-blueFilled-BorderWidth: 0;
+  --button-blueFilled-BorderColor: transparent;
+  --button-blueFilled-ColorText: #ffffff;
+  --button-blueFilled-ColorText-Hover: #ffffff;
+
+  --button-blueOutlined-BgColor: #b1a598;
+  --button-blueOutlined-BgColor-Hover: #b1a598;
+  --button-blueOutlined-ColorText: #ffffff;
+  --button-blueOutlined-ColorText-Hover: #ffffff;
+  --button-blueOutlined-BorderWidth: 0;
+  --button-blueOutlined-BorderColor: transparent;
+  --button-blueOutlined-BorderColor-Hover: transparent;
+
+  --button-whiteOutlined-BgColor: transparent;
+  --button-whiteOutlined-BgColor-Hover: transparent;
+  --button-whiteOutlined-ColorText: #ffffff;
+  --button-whiteOutlined-ColorText-Hover: #ffffff;
+  --button-whiteOutlined-BorderColor: transparent;
+  --button-whiteOutlined-BorderColor-Hover: #ffffff;
+
+  --button-login-primary-Bg: linear-gradient(
+    90deg,
+    #6561d7 2.76%,
+    #80bbe6 100%
+  );
+  --button-login-primary-ColorText: #ffffff;
+  --button-login-primary-BorderColor: transparent;
+
+  --button-login-secondary-Bg: #ffffff;
+  --button-login-secondary-ColorText: #6561d7;
+  --button-login-secondary-BorderColor: transparent;
+
+  --button-login-FontWeight: 500;
+
+  --button-login-inner-Bg: linear-gradient(
+    89.75deg,
+    #6561d7 -2.12%,
+    #80bbe6 100%
+  );
+  --button-login-inner-Bg-clip: text;
+  --button-login-inner-fill-color: transparent;
+
+  --button-small-Padding: 8px 16px;
+  --button-small-Padding-Large: 10px 16px;
+  --button-small-FontSize: 16px;
+  --button-small-FontSize-Large: 20px;
+  --button-small-LineHeight: 23px;
+
+  --button-medium-Padding: 8px 20px;
+  --button-medium-Padding-Large: 14px 16px;
+  --button-medium-FontSize: 16px;
+  --button-medium-FontSize-Large: 20px;
+  --button-medium-LineHeight: 23px;
+
+  --button-large-Padding: 8px 16px;
+  --button-large-Padding-Large: 15px 26px;
+  --button-large-FontSize: 16px;
+  --button-large-FontSize-Large: 20px;
+  --button-large-LineHeight: 23px;
+
+  --button-back-Padding: 14px 16px;
+  --button-back-FontSize: 16px;
+  --button-back-LineHeight: 18px;
+  --button-back-FontWeight: 400;
+  --button-back-ColorText: #ffffff;
+  --button-back-ColorText-Hover: #ffffff;
+  --button-back-Bg: transparent;
+  --button-back-Bg-Hover: transparent;
+  --button-back-BorderColor: rgba(255, 255, 255, 0.5);
+  --button-back-icon-Fill: rgba(255, 255, 255, 0.5);
+
+  --button-buyPack-Padding: 6px 16px;
+  --button-buyPack-Bg-Image: url(/assets/img/jungle/button_bg.webp);
+
+  --button-connect-Bg-Image: url(/assets/img/jungle/button_XLarge_bg.webp);
+  --button-connect-BgColor: transparent;
+  --button-connect-BgColor-Hover: transparent;
+  --button-connect-ColorText: #ffffff;
+  --button-connect-ColorText-Hover: #ffffff;
+  --button-connect-BorderColor: transparent;
+  --button-connect-BorderColor-Hover: transparent;
+  --button-connect-Width: 300px;
+  --button-connect-icon-Width: 32px;
+  --button-connect-icon-Height: 32px;
+
+  --button-redeemInfo-actions-Width: 164px;
+
+  --button-seeAll-BgImage: url(/assets/img/jungle/button_stone.webp);
+  --button-seeAll-FontSize: 18px;
+  --button-seeAll-FontSize-Large: 24px;
+  --button-seeAll-LineHeight: 24px;
+  --button-seeAll-LineHeight-Large: 32px;
+  --button-seeAll-FontWeight: 500;
+  --button-seeAll-BoxShadow: 0px 2px 12px 0px rgba(30, 32, 30, 0.36);
+  --button-seeAll-Width: 227px;
+  --button-seeAll-Padding: 10px;
+  --button-seeAll-Margin: 30px 0 0;
+  --button-seeAll-Margin-Large: 44px 0 0;
+
+  --button-withdraw-Width: 212px;
+  --button-withdraw-Padding: 8px 16px 7px;
+  --button-withdraw-Padding-Large: 15px 16px;
+  --button-withdraw-FontSize: 20px;
+  --button-withdraw-LineHeight: 23px;
+  --button-withdraw-BgColor: #163929;
+
+  --tipsText-ColorText: #fff;
+  --tipsText-FontSize: 18px;
+  --tipsText-LineHeight: 27px;
+  --tipsText-FontWeight: 500;
+
+  --tipsText-link-ColorText: #fff;
+
+  --avatar-Border: 1px solid #ffffff;
+  --avatar-Border-Primary: 1px solid #ffffff;
+  --avatar-Border-Primary: 1px solid #ffffff;
+  --avatar-Bg-Primary: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --avatar-icon-Fill: rgba(255, 255, 255, 0.1);
+  --avatar-icon-edit-BorderColor: #ffffff;
+  --avatar-icon-edit-BgColor: #bfd3e4;
+
+  --jungleHeader-leaves-left: url('/assets/img/jungle/jungleHeader-leaves-left.webp');
+  --jungleHeader-leaves-right: url('/assets/img/jungle/jungleHeader-leaves-right.webp');
+  --jungleHeader-leaves-center: url('/assets/img/jungle/jungleHeader-leaves-center.webp');
+  --jungleHeader-leaves-center: url('/assets/img/jungle/jungleHeader-leaves-center.webp');
+
+  --jungleFooter: url('/assets/img/jungle/jungleFooter.webp');
+  --jungleFooter-Large: url('/assets/img/jungle/jungleFooter-Large.webp');
+
+  --jungleContent-signin-left: url('/assets/img/jungle/jungle-signIn-leaves-left.webp');
+  --jungleContent-signin-right: url('/assets/img/jungle/jungle-signIn-leaves-right.webp');
+
+  --jungleContent-signup-left: url('/assets/img/jungle/jungle-signup-leaves-left.webp');
+  --jungleContent-signup-right: url('/assets/img/jungle/jungle-signup-leaves-right.webp');
+
+  --jungleContent-left-top: url('/assets/img/jungle/jungle-snake-leaves-left.webp');
+  --jungleContent-left-middle: url('/assets/img/jungle/jungle-parrot-leaves-left.webp');
+  --jungleContent-left-bottom: url('/assets/img/jungle/jungle-leaves-left.webp');
+
+  --jungleContent-right-top: url('/assets/img/jungle/jungle-lizard-leaves-right.webp');
+  --jungleContent-right-bottom: url('/assets/img/jungle/jungle-snake-leaves-right.webp');
+
+  --jungleProfile-right-bottom: url('/assets/img/jungle/jungle-profile-leaves-bottom-right.webp');
+  --jungleProfile-left-bottom: url('/assets/img/jungle/jungle-profile-leaves-bottom-left.webp');
+
+  --jungle-signup-Bg: url('/assets/img/jungle/jungle-signup.webp');
+  --jungle-Bg: url('/assets/img/jungle/homePage-bg.webp');
+  --jungle-Bg-Color: #12231d;
+
+  --color-header: #ffffff;
+  --padding-header: 16.5px 20px;
+
+  --header-colorText: #ffffff;
+  --header-colorText-hover: #fdc634;
+  --header-colorText-active: #fdc634;
+  --header-navLink-FontSize: 20px;
+  --header-navLink-FontWeight: 500;
+  --header-navLink-LineHeight: 23px;
+  --header-navLink-Padding: 10px 0;
+  --header-navLink-Padding-Large: 0 21.5px;
+
+  --header-navUl-Margin-Large: 0 -21.5px;
+
+  --header-container-justify-content: space-between;
+  --header-container-justify-content-Large: flex-end;
+
+  --header-login-ColorText: #fdc634;
+
+  --header-navigation-Bg: #163929;
+  --header-navigation-Padding: 20px 0;
+  --header-navigation-Padding-Large: 0 4.825% 0 0;
+  --header-navigation-BoxShadow: 0 2px 12px 0px rgba(30, 32, 30, 0.36);
+  --header-navigation-BoxShadow-Large: none;
+  --header-navigation-overlay: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+
+  --navbar-toggler-BorderColor: #ffffff;
+  --navbar-toggler-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+  --navbar-close-icon-Fill: #ffffff;
+
+  --pageHeading-ColorText: #ffffff;
+  --pageHeading-FontSize: 28px;
+  --pageHeading-FontSize: 30px;
+  --pageHeading-FontSize-Large: 48px;
+  --pageHeading-LineHeight: 52px;
+  --pageHeading-userSettings-Margin: 11px 0;
+
+  --myProfile-section-Bg-odd: #163929;
+  --myProfile-section-Bg-even: #163929;
+  --myProfile-empty-ColorText: #ffffff;
+  --myProfile-empty-Border: none;
+  --myProfile-section-PaddingBottom: 220px;
+
+  --myProfile-BgImage-1-Height: 37.25%;
+  --myProfile-BgImage-2-Height: 64.28%;
+  --myProfile-BgImage-3-Height: 77%;
+  --myProfile-BgImage-4-Height: 36%;
+
+  --myProfile-container-Top: 56px;
+  --myProfile-container-Bottom: 37px;
+
+  --modal-Bg-Color: #163929;
+  --modal-Bg: url(/assets/img/jungle/jungleModal-bg.webp);
+  --modal-top-left-Bg: url(/assets/img/jungle/jungleModal-top-leaves-left.webp);
+  --modal-top-right-Bg: url(/assets/img/jungle/jungleModal-top-leaves-right.webp);
+  --jungleModal-bottom-left: url(/assets/img/jungle/jungleModal-bottom-leaves-left.webp);
+  --modal-BorderRadius: 8px;
+  --modal-boxShadow: none;
+  --modal-Border: none;
+
+  --modal-close-top: 26px;
+  --modal-close-right: 6px;
+  --modal-icon-close-Fill: #ffffff;
+  --modal-icon-close-Fill-Hover: #fdc634;
+
+  --modal-Padding: 55px 0 0;
+  --modalWrapper-Bg: transparent;
+  --modalWrapper-Width: 684px;
+  --modal-title-ColorText: #ffffff;
+  --modal-text-ColorText: #ffffff;
+  --modal-text-FontSize: 22px;
+  --modal-text-FontWeight: 700;
+  --modal-text-LineHeight: 35px;
+  --modal-details-Margin: 10px 0 0;
+  --detail-info-block-Margin: 0 0 0 24px;
+
+  --details-Padding: 0 32px 0;
+  --details-Padding-Large: 0 32px 12px;
+  --details-owen-FontSize: 12px;
+  --details-owen-FontWeight: 400;
+  --details-owen-LineHeight: 18px;
+  --details-owen-name-FontWeight: 600;
+  --details-owen-collection-LetterSpace: 0.2em;
+  --details-price-FontSize: 24px;
+  --details-price-FontWeight: 700;
+  --details-btn-buy: 164px;
+
+  --modal-label-text-ColorText: rgba(255, 255, 255, 0.5);
+  --modal-label-text-secondary-ColorText: #ffffff;
+  --modal-icon-placeholder-Bg: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  --modal-icon-placeholder-Border: 2px solid rgba(255, 255, 255, 0.5);
+  --modal-icon-placeholder-icon-Fill: #ffffff;
+  --modal-link-ColorText: #ffffff;
+  --modal-line-BorderColor: #ffffff;
+  --modal-PackPaymentSuccess-BgImage: none;
+
+  --modal-highLight-title-ColorText: #ffffff;
+  --modal-highLight-title-TextTransform: uppercase;
+  --modal-heading-FontSize: 28px;
+  --modal-heading-FontSize-Large: 48px;
+  --modal-heading-FontWeight: 700;
+  --modal-heading-LineHeight: 26px;
+  --modal-heading-LineHeight-Large: 44px;
+
+  --modal-subTitle-FontSize: 16px;
+  --modal-subTitle-FontSize-Large: 20px;
+  --modal-subTitle-LineHeight: 18px;
+  --modal-subTitle-LineHeight-Large: 23px;
+  --modal-subTitle-FontWeight: 500;
+  --modal-subTitle-bold: 500;
+
+  --modal-content-Width: 550px;
+
+  --MergeNFTs-section-Bg: transparent;
+
+  --footer-signIn-display: none;
+  --footer-border-color: transparent;
+  --footer-Padding: 70px 0 32vw;
+  --footer-Padding-small: 70px 0 24vw;
+  --footer-Padding-large: 70px 0 18vw;
+  --footer-direction: column;
+  --footer-gap: 28px;
+  --footer-ColorText: #ffffff;
+  --footer-small-Image: url('/assets/img/jungle/butterfly.webp');
+
+  --footer-terms-links-ColorText: #ffffff;
+  --footer-terms-separator-BgColor: #fdc634;
+  --footer-terms-separator-Height: 14px;
+  --footer-terms-FontSize: 14px;
+  --footer-terms-LineHeight: 16px;
+  --footer-terms-align-self: center;
+
+  --poweredBy-logo-ColorText: #fdc634;
+  --poweredBy-logo-signIn-ColorText: #ffffff;
+  --poweredBy-logo-FontWeight: 700;
+  --poweredBy-display: block;
+  --copyright-Margin: 10px 0 0;
+
+  --order-footer-contentLeft: 3;
+  --order-footer-contentCenter: 1;
+  --order-footer-contentRight: 1;
+
+  --align-footer-contentLeft: center;
+  --align-footer-contentLeft-Large: center;
+  --align-footer-contentCenter: center;
+  --align-footer-contentRight: center;
+
+  --social-icon-BgColor: #fab72b;
+  --social-icon-BgColor-Hover: #fab72b;
+
+  --searchInput-Bg: var(--body-Bg);
+  --searchInput-input-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --searchInput-input-Border: 2px solid rgba(255, 255, 255, 0.1);
+  --searchInput-input-BorderRadius: 35px;
+  --searchInput-input-ouLine-Color: #fdc634;
+
+  --searchInput-input-FontSize: 14px;
+  --searchInput-input-LineHeight: 16px;
+  --searchInput-input-FontWeight: 400;
+  --searchInput-input-ColorText: #ffffff;
+  --searchInput-input-Placeholder-ColorText: rgba(255, 255, 255, 0.5);
+  --searchInput-input-Height: 36px;
+  --searchInput-input-Height-Large: 50px;
+  --searchInput-search-Width: 477px;
+  --searchInput-search-icon-Fill: #ffffff;
+  --searchInput-input-Padding: 7px 16px 7px 50px;
+  --searchInput-search-icon-Left: 12px;
+  --searchInput-search-icon-toggle-Left: 2px;
+  --searchInput-search-icon-Height: 24px;
+  --searchInput-search-icon-Width: 24px;
+  --searchInput-input-cancel-button-bg: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
+
+  --buttonGroup-BorderColor: #ffffff;
+  --buttonGroup-active-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  --buttonGroup-svg-Color: #ffffff;
+  --buttonGroup-svg-active-Color: #ffffff;
+
+  --forgotPassLink-ColorText: #fdc634;
+  --forgotPassLink-FontSize: 14px;
+  --forgotPassLink-FontWeight: 400;
+  --forgotPassLink-LineHeight: 16px;
+  --forgotPassLink-ColorText-Hover: #fdc634;
+
+  --input-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+
+  --input-Padding: 10px 26px;
+  --input-Padding-Large: 10px 50px 10px 30px;
+  --input-label-text-Padding: 0 0 0 26px;
+  --input-wrapper-Margin: 26px 0 0;
+  --input-ColorText: #ffffff;
+  --input-Border: 2px solid #dadada;
+  --input-BorderRadius: 35px;
+  --input-BorderRadius-Large: 35px;
+  --input-Placeholder-ColorText: rgba(255, 255, 255, 0.5);
+  --input-AutoFill-ColorText: #ffffff;
+  --input-AutoFill-BgColor: #375547;
+  --input-Outline-ColorText: #ffffff;
+
+  --input-FontSize: 18px;
+  --input-LineHeight: 21px;
+  --input-FontWeight: 400;
+  --input-Height: 48px;
+  --input-Height-large: 65px;
+  --input-height-Small: 36px;
+  --input-Height-Medium: 48px;
+
+  --input-price-Bg: transparent;
+  --input-price-Border: 1px solid #fab72b;
+  --input-price-BorderRadius: 6px;
+  --input-price-Placeholder-ColorText: #ffffff;
+
+  --menubar-Padding: 23px 24px 23px 0;
+  --menubar-Width: 270px;
+  --menubar-Bg: rgba(21, 50, 36, 0.72);
+  --menubar-Bg-Large: rgba(21, 50, 36, 0.72);
+  --menubar-Border: 1px solid transparent;
+  --menubar-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --menubar-Filter: blur(24px);
+  --menubar-BorderRadius: 0 5px 5px 0;
+  --menubar-icon-filter-Fill: #ffffff;
+  --menubar-icon-filter-Position-Collapsed: 0 0 auto auto;
+  --menubar-icon-filter-Position: 22px 23px auto auto;
+  --menubar-Margin-Large: 0 38px 0 -60px;
+  --menubar-Margin: 0 38px 0 0;
+
+  --menubar-header-FontSize: 20px;
+  --menubar-header-FontWeight: 500;
+  --menubar-header-LineHeight: 23px;
+
+  --filterBlock-header-Padding: 0 20px 20px;
+  --filterBlock-header-Padding-Large: 0 0 22px;
+  --filterBlock-header-Padding-Show: 0 0 17px;
+  --filterBlock-header-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+  --filterBlock-Padding-Left: 20px;
+  --filterBlock-Padding-Left-Large: 0;
+  --filterBlock-Padding-Right: 20px;
+  --filterBlock-Padding-Right-Large: 0;
+
+  --filterBlock-subHeading-FontSize: 14px;
+  --filterBlock-subHeading-FontWeight: 600;
+  --filterBlock-subHeading-LineHeight: 21px;
+  --filterBlock-subHeading-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+
+  --filterBlock-header-AlignItems: center;
+
+  --filterBlock-form-Padding-Left: 20px;
+  --filterBlock-form-Padding-Right: 20px;
+  --filterBlock-form-Padding-Left-Large: 0;
+  --filterBlock-form-Padding-Right-Large: 0;
+
+  --utitlityFilter-label-FontSize: 12px;
+  --utitlityFilter-label-FontWeight: 600;
+  --utitlityFilter-label-lineHeight: 18px;
+  --utitlityFilter-label-ColorText: #ffffff;
+  --utitlityFilter-reedeem-ColorText: #ffffff;
+  --utitlityFilter-square-Border: 1px solid rgba(255, 255, 255, 0.56);
+  --utitlityFilter-square-BorderColor: rgba(255, 255, 255, 0.56);
+  --utitlityFilter-square-checked-BorderColor: #fab72b;
+  --utitlityFilter-square-check-Bg: rgba(255, 255, 255, 0.56);
+  --utitlityFilter-square-check-checked-Bg: #fab72b;
+  --utitlityFilter-square-check-Width: 12px;
+  --utitlityFilter-square-check-height: 12px;
+  --utitlityFilter-square-checked-show: none;
+
+  --filter-trait-label-ColorText: #ffffff;
+  --filter-trait-value-ColorText: #ffffff;
+  --filter-counter-ColorText: #c0c9d1;
+
+  --see-more-ColorText: #ffffff;
+
+  --checkbox-Bg: transparent;
+  --checkbox-ColorText: #ffffff;
+
+  --checkbox-Border: 1px solid transparent;
+
+  --checkBox-FontSize: 16px;
+  --checkBox-LineHeight: 18px;
+  --checkBox-FontWeight: 400;
+
+  --checkbox-primary-BorderColor: rgba(255, 255, 255, 0.5);
+  --checkbox-primary-Checked-BorderColor: #fab72b;
+  --checkBox-icon-primary-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 7.80007L1.2 5.00006L0.266663 5.9334L4 9.66673L12 1.66673L11.0667 0.733398L4 7.80007Z' fill='%23FAB72B'/%3e%3c/svg%3e");
+
+  --checkBox-default-BorderColor: rgba(255, 255, 255, 0.5);
+  --checkBox-default-Checked-BorderColor: #ffffff;
+  --checkBox-icon-default-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.73047 10.7812C6.00391 11.0547 6.46875 11.0547 6.74219 10.7812L14.7812 2.74219C15.0547 2.46875 15.0547 2.00391 14.7812 1.73047L13.7969 0.746094C13.5234 0.472656 13.0859 0.472656 12.8125 0.746094L6.25 7.30859L3.16016 4.24609C2.88672 3.97266 2.44922 3.97266 2.17578 4.24609L1.19141 5.23047C0.917969 5.50391 0.917969 5.96875 1.19141 6.24219L5.73047 10.7812Z' fill='white'/%3e%3c/svg%3e");
+
+  --checkBoxGroup-title-ColorText: #ffffff;
+  --checkBoxGroup-title-FontSize: 18px;
+  --checkBoxGroup-title-FontWeight: 500;
+  --checkBoxGroup-title-LineHeight: 21px;
+
+  --checkBoxGroup-label-ColorText: #ffffff;
+  --checkBoxGroup-label-FontSize: 14px;
+  --checkBoxGroup-label-FontWeight: 400;
+  --checkBoxGroup-label-LineHeight: 16px;
+  --checkBoxGroup-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+
+  --radioBox-Bg: none;
+  --radioBox-Border: 2px solid #fab72b;
+  --radioBox-checked-small-Bg: #fab72b;
+  --radioBox-BorderColor: #fab72b;
+  --radioBox-checked-BorderColor: #fab72b;
+  --radioBox-ColorText: #ffffff;
+
+  --traitDate-title-ColorText: #ffffff;
+  --trait-input-Bg: rgba(255, 255, 255, 0.5);
+  --trait-input-placeholder-ColorText: #ffffff;
+  --traitInt-title-ColorText: #ffffff;
+  --trait-BorderColor: rgba(255, 255, 255, 0.1);
+  --trait-input-BorderRadius: 6px;
+
+  --input-datepicker-focus-BorderColor: #ffffff;
+  --input-datepicker-Border: none;
+  --input-datepicker-Padding: 11px 30px 10px 13px;
+  --input-datepicker-BgColor: rgba(0, 0, 0, 0.25);
+  --input-datepicker-ColorText: #ffffff;
+  --input-datepicker-placeholder-ColorText: #c0c9d1;
+
+  --datepicker-Bg: rgba(0, 0, 0, 0.8);
+  --datepicker-ColorText: #ffffff;
+  --datepicker-time-ColorText: #ffffff;
+  --datepicker-navigation-icon-BorderColor: #ffffff;
+  --datepicker-down-arrow-icon-BorderColor: #ffffff;
+  --datepicker-selected-Bg: #fdc634;
+  --datepicker-selected-ColorText: #ffffff;
+
+  --datepicker-button-close-Bg: none;
+  --datepicker-button-close-Position: 6px 6px auto auto;
+  --datepicker-button-close-Width: 28px;
+  --datepicker-button-close-Height: 26px;
+
+  --datepicker-icon-close-Width: 19px;
+  --datepicker-icon-close-Height: 16px;
+  --datepicker-icon-close-Bg: #ffffff;
+  --datepicker-icon-close-ColorText: #fdc634;
+  --datepicker-day-in-range-Bg: #fdc634;
+  --datepicker-day-in-selecting-range-Bg: rgba(253, 198, 52, 0.5);
+  --datepicker-day-selecting: 50%;
+
+  --datepicker-header-Bg: none;
+  --datepicker-header-ColorText: #ffffff;
+  --datepicker-triangle-Color: rgba(0, 0, 0, 0.8);
+
+  --option-Bg: rgba(17, 40, 30, 0.72);
+  --option-Filter: blur(4px);
+  --option-ColorText: #ffffff;
+  --option-Border: 1px solid rgba(17, 40, 30, 0.72);
+  --option-BorderColor-Hover: rgba(229, 229, 229, 0.5);
+  --option-active-BorderColor: rgba(17, 40, 30, 0.72);
+  --option-icon-close-Fill: #ffffff;
+  --option-icon-close-Fill-Hover: #fdc634;
+  --option-icon-option-Fill: #a0ec00;
+  --option-onIcon-BgColor: #a0ec00;
+  --option-BorderRadius: 5px;
+  --option-padding: 10px 15px;
+  --option-margin: 0 0 5px;
+  --option-FontSize: 12px;
+  --option-FontWeight: 400;
+  --option-isActive-FontWeight: 400;
+  --option-LineHeight: 14px;
+
+  --badge-ColorText: #80de65;
+  --badge-BorderRadius: 2px;
+  --badge-FontSize: 14px;
+  --badge-FontWeight: 400;
+  --badge-LineHeight: 16px;
+
+  --badge-medium-FontSize: 10px;
+  --badge-medium-LineHeight: 12px;
+  --badge-medium-Padding: 4px 6px 3px;
+
+  --badge-small-FontSize: 8px;
+  --badge-small-LineHeight: 9px;
+  --badge-small-Padding: 3px 4px;
+
+  --badge-icon-close-Fill: #80de65;
+  --badge-pill-BorderRadius: 20px;
+
+  --badge-primary-BgColor: #df9f1a;
+  --badge-primary-ColorText: #ffffff;
+  --badge-primary-icon-close-Fill: #ffffff;
+
+  --badge-secondary-BgColor: #dff2ff;
+  --badge-secondary-ColorText: #446384;
+  --badge-secondary-icon-close-Fill: #446384;
+
+  --badge-light-BgColor: #ebf2f8;
+  --badge-light-ColorText: #446384;
+  --badge-light-icon-close-Fill: #446384;
+
+  --badge-white-BgColor: #ffffff;
+  --badge-white-ColorText: #31bc83;
+  --badge-white-icon-close-Fill: #31bc83;
+
+  --burnBadge-BgColor: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  --burnBadge-ColorText: #ffffff;
+  --burnBadge-icon-Fill: #fff;
+  --burnBadge-FontSize: 12px;
+  --burnBadge-FonWeight: 700;
+  --burnBadge-LineHeight: 22px;
+
+  --accordion-Border: 1px solid #dadada;
+  --accordion-Bg-primary: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --accordion-title-Margin-Right: 0;
+  --accordion-title-BorderTop: 1px solid #ebf2f8;
+  --accordion-small-title-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+  --accordion-title-primary-BorderTop: 1px solid #dadada;
+  --accordion-title-First-BorderColor: #d9e6f2;
+  --accordion-default-title-icon-BorderColor: #ffffff;
+  --accordion-primary-title-icon-BorderColor: #ffffff;
+  --accordion-height-large: 312px;
+
+  --accordion-title-small-FontSize: 18px;
+  --accordion-title-small-FontWeight: 500;
+  --accordion-title-small-LineHeight: 21px;
+
+  --accordion-text-fontSize: 12px;
+  --accordion-text-FontWeight: 400;
+  --accordion-text-LineHeight: 24px;
+
+  --accordion-title-fontSize: 16px;
+  --accordion-title-FontWeight: 700;
+  --accordion-title-LineHeight: 18px;
+
+  --accordion-paddingX-Large: 15px;
+
+  --buySearchBlock-ColorText: #ffffff;
+  --buySearchBlock-icon-Fill: #ffffff;
+
+  --table-ColorText: #ffffff;
+  --table-row-borderTop: 1px solid #e9eff4;
+  --table-row-borderBottom: #e9eff4;
+
+  --scrollbar-track-Light: rgba(255, 255, 255, 0.5);
+  --scrollbar-thumb-Light: #ffffff;
+  --scrollbar-thumb-Border-Light: 2px solid rgba(255, 255, 255, 0.5);
+
+  --scrollbar-track-Primary: rgba(255, 255, 255, 0.5);
+  --scrollbar-thumb-Primary: #ffffff;
+  --scrollbar-thumb-Border-Primary: 2px solid rgba(255, 255, 255, 0.5);
+
+  --icon-person-Circle-Fill: rgba(255, 255, 255, 0.1);
+  --icon-person-Circle-Stroke: rgba(255, 255, 255, 0.5);
+  --icon-validUser-Fill: #ffffff;
+  --icon-rarityScore-Fill: #ffffff;
+  --icon-share-Fill: #ffffff;
+  --icon-binance-Fill: #ffffff;
+  --icon-eye-Fill: rgba(255, 255, 255, 0.5);
+  --icon-openEye-Fill: #ffffff;
+  --icon-wallet-Circle-Fill: rgba(255, 255, 255, 0.5);
+  --icon-wallet-Path-Fill: #ffffff;
+  --icon-Fill: #ffffff;
+  --icon-Circle-Fill: rgba(255, 255, 255, 0.1);
+  --icon-check-activated-Fill: #ffffff;
+  --icon-attach-close-Fill: #ffffff;
+
+  --icon-favorite-clear-default-Fill: #ffffff;
+  --icon-favorite-default-Fill: #ffffff;
+
+  --icon-favorite-clear-primary-Fill: #163929;
+  --icon-favorite-primary-Fill: #163929;
+
+  --icon-close-Fill: #ffffff;
+
+  --back-to-collections-ColorText: #ffffff;
+  --back-to-collections-icon-Fill: #ffffff;
+
+  --input-icon-Height: 18px;
+  --input-icon-Width: 18px;
+  --input-icon-right-Medium: 18px;
+  --input-icon-right-Large: 33px;
+  --input-icon-valid-Fill: #00ec26;
+  --input-icon-error-Fill: #f28033;
+
+  --packDetail-Padding: 0 30px 80px;
+
+  --packDetailInfo-ColorText: #ffffff;
+  --packDetailInfo-title-ColorText: #ffffff;
+  --packDetailInfo-link-ColorText: #ffffff;
+  --packDetailInfo-line-BorderTop: 1px solid #ffffff;
+  --packDetailInfo-badge-description-ColorText: #ffffff;
+  --packDetailInfo-price-header-ColorText: rgba(255, 255, 255, 0.5);
+  --packContains-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --packContains-description-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --packContains-description-Border: 1px solid #dadada;
+
+  --button-secondary-FontSize: 20px;
+  --button-secondary-LineHeight: 23px;
+  --button-secondary-FontWeight: 500;
+  --button-secondary-Padding: 14px 10px;
+  --button-secondary-ColorText: #ffffff;
+  --button-secondary-ColorText-Hover: #ffffff;
+  --button-secondary-Bg: none;
+  --button-secondary-BgColor: transparent;
+  --button-secondary-BorderColor: #ffffff;
+  --button-secondary-BgColor-Hover: transparent;
+  --button-secondary-BoxShadow: none;
+
+  --button-secondary-active-ColorText: #ffffff;
+  --button-secondary-active-Bg-Image: url(/assets/img/jungle/button_large_bg.webp);
+  --button-secondary-active-BgColor: transparent;
+  --button-secondary-active-BorderColor: transparent;
+
+  --button-cancel-ColorText: #ffffff;
+  --button-cancel-ColorText-Hover: #ffffff;
+  --button-cancel-BgColor: transparent;
+  --button-cancel-BorderWidth: 2px;
+  --button-cancel-BorderColor: #ffffff;
+  --button-cancel-BoxShadow: none;
+  --button-cancel-BgColor-Hover: transparent;
+  --button-cancel-BoxShadow: none;
+
+  --button-auction-ColorText: #ffffff;
+  --button-auction-ColorText-Hover: #ffffff;
+  --button-auction-BgColor: transparent;
+  --button-auction-BgColor-Hover: transparent;
+  --button-auction-BorderColor: #ffffff;
+  --button-auction-BorderColor-Hover: #ffffff;
+
+  --button-forgot-password-Margin: 48px 0 0;
+  --button-forgot-password-Width: 280px;
+
+  --button-available-small-Width: 210px;
+  --button-available-large-Width: 277px;
+  --button-available-Padding: 14px 10px;
+
+  --button-width-login: 380px;
+  --button-width-primary: 190px;
+  --button-width-secondary: 282px;
+
+  --button-buyPack-Width: 314px;
+  --button-buyPack-FontSize: 20px;
+  --button-buyPack-FontWeight: 500;
+  --button-buyPack-LineHeight: 23px;
+
+  --activatedBadge-BgColor: #80de65;
+  --activatedBadge-ColorText: #ffffff;
+
+  --changePassword-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+
+  --cardSettings-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --cardSettings-ColorText: #ffffff;
+  --cardSettings-line-Bg: rgba(255, 255, 255, 0.5);
+  --cardSettings-BorderLeft: 1px solid rgba(255, 255, 255, 0.5);
+  --cardSettings-title-ColorText: #ffffff;
+
+  --settings-navButton-width: 210px;
+  --settings-navButton-Padding: 14px 16px;
+  --settings-navWrapper-BorderBottom: 1px solid rgba(255, 255, 255, 0.1);
+  --settings-navWrapper-Margin: 48px 0 0;
+  --settings-userSettings-Margin: 91px 0 0;
+
+  --settings-heading-FontSize: 20px;
+  --settings-heading-FontWeight: 500;
+  --settings-heading-LineHeight: 23px;
+
+  --settings-heading-FontSize: 20px;
+  --settings-heading-FontWeight: 500;
+  --settings-heading-LineHeight: 23px;
+
+  --settings-card-Padding: 20px;
+  --settings-card-Padding-Large: 23px;
+  --settings-card-title-FontSize: 16px;
+  --settings-card-title-FontWeight: 500;
+  --settings-card-title-LineHeight: 18px;
+
+  --settings-card-text-FontSize: 14px;
+  --settings-card-text-FontWeight: 400;
+  --settings-card-text-LineHeight: 16px;
+
+  --settings-cardText-FontSize: 12px;
+  --settings-cardText-FontWeight: 400;
+  --settings-cardText-LineHeight: 14px;
+
+  --settings-textHelper-FontSize: 14px;
+  --settings-textHelper-FontWeight: 400;
+  --settings-textHelper-LineHeight: 16px;
+  --settings-textHelper-heading-FontWeight: 500;
+  --settings-textHelper-Margin: 20px 0 35px;
+
+  --textHelper-BorderLeft: 2px solid #dadada;
+  --textHelper-ColorText: #ffffff;
+
+  --listIcon-icon-Fill: #fab72b;
+  --listIcon-ColorText: #ffffff;
+
+  --getAuth-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --getAuth-Border: 2px solid #dadada;
+  --setKey-box-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --getAuth-title-FontSize: 14px;
+  --getAuth-title-FonWeight: 500;
+  --getAuth-title-LineHeight: 16px;
+
+  --setKey-box-Border: 2px solid #dadada;
+  --setKey-box-ColorText: #ffffff;
+
+  --copy-code-ColorText: #ffffff;
+  --copy-code-icon-Fill: #ffffff;
+
+  --otp-input-FontSize: 24px;
+  --otp-input-FontWeight: 500;
+  --otp-input-LineHeight: 1;
+  --otp-input-Height: 50px;
+  --otp-input-Width: 47px;
+  --otp-input-ColorText: #ffffff;
+  --otp-input-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --otp-input-Border: 2px solid #dadada;
+  --otp-input-placeholder-ColorText: #ffffff;
+  --otp-input-outline-color: #fab72b;
+
+  --error-ColorText: #f28033;
+  --error-Border: 2px solid #f28033;
+  --error-FontSize: 12px;
+  --error-FonTWeight: 400;
+  --error-LineHeight: 14px;
+  --error-Bottom: -5px;
+
+  --sidebar-Bg: none;
+
+  --nav-FontSize: 16px;
+  --nav-FontWeight: 500;
+  --nav-LineHeight: 18px;
+  --nav-ColorText: #ffffff;
+  --nav-active-ColorText: #fab72b;
+  --nav-active-Bg: #fab72b;
+  --nav-BorderColor: rgba(255, 255, 255, 0.1);
+
+  --nav-column-FontSize: 20px;
+  --nav-column-FontWeight: 400;
+  --nav-column-LineHeight: 23px;
+  --nav-column-Padding: 20px 15px;
+
+  --nav-pill-active-Bg: rgba(255, 255, 255, 0.1);
+  --nav-pill-ColorText: #ffffff;
+  --nav-pill-active-ColorText: #ffffff;
+
+  --navTab-ColorText: #ffffff;
+  --navTab-FontSize: 14px;
+  --navTab-FontWeight: 500;
+  --navTab-LineHeight: 16px;
+
+  --navTab-settings-FontSize: 16px;
+  --navTab-settings-FontWeight: 500;
+  --navTab-settings-LineHeight: 18px;
+
+  --userNameLabel-ColorText: #6561d7;
+  --userNameLabel-Bg: #ebf2f8;
+  --userNameLabel-fontSize: 12px;
+  --userNameLabel-LineHeight: 21px;
+  --userNameLabel-FontWeight: 400;
+
+  --carousel-Bg: transparent;
+  --carousel-dots-Bg: rgba(255, 255, 255, 0.15);
+  --carousel-dots-active-Bg: #ffffff;
+  --carousel-arrowWrapper-Border: none;
+  --carousel-arrow-Bg: url(/assets/img/jungle/carousel-arrow.webp) no-repeat 50%
+    0;
+  --carousel-arrow-ColorText: rgba(255, 255, 255, 0);
+  --carousel-arrow-BorderLeft: 2px solid transparent;
+  --carousel-arrow-BorderTop: 2px solid transparent;
+  --carousel-arrow-BorderColor: transparent;
+  --carousel-arrow-Width-Large: 50px;
+  --carousel-arrow-Height-Large: 50px;
+  --carousel-arrow-Width: 24px;
+  --carousel-arrow-Height: 24px;
+
+  --carousel-arrow-icon-Width: 8px;
+  --carousel-arrow-icon-Height: 8px;
+  --carousel-arrow-icon-Width-Large: 10px;
+  --carousel-arrow-icon-Height-Large: 10px;
+
+  --carousel-scrollbar-Bg: rgba(255, 255, 255, 0.1);
+  --carousel-drag-Bg: rgba(255, 255, 255, 0.5);
+  --carouselScrollbar-Template-Columns: 58px 1fr;
+  --carouselScrollbar-Template-Columns-Large: 110px 1fr;
+  --carouselScrollbar-Gap: 20px;
+  --carouselScrollbar-Gap-Large: 40px;
+
+  --carousel-arrow-secondary-Width-Large: 87px;
+  --carousel-arrow-secondary-Height-Large: 95px;
+
+  --carousel-arrow-secondary-BorderTop: none;
+  --carousel-arrow-secondary-BorderLeft: none;
+  --carousel-arrow-secondary-BorderColor: transparent;
+  --carousel-arrow-secondary-Bg: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 87 95' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M87 47.5L43.5 6.36379L43.5 88.6362L87 47.5Z' fill='%23f0c66d'/%3e%3cpath d='M74 47.5L30.5 6.36379L30.5 88.6362L74 47.5Z' fill='%23c39430'/%3e%3cpath d='M58 47.5L14.5 6.36379L14.5 88.6362L58 47.5Z' fill='%23FAB72B'/%3e%3c/svg%3e ");
+
+  --getNewNFT-Bg: transparent;
+  --getNewNFT-BorderColor: #ffffff;
+  --getNewNFT-FontWeight: 500;
+
+  --hr-line-bg: rgba(255, 255, 255, 0.1);
+  --hr-line-Buy-bg: rgba(255, 255, 255, 0.1);
+  --hr-line-Buy-Margin: 30px 0 0;
+  --hr-line-Collection-Margin: 30px 0 0;
+
+  --youHave-Bg: #fab72b;
+  --youHave-ColorText: #ffffff;
+
+  --youHave-FontSize: 20px;
+  --youHave-LineHeight: 22px;
+  --youHave-FontWeight: 700;
+
+  --youHave-FontSize-Large: 28px;
+  --youHave-LineHeight-Large: 40px;
+
+  --toggleSwitch-Bg: #ffffff;
+  --toggleSwitch-BorderColor: #ffffff;
+  --toggleSwitch-slider-Bg: #ffffff;
+  --toggleSwitch-checked-Bg: #fab72b;
+  --toggleSwitch-checked-BorderColor: #fab72b;
+  --toggleSwitch-slider-checked-Bg: rgba(255, 255, 255, 0.73);
+
+  --section-highlight-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --section-highlight-ColorText: #ffffff;
+
+  --redeemItem-ColorText: #ffffff;
+  --redeemItem-Bg: rgba(21, 50, 36, 0.72);
+  --redeemItem-Bg-Hover: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --redeemItem-filter: blur(24px);
+  --redeemItem-line-BorderColor: #ffffff;
+  --redeemItem-line-Border: 1px solid rgba(229, 229, 229, 0.5);
+  --redeemItem-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  --redeemButton-Padding: 10px 16px;
+  --redeemButton-Width: 164px;
+  --redeemItem-text-ColorText: #ffffff;
+  --redeemItem-moreAbout-ColorText: #80de65;
+
+  --redeem-FontSize: 20px;
+  --redeem-LineHeight: 26px;
+  --redeem-FontWeight: 500;
+
+  --text-FontSize: 20px;
+  --text-LineHeight: 26px;
+  --text-FontWeight: 500;
+
+  --redeemItem-FontSize: 22px;
+  --redeemItem-LineHeight: 35px;
+  --redeemItem-FontWeight: 700;
+
+  --redeemItem-owner-FontSize: 12px;
+  --redeemItem-owner-LineHeight: 18px;
+  --redeemItem-owner-FontWeight: 400;
+
+  --redeemItem-experience-title-FontSize: 16px;
+  --redeemItem-experience-title-LineHeight: 18px;
+  --redeemItem-experience-title-FontWeight: 700;
+
+  --redeemItem-experience-text-FontSize: 12px;
+  --redeemItem-experience-text-LineHeight: 24px;
+  --redeemItem-experience-text-FontWeight: 400;
+
+  --redeemItem-details-FontSize: 14px;
+  --redeemItem-details-LineHeight: 21px;
+  --redeemItem-details-FontWeight: 500;
+
+  --buyPack-media-Width: 294px;
+  --buyPack-media-Height: 293px;
+  --buyPack-FontSize: 14px;
+  --buyPack-LineHeight: 22px;
+  --buyPack-FontWeight: 400;
+
+  --collection-PaddingTop: 119px;
+  --collection-text-MarginBottom: 97px;
+
+  --buy-PaddingTop: 119px;
+  --buy-text-MarginBottom: 97px;
+  --packPage-header-MarginTop: 97px;
+  --packPage-header-MarginBottom: 15px;
+  --packPage-text-MarginBottom: 60px;
+
+  --sticker-Bg: #dadada;
+  --sticker-triangle-Bg: #fab72b;
+  --sticker-ColorText: #000000;
+
+  --pagination-Bg: linear-gradient(
+    153.9deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  --pagination-BorderColor: #e5e5e5;
+  --pagination-ColorText: #ffffff;
+  --pagination-arrow-Fill: #ffffff;
+  --pagination-arrow-disabled-Fill: #bfd3e4;
+
+  --pagination-current-Bg: #dff2ff;
+  --pagination-current-BorderColor: #dff2ff;
+  --pagination-current-ColorText: #163929;
+  --pagination-MarginTop: 74px;
+  --pagination-MarginBottom: 50px;
+
+  --shoppingCard-heading-ColorText: #032447;
+  --shoppingCard-Bg: linear-gradient(
+    108.67deg,
+    #163929 0%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+  --shoppingCard-Filter: blur(4px);
+  --shoppingCard-icon-Fill: #446384;
+  --shoppingCard-Padding: 26px 30px 30px;
+
+  --loadingWave-Bg: #ffffff;
+  --loadingWave-BorderColor: #fab72b;
+  --loadingWave-ColorText: #ffffff;
+  --loadingWave-circle-Bg: #ffffff;
+  --loadingWave-wave-primary-Bg: #fab72b;
+  --loadingWave-wave-secondary-Bg: #99adfb;
+  --loadingWave-wave-third-Bg: #ffffff;
+
+  --modal-card-BgColor: transparent;
+  --modal-card-Bg: none;
+  --icon-dataPicker: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.04688 7.875H2.95312C2.73438 7.875 2.625 7.76562 2.625 7.54688V6.45312C2.625 6.23438 2.73438 6.125 2.95312 6.125H4.04688C4.26562 6.125 4.375 6.23438 4.375 6.45312V7.54688C4.375 7.76562 4.26562 7.875 4.04688 7.875ZM7 7.54688C7 7.76562 6.89062 7.875 6.67188 7.875H5.57812C5.35938 7.875 5.25 7.76562 5.25 7.54688V6.45312C5.25 6.23438 5.35938 6.125 5.57812 6.125H6.67188C6.89062 6.125 7 6.23438 7 6.45312V7.54688ZM9.625 7.54688C9.625 7.76562 9.51562 7.875 9.29688 7.875H8.20312C7.98438 7.875 7.875 7.76562 7.875 7.54688V6.45312C7.875 6.23438 7.98438 6.125 8.20312 6.125H9.29688C9.51562 6.125 9.625 6.23438 9.625 6.45312V7.54688ZM7 10.1719C7 10.3906 6.89062 10.5 6.67188 10.5H5.57812C5.35938 10.5 5.25 10.3906 5.25 10.1719V9.07812C5.25 8.85938 5.35938 8.75 5.57812 8.75H6.67188C6.89062 8.75 7 8.85938 7 9.07812V10.1719ZM4.375 10.1719C4.375 10.3906 4.26562 10.5 4.04688 10.5H2.95312C2.73438 10.5 2.625 10.3906 2.625 10.1719V9.07812C2.625 8.85938 2.73438 8.75 2.95312 8.75H4.04688C4.26562 8.75 4.375 8.85938 4.375 9.07812V10.1719ZM9.625 10.1719C9.625 10.3906 9.51562 10.5 9.29688 10.5H8.20312C7.98438 10.5 7.875 10.3906 7.875 10.1719V9.07812C7.875 8.85938 7.98438 8.75 8.20312 8.75H9.29688C9.51562 8.75 9.625 8.85938 9.625 9.07812V10.1719ZM12.25 3.0625V12.6875C12.25 13.0521 12.1224 13.362 11.8672 13.6172C11.612 13.8724 11.3021 14 10.9375 14H1.3125C0.947917 14 0.638021 13.8724 0.382812 13.6172C0.127604 13.362 0 13.0521 0 12.6875V3.0625C0 2.69792 0.127604 2.38802 0.382812 2.13281C0.638021 1.8776 0.947917 1.75 1.3125 1.75H2.625V0.328125C2.625 0.109375 2.73438 0 2.95312 0H4.04688C4.26562 0 4.375 0.109375 4.375 0.328125V1.75H7.875V0.328125C7.875 0.109375 7.98438 0 8.20312 0H9.29688C9.51562 0 9.625 0.109375 9.625 0.328125V1.75H10.9375C11.3021 1.75 11.612 1.8776 11.8672 2.13281C12.1224 2.38802 12.25 2.69792 12.25 3.0625ZM10.9375 12.5234V4.375H1.3125V12.5234C1.3125 12.6328 1.36719 12.6875 1.47656 12.6875H10.7734C10.8828 12.6875 10.9375 12.6328 10.9375 12.5234Z' fill='%23FAB72B'/%3e%3c/svg%3e ");
+
+  --card-get-Bg: none;
+
+  --maintenance-Bg-Footer: transparent;
+
+  --404-page-PaddingTop: 150px;
+  --404-page-PaddingBottom: 50px;
+  --404-page-header-ColorText: #163929;
+  --404-page-header-textShadow: 2px 2px 0 #fab72b, 2px -2px 0 #fab72b,
+    -2px 2px 0 #fab72b, -2px -2px 0 #fab72b, 2px 0px 0 #fab72b,
+    0px 2px 0 #fab72b, -2px 0px 0 #fab72b, 0px -2px 0 #fab72b;
+  --404-page-ColorText: #ffffff;
+  --404-page-title-ColorText: #ffffff;
+  --404-page-button-Bg-Image: url('/assets/img/jungle/button-404.webp');
+  --404-page-button-Width: 282px;
+  // --404-page-Bg: url(/assets/img/jungle/bg_404_page.webp);
+  --404-page-Bg: none;
+
+  --maintenance-media-Bg-Image: url('/assets/img/jungle/mainTainance.webp');
+
+  --signin-input-Margin: 26px 0 0;
+  --signin-Padding: 120px 20px 0;
+
+  --heading-2fa-FontSize: 28px;
+  --heading-2fa-LineHeight: 30px;
+  --heading-2fa-FontWeight: 500;
+  --heading-2fa-Margin: 11px 0;
+
+  --subTitle-2fa-FontSize: 14px;
+  --subTitle-2fa-LineHeight: 21px;
+  --subTitle-2fa-FontWeight: 400;
+  --avatar-2fa-Bg: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --avatar-2fa-Border: 2px solid #dadada;
+  --avatar-large-Padding: 0;
+  --avatar-large-Width: 110px;
+  --avatar-large-Height: 110px;
+
+  --tipsText-signUp-ColorText: #82c2e7;
+  --tipsText-signUp-FontWeight: 400;
+  --tipsText-signUp-FontSize: 24px;
+  --tipsText-signUp-LineHeight: 28px;
+
+  --heading-forgot-password-Margin: 0 0 45px;
+  --success-password-Padding: 67px 0 0;
+  --forgot-password-Padding: 10.6% 0 0;
+  --siginup--checkBox-margin: 31.5px 0 0 26px;
+
+  --heading-checkEmail-Margin: 19px 0 45px;
+  --heading-success-Margin: 19px 0 48px;
+  --subTitle-checkEmail-FontSize: 24px;
+  --subTitle-checkEmail-LineHeight: 28px;
+  --subTitle-checkEmail-FontWeight: 500;
+
+  --info-hint-ColorText: #000;
+  --info-hint-Bg: #fff;
+
+  --listWrapper-Margin: 0;
+
+  --toastify-color-light: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.075) 0%,
+    rgba(255, 255, 255, 0.075) 100%
+  );
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #6f8efb;
+  --toastify-color-success: #31bc83;
+  --toastify-color-warning: #fbcb51;
+  --toastify-color-error: #fd7465;
+  --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  --toastify-icon-color-info: #fff;
+  --toastify-icon-color-success: #fff;
+  --toastify-icon-color-warning: #fff;
+  --toastify-icon-color-error: #fff;
+  ---toastify-toast-width: 320px;
+  ---toastify-toast-width-Large: 585px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: var(--font-family-base);
+  --toastify-z-index: 9999;
+  --toastify-text-color-light: #ffffff;
+  --toastify-text-color-dark: #fff;
+  --toastify-text-color-info: #fff;
+  --toastify-text-color-success: #fff;
+  --toastify-text-color-warning: #fff;
+  --toastify-text-color-error: #fff;
+  --toastify-spinner-color: #616161;
+  --toastify-spinner-color-empty-area: #e0e0e0;
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  --toastify-color-progress-dark: #bb86fc;
+  --toastify-color-progress-info: var(--toastify-color-info);
+  --toastify-color-progress-success: var(--toastify-color-success);
+  --toastify-color-progress-warning: var(--toastify-color-warning);
+  --toastify-color-progress-error: var(--toastify-color-error);
+
+  --toastify-close-button-fill: #fff;
+  --toastify-close-button-color: #fff;
+  --toastify-close-button-opacity: 1;
+  --toastify-border-radius: 0;
+  --toastify-border-color: transparent;
+
+  --toastify-font-size: 20px;
+  --toastify-font-weight: 400;
+  --toastify-line-height: 23px;
+  --toastify__progress-bar-bottom: -2px;
+
+  --toastify-border-color-info: var(--toastify-color-info);
+  --toastify-border-color-success: var(--toastify-color-success);
+  --toastify-border-color-warning: var(--toastify-color-warning);
+  --toastify-border-color-error: var(--toastify-color-error);
+
+  --blockchain-network-them-color: #fff;
+  --blockchain-network-gradient-1: #fff;
+  --blockchain-network-gradient-2: #f1f1f1;
+  --blockchain-network-gradient-3: #d0d0d0;
+  --profile-container-grid: 250px 1fr;
+  --profile-container-grid-Large: 253px 1fr;
+  --profile-container-gap: 0;
+  --profile-you-have-Padding: 20px 20px 20px 0;
+  --profile-button-youHave-Width: 166px;
+  --profile-button-youHave-Padding: 15px 10px;
+  --profile-button-youHave-Margin: 48px 0 0;
+
+  --bsc-label-FontSize: 9px;
+  --bsc-label-FontWeight: 700;
+  --bsc-label-LineHeight: 14px;
+
+  --buyWith-ColorText: #ffffff;
+
+  --termsCheckbox-FontWeight: 500;
+  --termsCheckbox-FontSize: 12px;
+  --termsCheckbox-LineHeight: 14px;
+  --termsCheckbox-ColorText: rgba(255, 255, 255, 0.5);
+  --termsCheckbox-link-ColorText: #ffffff;
+}

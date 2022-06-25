@@ -1,0 +1,16 @@
+@use '../../../styles/index.scss' as *;
+
+.textHelper {
+  margin-top: auto;
+  padding-left: 20px;
+  border-left: var(--textHelper-BorderLeft);
+  color: var(--textHelper-ColorText);
+  font-size: 14px;
+  line-height: 21px;
+  p {
+    margin: 10px 0 0;
+  }
+  &.small {
+    font-size: 12px;
+  }
+}

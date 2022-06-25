@@ -1,0 +1,44 @@
+.tooltipWrapper {
+  position: relative;
+  .tooltip {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    background: rgba(12, 21, 36, 0.75);
+    border-radius: 3px;
+    padding: 4px 7px;
+    & svg {
+      position: relative;
+    }
+  }
+  &:hover .tooltip {
+    visibility: visible;
+  }
+}
+
+.tooltipBottom {
+  top: 100%;
+  transform: translateX(-60%);
+}
+.like-primary {
+  &.icon-favorite-clear {
+    fill: var(--icon-favorite-clear-primary-Fill);
+  }
+  &.icon-favorite {
+    fill: var(--icon-favorite-primary-Fill);
+  }
+}
+.like-default {
+  &.icon-favorite-clear {
+    fill: var(--icon-favorite-clear-default-Fill);
+  }
+  &.icon-favorite {
+    fill: var(--icon-favorite-default-Fill);
+  }
+}

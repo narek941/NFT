@@ -1,0 +1,29 @@
+@use '../../../styles/index.scss' as *;
+
+.general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.addressContainer {
+  margin-top: 24px;
+  border: 1px solid var(--border-bgColor);
+  border-radius: 6px;
+  background: var(--section-bgColor);
+  padding: 13px 16px;
+}
+.balanceContainer {
+  margin-top: 10px;
+}
+.errorMsg {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translate(-50%, 0);
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}

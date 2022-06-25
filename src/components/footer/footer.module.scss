@@ -1,0 +1,62 @@
+@use '../../styles/index.scss' as *;
+
+.footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  font-family: var(--font-family-SansSerif);
+  font-weight: 400;
+  color: var(--footer-ColorText);
+
+  padding: var(--footer-Padding);
+  margin-top: auto;
+  border-top: 1px solid var(--footer-border-color);
+  @include respond-to('small') {
+    padding: var(--footer-Padding-small);
+  }
+  @include respond-to('medium') {
+    padding: var(--footer-Padding-large);
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: var(--footer-direction);
+  gap: var(--footer-gap);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-column {
+  width: 33%;
+}
+
+.container {
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 193px;
+    padding-top: 209px;
+    padding-top: 20%;
+
+    position: absolute;
+    top: -96px;
+    right: 0;
+
+    background-position: 100% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: var(--footer-small-Image);
+
+    @include respond-to('small') {
+      top: -137px;
+      right: -13px;
+    }
+    @include respond-to('medium') {
+      width: 263px;
+      padding-top: 20.85%;
+      top: -346px;
+      right: -65px;
+    }
+  }
+}

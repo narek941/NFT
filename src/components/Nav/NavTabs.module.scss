@@ -1,0 +1,85 @@
+@use '../../styles/index.scss' as *;
+
+.wrapper {
+  width: 100%;
+}
+
+.nav {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include respond-to('small') {
+    margin: 0;
+    flex-direction: row;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-bottom-color: var(--nav-BorderColor);
+  }
+}
+
+.navLink {
+  padding: 20px 20px;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  font-weight: var(--navTab-FontWeight);
+  font-size: var(--navTab-FontSize);
+  line-height: var(--navTab-LineHeight);
+  color: var(--navTab-ColorText);
+
+  display: block;
+  position: relative;
+  z-index: 2;
+
+  border-bottom: 1px solid transparent;
+  border-bottom-color: var(--nav-BorderColor);
+
+  @include respond-to('small') {
+    padding: 10px 0;
+    border: none;
+  }
+
+  &:before {
+    content: '';
+
+    position: absolute;
+    bottom: -1px;
+
+    height: 2px;
+    border-radius: 2px 2px 0 0;
+
+    left: 20px;
+    right: 20px;
+    @include respond-to('small') {
+      left: -5px;
+      right: -5px;
+    }
+  }
+
+  &.isActive {
+    color: var(--nav-active-ColorText);
+
+    &:before {
+      background: var(--nav-active-Bg);
+    }
+  }
+}
+
+.navItem {
+  @include respond-to('small') {
+    &:not(:first-child) {
+      padding: 0 0 0 6.45%;
+    }
+  }
+}
+
+.navItem,
+.navItem > a {
+  outline: none;
+}

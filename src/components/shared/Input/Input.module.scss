@@ -1,0 +1,154 @@
+@use '../../../styles/index.scss' as *;
+
+.container {
+  position: relative;
+  margin-top: 8.5px;
+  width: 100%;
+}
+.input {
+  height: var(--input-Height);
+  font-size: var(--input-FontSize);
+  line-height: var(--input-LineHeight);
+  font-weight: var(--input-FontWeight);
+  font-family: var(--font-family-base);
+  padding: var(--input-Padding);
+  color: var(--input-ColorText);
+  border: var(--input-Border);
+  background-color: transparent;
+  background: var(--input-Bg);
+  border-radius: var(--input-BorderRadius);
+  width: 100%;
+
+  outline-color: var(--input-Placeholder-ColorText);
+
+  @include respond-to('medium') {
+    height: var(--input-Height-large);
+    padding: var(--input-Padding-Large);
+    border-radius: var(--input-BorderRadius-Large);
+  }
+
+  &:-webkit-autofill {
+    font-size: var(--input-FontSize);
+    -webkit-box-shadow: 0 0 0px 1000px var(--input-AutoFill-BgColor) inset;
+    -moz-box-shadow: 0 0 0 100px var(--input-AutoFill-BgColor) inset;
+    box-shadow: 0 0 0 100px var(--input-AutoFill-BgColor) inset;
+
+    -webkit-text-fill-color: var(--input-AutoFill-ColorText) !important;
+  }
+  &::placeholder {
+    color: var(--input-Placeholder-ColorText);
+  }
+  &-small {
+    padding: 7px 12px 7px 16px;
+    font-size: 12px;
+    line-height: 18px;
+    height: var(--input-height-Small);
+    + .input-icon + .input-icon,
+    + .input-icon {
+      right: var(--input-icon-right-Medium);
+    }
+  }
+  &-medium {
+    height: var(--input-Height-Medium);
+    padding: 10px 34px 10px 16px;
+
+    + .input-icon + .input-icon,
+    + .input-icon {
+      right: var(--input-icon-right-Medium);
+    }
+  }
+}
+.forgotPassLink {
+  text-decoration: none;
+  font-size: var(--forgotPassLink-FontSize);
+  font-weight: var(--forgotPassLink-FontWeight);
+  line-height: var(--forgotPassLink-LineHeight);
+  color: var(--forgotPassLink-ColorText);
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(0, -26.5px);
+  @include respond-to('medium') {
+    right: var(--input-icon-right-Large);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--forgotPassLink-ColorText-Hover);
+  }
+}
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translate(0, -50%);
+  @include respond-to('medium') {
+    right: var(--input-icon-right-Large);
+  }
+}
+.input-icon-validation {
+  width: var(--input-icon-Width);
+  height: var(--input-icon-Height);
+}
+.input-icon-eye {
+  fill: var(--icon-eye-Fill);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.input-errorMsg {
+  position: absolute;
+  left: 0;
+  padding: var(--input-label-text-Padding);
+  bottom: var(--error-Bottom);
+  transform: translate(0, 100%);
+  font-size: var(--error-FontSize);
+  font-weight: var(--error-FonTWeight);
+  line-height: var(--error-LineHeight);
+  color: var(--error-ColorText);
+}
+
+.container-password {
+  &:focus,
+  &:hover {
+    .input-icon-error,
+    .input-icon-valid {
+      display: none;
+    }
+    .input-icon-eye {
+      display: block !important;
+    }
+  }
+}
+.input-password {
+  + .input-icon-error + .input-icon-eye,
+  + .input-icon-valid + .input-icon-eye {
+    display: none;
+  }
+  &:focus {
+    + .input-icon-error,
+    + .input-icon-valid {
+      display: none;
+    }
+    + .input-icon-valid + .input-icon-eye {
+      display: block;
+    }
+    + .input-icon-error + .input-icon-eye {
+      display: block;
+    }
+  }
+}
+
+.input-disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.input-icon-valid {
+  fill: var(--input-icon-valid-Fill);
+}
+.input-icon-error {
+  fill: var(--input-icon-error-Fill);
+}

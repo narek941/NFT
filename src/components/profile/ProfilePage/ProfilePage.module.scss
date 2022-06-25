@@ -1,0 +1,17 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 21px 0 0;
+
+  position: relative;
+  z-index: 2;
+}
+
+.tab-wrapper {
+  width: 100%;
+}

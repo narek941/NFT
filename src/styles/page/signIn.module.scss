@@ -1,0 +1,62 @@
+@use '@styles/index.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex-grow: 1;
+
+  .content {
+    flex: 1;
+    @include respond-to('medium') {
+      padding: var(--signin-Padding);
+    }
+  }
+}
+
+.signIn-wrapper {
+  position: relative;
+
+  z-index: 3;
+  @include respond-to('medium') {
+    padding: 0;
+  }
+}
+.signIn-content {
+  margin: 14px auto 0;
+
+  .button {
+    margin-top: 20px;
+  }
+}
+
+.heading-signIn {
+  margin-bottom: 55px;
+}
+.signin-step1 {
+  margin: 0 auto;
+
+  .input + .input {
+    margin-top: 26px;
+  }
+}
+
+.signin-bottom {
+  margin-top: 64px;
+  margin-bottom: 50px;
+
+  display: var(--poweredBy-display);
+}
+.poweredBy {
+  span {
+    color: var(--poweredBy-logo-signIn-ColorText);
+  }
+}
+.subHeading {
+  max-width: 419px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

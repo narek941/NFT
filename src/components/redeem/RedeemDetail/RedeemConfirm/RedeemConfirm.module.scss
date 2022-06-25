@@ -1,0 +1,53 @@
+@use '../../../../styles/index.scss' as *;
+
+.media {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.title {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.confirmText {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.action {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  .button {
+    margin-top: 30px;
+    min-width: 220px;
+  }
+}
+.wrapper {
+  @include respond-to('medium') {
+    min-height: 439px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 45px;
+  }
+}
+
+.badge {
+  z-index: 1;
+  text-align: center;
+  margin-top: 20px;
+}

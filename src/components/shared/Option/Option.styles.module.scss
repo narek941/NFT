@@ -1,0 +1,71 @@
+@use '../../../styles/index.scss' as *;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  column-gap: 12px;
+  padding: var(--option-padding);
+  font-size: var(--option-FontSize);
+  line-height: var(--option-LineHeight);
+  font-weight: var(--option-FontWeight);
+  cursor: pointer;
+  &:not(:last-child) {
+    margin: var(--option-margin);
+  }
+
+  border-radius: var(--option-BorderRadius);
+  border: var(--option-Border);
+  background: var(--option-Bg);
+  backdrop-filter: var(--option-Filter);
+  color: var(--option-ColorText);
+  @include animate(border);
+
+  &:hover {
+    border-color: var(--option-BorderColor-Hover);
+  }
+  &.active {
+    &:hover {
+      border-color: var(--option-active-BorderColor);
+    }
+  }
+
+  &:empty {
+    display: none;
+  }
+
+  .image {
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    margin-bottom: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--option-onIcon-BgColor);
+  }
+}
+
+.icon-close {
+  margin-left: auto;
+  fill: var(--option-icon-close-Fill);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  &:hover {
+    fill: var(--option-icon-close-Fill-Hover);
+  }
+}
+
+.icon-option {
+  fill: var(--option-icon-option-Fill);
+}
+
+.text {
+  @include ellipsis(2);
+}
+
+.isActiveText {
+  font-weight: var(--option-isActive-FontWeight);
+}

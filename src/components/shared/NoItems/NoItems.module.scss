@@ -1,0 +1,16 @@
+.noItems {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  padding: 60px 0;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+
+  &:only-child {
+    grid-column: 1/5;
+  }
+}

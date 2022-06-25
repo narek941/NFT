@@ -1,0 +1,35 @@
+@use '@styles/index.scss' as *;
+.card {
+  width: 162px;
+  height: 162px;
+  padding: 9px;
+  border: var(--card-merge-Border-Width) solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  @include animate(border background);
+  &:hover,
+  &.isActive {
+    backdrop-filter: blur(81px);
+    background: var(--card-merge-active-Bg);
+    border: var(--card-merge-Border-Width) solid
+      var(--card-merge-active-BorderColor);
+    .media {
+      background: var(--card-merge-media-active-Bg);
+      border-color: var(--card-merge-media-active-BorderColor);
+      backdrop-filter: blur(4px);
+    }
+  }
+  .media {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    background: var(--card-merge-media-Bg);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--card-merge-media-BorderColor);
+  }
+  .icon-placeholder {
+    width: 100%;
+    height: 100%;
+  }
+}
